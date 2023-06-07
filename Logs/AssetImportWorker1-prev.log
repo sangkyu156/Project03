@@ -15,7 +15,7 @@ C:/Sang/Project03
 -logFile
 Logs/AssetImportWorker1.log
 -srvPort
-10085
+12148
 Successfully changed project path to: C:/Sang/Project03
 C:/Sang/Project03
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -47,11 +47,11 @@ C:/Sang/Project03
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [22388] Host "[IP] 192.168.219.102 [Port] 0 [Flags] 2 [Guid] 1066802911 [EditorId] 1066802911 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-21HD2QP) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [18476] Host "[IP] 192.168.219.102 [Port] 0 [Flags] 2 [Guid] 411604580 [EditorId] 411604580 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-21HD2QP) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [22388] Host "[IP] 192.168.219.102 [Port] 0 [Flags] 2 [Guid] 1066802911 [EditorId] 1066802911 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-21HD2QP) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [18476] Host "[IP] 192.168.219.102 [Port] 0 [Flags] 2 [Guid] 411604580 [EditorId] 411604580 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-21HD2QP) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
-Refreshing native plugins compatible for Editor in 79.14 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 97.18 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.3.16f1 (4016570cf34f)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.16f1/Editor/Data/Resources/UnitySubsystems
@@ -67,92 +67,1124 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.16f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.16f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.16f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56508
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56264
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.16f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.16f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.013409 seconds.
+Registered in 0.011513 seconds.
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
-Refreshing native plugins compatible for Editor in 84.06 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 81.97 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.749 seconds
+- Completed reload, in  0.743 seconds
 Domain Reload Profiling:
-	ReloadAssembly (750ms)
-		BeginReloadAssembly (93ms)
+	ReloadAssembly (744ms)
+		BeginReloadAssembly (96ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (529ms)
-			LoadAssemblies (90ms)
+		EndReloadAssembly (515ms)
+			LoadAssemblies (93ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (124ms)
+			SetupTypeCache (115ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (32ms)
-			SetupLoadedEditorAssemblies (312ms)
+			RebuildScriptCaches (31ms)
+			SetupLoadedEditorAssemblies (314ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (62ms)
+				InitializePlatformSupportModulesInManaged (70ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (84ms)
+				RefreshPlugins (82ms)
 				BeforeProcessingInitializeOnLoad (1ms)
-				ProcessInitializeOnLoadAttributes (107ms)
-				ProcessInitializeOnLoadMethodAttributes (57ms)
+				ProcessInitializeOnLoadAttributes (102ms)
+				ProcessInitializeOnLoadMethodAttributes (58ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.008293 seconds.
+Registered in 0.009537 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Sang\Project03\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image C:\Sang\Project03\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
-Refreshing native plugins compatible for Editor in 0.51 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 0.52 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.253 seconds
+- Completed reload, in  1.244 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1254ms)
-		BeginReloadAssembly (243ms)
+	ReloadAssembly (1245ms)
+		BeginReloadAssembly (248ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (8ms)
+			DisableScriptedObjects (7ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (130ms)
-		EndReloadAssembly (880ms)
-			LoadAssemblies (108ms)
+			CreateAndSetChildDomain (128ms)
+		EndReloadAssembly (869ms)
+			LoadAssemblies (115ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (291ms)
+			SetupTypeCache (271ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (53ms)
-			SetupLoadedEditorAssemblies (391ms)
+			RebuildScriptCaches (54ms)
+			SetupLoadedEditorAssemblies (402ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (17ms)
 				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (99ms)
-				ProcessInitializeOnLoadAttributes (235ms)
+				BeforeProcessingInitializeOnLoad (98ms)
+				ProcessInitializeOnLoadAttributes (247ms)
 				ProcessInitializeOnLoadMethodAttributes (25ms)
-				AfterProcessingInitializeOnLoad (14ms)
+				AfterProcessingInitializeOnLoad (13ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (16ms)
+			AwakeInstancesAfterBackupRestoration (12ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
-Refreshing native plugins compatible for Editor in 1.14 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 0.85 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3361 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 27 unused Assets / (113.3 KB). Loaded Objects now: 3820.
-Memory consumption went from 120.0 MB to 119.9 MB.
-Total: 3.189100 ms (FindLiveObjects: 0.263300 ms CreateObjectMapping: 0.239000 ms MarkObjects: 2.558700 ms  DeleteObjects: 0.127100 ms)
+Unloading 3408 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 27 unused Assets / (113.8 KB). Loaded Objects now: 3867.
+Memory consumption went from 123.4 MB to 123.3 MB.
+Total: 4.160800 ms (FindLiveObjects: 0.338500 ms CreateObjectMapping: 0.310800 ms MarkObjects: 3.372200 ms  DeleteObjects: 0.138300 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 288948.168119 seconds.
+  path: Assets/TextMesh Pro
+  artifactKey: Guid(f54d1bd14bd3ca042bd867b519fee8cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro using Guid(f54d1bd14bd3ca042bd867b519fee8cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f5648c5ef36b7beab651a001a8d08867') in 0.014936 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 33.652873 seconds.
+  path: Assets/Fonts/PFStardust.ttf
+  artifactKey: Guid(db8502902cf6d7a48a141d1413661434) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fonts/PFStardust.ttf using Guid(db8502902cf6d7a48a141d1413661434) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1493f0e1323f522fec9c149ebc180e4f') in 0.131111 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Fonts/PFStardust_Bold SDF.asset
+  artifactKey: Guid(dcc4d62f96d91c840990b9ce93631fc5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fonts/PFStardust_Bold SDF.asset using Guid(dcc4d62f96d91c840990b9ce93631fc5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7c5e2496bec934d1e18eb6fbbfe6db74') in 0.308187 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Fonts/PFStardust_S.ttf
+  artifactKey: Guid(94401e09ab9f9d44295dd9fa55c4a827) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fonts/PFStardust_S.ttf using Guid(94401e09ab9f9d44295dd9fa55c4a827) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0c1a5d7b58f419e2723dad29236d535b') in 0.017204 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Fonts/PFStardust_Bold.ttf
+  artifactKey: Guid(4b47dfedf6251be48b75117cc4a99ac7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fonts/PFStardust_Bold.ttf using Guid(4b47dfedf6251be48b75117cc4a99ac7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '43d1ddf221eeee0db91a1ba7120dac83') in 0.014049 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.025914 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Sang\Project03\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Sang\Project03\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Refreshing native plugins compatible for Editor in 0.69 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.217 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1218ms)
+		BeginReloadAssembly (181ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (42ms)
+		EndReloadAssembly (920ms)
+			LoadAssemblies (128ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (301ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (47ms)
+			SetupLoadedEditorAssemblies (422ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (27ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (88ms)
+				ProcessInitializeOnLoadAttributes (267ms)
+				ProcessInitializeOnLoadMethodAttributes (25ms)
+				AfterProcessingInitializeOnLoad (13ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (12ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 2.22 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3392 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 20 unused Assets / (80.0 KB). Loaded Objects now: 3918.
+Memory consumption went from 128.7 MB to 128.6 MB.
+Total: 2.785100 ms (FindLiveObjects: 0.227500 ms CreateObjectMapping: 0.147400 ms MarkObjects: 2.306000 ms  DeleteObjects: 0.103400 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 1060.729765 seconds.
+  path: Assets/GUI Kit The Stone/Preview/01_Login.png
+  artifactKey: Guid(a7940d36b624a4b6789907c2533ef05d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit The Stone/Preview/01_Login.png using Guid(a7940d36b624a4b6789907c2533ef05d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5f08620481b2df22cce068a7bab87ccb') in 0.164035 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/GUI Kit The Stone/Preview/10_ShopCoin.png
+  artifactKey: Guid(8349a39d869af4e9faac53e5f76edfef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit The Stone/Preview/10_ShopCoin.png using Guid(8349a39d869af4e9faac53e5f76edfef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8e5572780c9fc2653bd8ced90f4aae50') in 0.105081 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/GUI Kit The Stone/Preview/07_LuckyBoxObjects.png
+  artifactKey: Guid(604db3f670dcf44e08ebf161d473b158) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit The Stone/Preview/07_LuckyBoxObjects.png using Guid(604db3f670dcf44e08ebf161d473b158) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '911bfbf843996c75749e179dfc75b636') in 0.123726 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/GUI Kit The Stone/Preview/05_Complete.png
+  artifactKey: Guid(715014df210ef4cd9948252a09d6ee5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit The Stone/Preview/05_Complete.png using Guid(715014df210ef4cd9948252a09d6ee5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9f44387f18212900895c9247deab9331') in 0.114503 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/GUI Kit The Stone/Preview/02_MyInfoPopup.png
+  artifactKey: Guid(8e21d9637db684cb68a480036f4b0ea7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit The Stone/Preview/02_MyInfoPopup.png using Guid(8e21d9637db684cb68a480036f4b0ea7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '45cfbe00ff1dca6f3a50709cdd3bd95e') in 0.111923 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/GUI Kit The Stone/Preview/15_Ranking.png
+  artifactKey: Guid(438126a9e7d674bb88ab3f4e378d8477) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit The Stone/Preview/15_Ranking.png using Guid(438126a9e7d674bb88ab3f4e378d8477) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8a6d22cdb4e0b3ff4933ce3168d9ff3f') in 0.102139 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/GUI Kit The Stone/Preview/06_Lose.png
+  artifactKey: Guid(a8ff87a51abad4b5a8ebb9712635bd84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit The Stone/Preview/06_Lose.png using Guid(a8ff87a51abad4b5a8ebb9712635bd84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '661dbe48c33ec0b5669ab2c959b27419') in 0.096704 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/GUI Kit The Stone/Preview/09_Mission.png
+  artifactKey: Guid(043cb115437684f848c892e7ed53a4e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit The Stone/Preview/09_Mission.png using Guid(043cb115437684f848c892e7ed53a4e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '16df046df2aab3eb402ad3901a2c0072') in 0.106346 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/GUI Kit The Stone/Preview/07_LuckyBox.png
+  artifactKey: Guid(67072ad53426a4492a74b3665a342f98) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit The Stone/Preview/07_LuckyBox.png using Guid(67072ad53426a4492a74b3665a342f98) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b50d43ef7fa42aee37b1479046773675') in 0.102110 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/GUI Kit The Stone/Preview/12_ShopSoulGem.png
+  artifactKey: Guid(26e9f31d7d0114c28a0b281e53c14619) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit The Stone/Preview/12_ShopSoulGem.png using Guid(26e9f31d7d0114c28a0b281e53c14619) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '278591dd8d1ebf0a3cee525b709e55e9') in 0.113558 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/GUI Kit The Stone/Preview/16_Settings.png
+  artifactKey: Guid(cb42516851f4b4d30b71550af375bab5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit The Stone/Preview/16_Settings.png using Guid(cb42516851f4b4d30b71550af375bab5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bae3a0853ae817a3e78fab7e410b8b38') in 0.094237 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1602.803969 seconds.
+  path: Assets/GUI Kit The Stone/Prefab/Prefabs_Component_ActionText/ActionText_Awesome.prefab
+  artifactKey: Guid(66591817a5fa64237ad7640a5913457a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit The Stone/Prefab/Prefabs_Component_ActionText/ActionText_Awesome.prefab using Guid(66591817a5fa64237ad7640a5913457a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8ec640507514f37927e1227694b5495c') in 0.023249 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/GUI Kit The Stone/Prefab/Prefabs_Component_ActionText/ActionText_Win.prefab
+  artifactKey: Guid(bc166fb638ac64b51b7401d13daed051) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit The Stone/Prefab/Prefabs_Component_ActionText/ActionText_Win.prefab using Guid(bc166fb638ac64b51b7401d13daed051) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '73ca47c63093e1e447d2f4a6d185133d') in 0.008837 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/GUI Kit The Stone/Prefab/Prefabs_Component_ActionText/ActionText_LevelUp.prefab
+  artifactKey: Guid(2f9309f3181674526abf5dc310d58941) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit The Stone/Prefab/Prefabs_Component_ActionText/ActionText_LevelUp.prefab using Guid(2f9309f3181674526abf5dc310d58941) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '30a1638c9483ec7f754aa17f4a081915') in 0.009857 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/GUI Kit The Stone/Prefab/Prefabs_Component_ActionText/ActionText_Defeat.prefab
+  artifactKey: Guid(0e04bb89428554e57880d63cb6c6345e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit The Stone/Prefab/Prefabs_Component_ActionText/ActionText_Defeat.prefab using Guid(0e04bb89428554e57880d63cb6c6345e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7673c45c6af5d27dc11d6627fdc31111') in 0.011027 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/GUI Kit The Stone/Prefab/Prefabs_Component_ActionText/ActionText_MissionClear.prefab
+  artifactKey: Guid(0cb06f4f8302f472191b3cf6cc30f5f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit The Stone/Prefab/Prefabs_Component_ActionText/ActionText_MissionClear.prefab using Guid(0cb06f4f8302f472191b3cf6cc30f5f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '67ae3908bed19a02c54b626e697286a0') in 0.009984 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/GUI Kit The Stone/Prefab/Prefabs_Component_ActionText/ActionText_Complete.prefab
+  artifactKey: Guid(98e49b1c4445244f88cc50f669c021f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit The Stone/Prefab/Prefabs_Component_ActionText/ActionText_Complete.prefab using Guid(98e49b1c4445244f88cc50f669c021f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c27e7643033838e6dc94fea59ec24195') in 0.008795 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/GUI Kit The Stone/Prefab/Prefabs_Component_ActionText/ActionText_Start.prefab
+  artifactKey: Guid(a100db444821d4bddb74b191335fe9ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit The Stone/Prefab/Prefabs_Component_ActionText/ActionText_Start.prefab using Guid(a100db444821d4bddb74b191335fe9ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0c0a679dd253022f82bfa7490d049b1f') in 0.008819 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/GUI Kit The Stone/Prefab/Prefabs_Component_ActionText/ActionText_Victory.prefab
+  artifactKey: Guid(da2ff4f32392e4ac9b3663e1faafeb8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit The Stone/Prefab/Prefabs_Component_ActionText/ActionText_Victory.prefab using Guid(da2ff4f32392e4ac9b3663e1faafeb8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd87d99d3fd6e965f9b672c144866716d') in 0.009438 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/GUI Kit The Stone/Prefab/Prefabs_Component_ActionText/ActionText_Nice.prefab
+  artifactKey: Guid(44ae45028bf5b4a2e9ca839db47b64dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit The Stone/Prefab/Prefabs_Component_ActionText/ActionText_Nice.prefab using Guid(44ae45028bf5b4a2e9ca839db47b64dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e72f36bfb7e98a5a71c8f3e9ffb320e7') in 0.009562 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/GUI Kit The Stone/Prefab/Prefabs_Component_ActionText/ActionText_Combo.prefab
+  artifactKey: Guid(5010f363e8e294771b63cfda4d1884eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit The Stone/Prefab/Prefabs_Component_ActionText/ActionText_Combo.prefab using Guid(5010f363e8e294771b63cfda4d1884eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'abe501c83dd7dce1bdf46dba8a4c0299') in 0.008686 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.897237 seconds.
+  path: Assets/GUI Kit The Stone/Prefab/Prefabs_Component_Buttons/Button_IconType-MainButton-Group-.prefab
+  artifactKey: Guid(b295495916e9649d3b29d26a67333d1f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit The Stone/Prefab/Prefabs_Component_Buttons/Button_IconType-MainButton-Group-.prefab using Guid(b295495916e9649d3b29d26a67333d1f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '197ceac4b15ec413cd365d624d81f36a') in 0.013835 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/GUI Kit The Stone/Prefab/Prefabs_Component_Buttons/Button_IconType_Circle01_Gary.prefab
+  artifactKey: Guid(7210f98459f4644d787fff9d85844350) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit The Stone/Prefab/Prefabs_Component_Buttons/Button_IconType_Circle01_Gary.prefab using Guid(7210f98459f4644d787fff9d85844350) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7506f3efa9d9a92b598c80bc293f8692') in 0.010787 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/GUI Kit The Stone/Prefab/Prefabs_Component_Buttons/Button_IconType_Circle03.prefab
+  artifactKey: Guid(114fa142dd0a442938513da0afcfd6cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit The Stone/Prefab/Prefabs_Component_Buttons/Button_IconType_Circle03.prefab using Guid(114fa142dd0a442938513da0afcfd6cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '22789c7bd6cf2fc0d57b6ee37b4ee2a3') in 0.009747 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000049 seconds.
+  path: Assets/GUI Kit The Stone/Prefab/Prefabs_Component_Buttons/Button_TextType-MainButton_Blue.prefab
+  artifactKey: Guid(b95abaf85a3fb419cae3886f12a8bb7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit The Stone/Prefab/Prefabs_Component_Buttons/Button_TextType-MainButton_Blue.prefab using Guid(b95abaf85a3fb419cae3886f12a8bb7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1d1ccfb8d7c1d8375a2e08a2a8758d58') in 0.032847 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/GUI Kit The Stone/Prefab/Prefabs_Component_Buttons/Button_TextType_Square03_White.prefab
+  artifactKey: Guid(5b4a35b8ebf4f445c9353e593112466d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit The Stone/Prefab/Prefabs_Component_Buttons/Button_TextType_Square03_White.prefab using Guid(5b4a35b8ebf4f445c9353e593112466d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd832d5fa721fb0bf90122671383ee154') in 0.017114 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/GUI Kit The Stone/Prefab/Prefabs_Component_Buttons/Button_TextType-MainButton_Red.prefab
+  artifactKey: Guid(fffcb3bd743054c85860e9394da42531) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit The Stone/Prefab/Prefabs_Component_Buttons/Button_TextType-MainButton_Red.prefab using Guid(fffcb3bd743054c85860e9394da42531) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e117aab34ddd8963c29cedd566a6979e') in 0.015946 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/GUI Kit The Stone/Prefab/Prefabs_Component_Buttons/Button_IconType-MainButton_Brown.prefab
+  artifactKey: Guid(7381cfd24763240ad8652c74fed5a9c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit The Stone/Prefab/Prefabs_Component_Buttons/Button_IconType-MainButton_Brown.prefab using Guid(7381cfd24763240ad8652c74fed5a9c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '786bef81290f0dbb60db645e8c0e7710') in 0.009705 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/GUI Kit The Stone/Prefab/Prefabs_Component_Buttons/Button_TextType-MainButton_Brown.prefab
+  artifactKey: Guid(e598d95fc9bda469997fdee35196d50b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit The Stone/Prefab/Prefabs_Component_Buttons/Button_TextType-MainButton_Brown.prefab using Guid(e598d95fc9bda469997fdee35196d50b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6464357ba7c934f21d8b005705698af0') in 0.015173 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/GUI Kit The Stone/Prefab/Prefabs_Component_Buttons/Button_IconType-MainButton_Green.prefab
+  artifactKey: Guid(21886b066855f42b1a81a9ba323855d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit The Stone/Prefab/Prefabs_Component_Buttons/Button_IconType-MainButton_Green.prefab using Guid(21886b066855f42b1a81a9ba323855d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2d1d3778263344f6f21e59930a4be524') in 0.009068 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/GUI Kit The Stone/Prefab/Prefabs_Component_Buttons/Button_IconType_Square01.prefab
+  artifactKey: Guid(25e6c532551364d73bda1998e5c167fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit The Stone/Prefab/Prefabs_Component_Buttons/Button_IconType_Square01.prefab using Guid(25e6c532551364d73bda1998e5c167fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e4c241ec2198f9f2f5ad92810750da57') in 0.009236 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/GUI Kit The Stone/Prefab/Prefabs_Component_Buttons/Button_TextType-MainButton_Purple.prefab
+  artifactKey: Guid(60de93d485773488faaa8da3c88d1634) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit The Stone/Prefab/Prefabs_Component_Buttons/Button_TextType-MainButton_Purple.prefab using Guid(60de93d485773488faaa8da3c88d1634) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3c0cd6c8575f9674984cd07381a7b818') in 0.015121 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/GUI Kit The Stone/Prefab/Prefabs_Component_Buttons/Button_TextType-MainButton_BlueGreen.prefab
+  artifactKey: Guid(fe8e92e90044b4fdeaa90752461cc145) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit The Stone/Prefab/Prefabs_Component_Buttons/Button_TextType-MainButton_BlueGreen.prefab using Guid(fe8e92e90044b4fdeaa90752461cc145) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '677d98848b7ba08973e4a7417b87c7d7') in 0.014977 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 45.002650 seconds.
+  path: Assets/GUI Kit The Stone/Preview/20_Pause.png
+  artifactKey: Guid(3b3f2fe5dca9a4ac79340d7bb09d4373) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit The Stone/Preview/20_Pause.png using Guid(3b3f2fe5dca9a4ac79340d7bb09d4373) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '361c56bfda2375fbf64a2bf2afdde138') in 0.114082 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.055683 seconds.
+  path: Assets/GUI Kit The Stone/Preview/22_ActionText.png
+  artifactKey: Guid(aa7971cd8cbf24289809fdfecaf99831) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit The Stone/Preview/22_ActionText.png using Guid(aa7971cd8cbf24289809fdfecaf99831) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c52255d61502fd4a44c76fb34d4d9913') in 0.105848 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/GUI Kit The Stone/Preview/23_PictoIcons.png
+  artifactKey: Guid(b26807da6306c488bb09510c34d63e8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit The Stone/Preview/23_PictoIcons.png using Guid(b26807da6306c488bb09510c34d63e8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e72c2028a8ca58aa7f0ba4ecd50ff18e') in 0.168360 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 9.123808 seconds.
+  path: Assets/GUI Kit The Stone/ResourceData/Fonts/Changa-Bold.ttf
+  artifactKey: Guid(58529310243d0497ea50d86df41c60da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit The Stone/ResourceData/Fonts/Changa-Bold.ttf using Guid(58529310243d0497ea50d86df41c60da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bc3fa7c87d307646b9cbb228e6de10cf') in 0.038118 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/GUI Kit The Stone/ResourceData/Fonts/Changa-Medium_Underlay SDF.asset
+  artifactKey: Guid(8f710fbaa11614b0db0b868c75039949) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit The Stone/ResourceData/Fonts/Changa-Medium_Underlay SDF.asset using Guid(8f710fbaa11614b0db0b868c75039949) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2396a24afcd9456e9ef53f432987d6d3') in 0.083771 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/GUI Kit The Stone/ResourceData/Fonts/Changa-Medium SDF.asset
+  artifactKey: Guid(fa08fff1716a04db18700207b6c202e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit The Stone/ResourceData/Fonts/Changa-Medium SDF.asset using Guid(fa08fff1716a04db18700207b6c202e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b296310930ed5954d0000f4bbb437d7a') in 0.024152 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/GUI Kit The Stone/ResourceData/Fonts/Changa-Bold_Underlay_Light SDF.asset
+  artifactKey: Guid(9fe018fe5f9f045c7811bf5459e2e4d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit The Stone/ResourceData/Fonts/Changa-Bold_Underlay_Light SDF.asset using Guid(9fe018fe5f9f045c7811bf5459e2e4d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd56df18ac4658f85f6b220523384de75') in 0.027767 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 58.686013 seconds.
+  path: Assets/GUI Kit The Stone/ResourceData/Sprites/Component/ActionText/ActionText_BonusTime1.png
+  artifactKey: Guid(8916da3d21383486fa98e0a7b3000658) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit The Stone/ResourceData/Sprites/Component/ActionText/ActionText_BonusTime1.png using Guid(8916da3d21383486fa98e0a7b3000658) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c2fb08039df3a266f90d95ea6b8e2a95') in 0.031883 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/GUI Kit The Stone/ResourceData/Sprites/Component/ActionText/ActionText_Lose.png
+  artifactKey: Guid(6513535c556cb40c8b9f68ff9bb710af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit The Stone/ResourceData/Sprites/Component/ActionText/ActionText_Lose.png using Guid(6513535c556cb40c8b9f68ff9bb710af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3abdd117f80b74e05ddf20fb916546a5') in 0.020370 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/GUI Kit The Stone/ResourceData/Sprites/Component/ActionText/ActionText_Start.png
+  artifactKey: Guid(ef1b9e76948914f1d8c28d9b65d3c210) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit The Stone/ResourceData/Sprites/Component/ActionText/ActionText_Start.png using Guid(ef1b9e76948914f1d8c28d9b65d3c210) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3b4a0b442edfc0b14c7df267193c91fa') in 0.018949 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/GUI Kit The Stone/ResourceData/Sprites/Component/ActionText/ActionText_GameOver1.png
+  artifactKey: Guid(63e0077339b364e6aaf8733be4815e3d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit The Stone/ResourceData/Sprites/Component/ActionText/ActionText_GameOver1.png using Guid(63e0077339b364e6aaf8733be4815e3d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8e903ad603095085d2e0b8cac076e32b') in 0.019808 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/GUI Kit The Stone/ResourceData/Sprites/Component/ActionText/ActionText_Ready.png
+  artifactKey: Guid(4898cd8e925ee40bb9d057d5bf260906) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit The Stone/ResourceData/Sprites/Component/ActionText/ActionText_Ready.png using Guid(4898cd8e925ee40bb9d057d5bf260906) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '87dc6d8d4d9ef5602dae9cbed42fb671') in 0.020737 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/GUI Kit The Stone/ResourceData/Sprites/Component/ActionText/ActionText_GameOver2.png
+  artifactKey: Guid(e1a3fcd3aee244029b79ec065beff426) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit The Stone/ResourceData/Sprites/Component/ActionText/ActionText_GameOver2.png using Guid(e1a3fcd3aee244029b79ec065beff426) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b76452635c4b681d6257af1afdc01da6') in 0.028996 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/GUI Kit The Stone/ResourceData/Sprites/Component/ActionText/ActionText_Win.png
+  artifactKey: Guid(63089ceebbc2942c5b8ddb2c24510a70) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit The Stone/ResourceData/Sprites/Component/ActionText/ActionText_Win.png using Guid(63089ceebbc2942c5b8ddb2c24510a70) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '20084ced0361339b10421720302896e0') in 0.025793 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/GUI Kit The Stone/ResourceData/Sprites/Component/ActionText/ActionText_Wow.png
+  artifactKey: Guid(141aae4e5e6c04bbfacb7f5d36fe8878) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit The Stone/ResourceData/Sprites/Component/ActionText/ActionText_Wow.png using Guid(141aae4e5e6c04bbfacb7f5d36fe8878) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '31afe675c96531e5fef556c525fdf6c0') in 0.030194 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/GUI Kit The Stone/ResourceData/Sprites/Component/ActionText/ActionText_Complete.png
+  artifactKey: Guid(abb069e0b06c14037af70e4560953989) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit The Stone/ResourceData/Sprites/Component/ActionText/ActionText_Complete.png using Guid(abb069e0b06c14037af70e4560953989) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '57ae91d2e32985f2cc998a2873e159db') in 0.020375 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/GUI Kit The Stone/ResourceData/Sprites/Component/ActionText/ActionText_LevelUp1.png
+  artifactKey: Guid(22849bbeddf6c4c0ea05734d6a2ce06f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit The Stone/ResourceData/Sprites/Component/ActionText/ActionText_LevelUp1.png using Guid(22849bbeddf6c4c0ea05734d6a2ce06f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aaf293e3282e5e400ab325ea4f761370') in 0.023176 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/GUI Kit The Stone/ResourceData/Sprites/Component/ActionText/ActionText_Great.png
+  artifactKey: Guid(48fe6c94537e849508eddeec5fc59eac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit The Stone/ResourceData/Sprites/Component/ActionText/ActionText_Great.png using Guid(48fe6c94537e849508eddeec5fc59eac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '22497c1bc39b610a36d9ce2ca2d60989') in 0.020059 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.113207 seconds.
+  path: Assets/GUI Kit The Stone/ResourceData/Sprites/Component/Button/Btn_Circle01_Gray.png
+  artifactKey: Guid(281f8729befff496bb788002ca7333af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit The Stone/ResourceData/Sprites/Component/Button/Btn_Circle01_Gray.png using Guid(281f8729befff496bb788002ca7333af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3ecbc3f475ea228f49f2e79816a8d94f') in 0.018410 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/GUI Kit The Stone/ResourceData/Sprites/Component/Button/Btn_Square03_n.png
+  artifactKey: Guid(a214a84d2524d402c9fcc2676ba0900e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit The Stone/ResourceData/Sprites/Component/Button/Btn_Square03_n.png using Guid(a214a84d2524d402c9fcc2676ba0900e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a1ad7c4714439df335517a29932ed437') in 0.017712 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/GUI Kit The Stone/ResourceData/Sprites/Component/Button/Btn_MainButton_Purple.Png
+  artifactKey: Guid(36267bcf5b2d343cdadf8a4766598974) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit The Stone/ResourceData/Sprites/Component/Button/Btn_MainButton_Purple.Png using Guid(36267bcf5b2d343cdadf8a4766598974) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '27033964091489200cb165a105746b8f') in 0.022342 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/GUI Kit The Stone/ResourceData/Sprites/Component/Button/Btn_Square02_f_Icon.png
+  artifactKey: Guid(59bce716a9cd24f2ca33eccf1ee174ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit The Stone/ResourceData/Sprites/Component/Button/Btn_Square02_f_Icon.png using Guid(59bce716a9cd24f2ca33eccf1ee174ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3ed1ee814aed7844c891266ec8a8c304') in 0.018289 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/GUI Kit The Stone/ResourceData/Sprites/Component/Button/Btn_Circle02.png
+  artifactKey: Guid(b66b96c6acb4f456898d981f7bc06784) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit The Stone/ResourceData/Sprites/Component/Button/Btn_Circle02.png using Guid(b66b96c6acb4f456898d981f7bc06784) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '825aac48ae2fe6cc25b6b11d8ca63975') in 0.017195 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/GUI Kit The Stone/ResourceData/Sprites/Component/Button/Btn_Square02_n.png
+  artifactKey: Guid(61ae0e14f76304324ad72d6be800a98b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit The Stone/ResourceData/Sprites/Component/Button/Btn_Square02_n.png using Guid(61ae0e14f76304324ad72d6be800a98b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bfd6a38e34f8faefc4b7c5b3f2c0834c') in 0.020810 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/GUI Kit The Stone/ResourceData/Sprites/Component/Button/Btn_MainButton_Bluegreen.Png
+  artifactKey: Guid(f139613dc3ca24233a05524c5162cdd8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit The Stone/ResourceData/Sprites/Component/Button/Btn_MainButton_Bluegreen.Png using Guid(f139613dc3ca24233a05524c5162cdd8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd399a4897eb8460596333a5993b63e35') in 0.015744 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/GUI Kit The Stone/ResourceData/Sprites/Component/Button/Btn_MainButton_red.png
+  artifactKey: Guid(4f27cdb744c7b4f4aba46139d40a63f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit The Stone/ResourceData/Sprites/Component/Button/Btn_MainButton_red.png using Guid(4f27cdb744c7b4f4aba46139d40a63f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c6690fb3bd15361c7e93e217d7ebbba6') in 0.016642 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/GUI Kit The Stone/ResourceData/Sprites/Component/Button/Btn_MainButton_Brown.Png
+  artifactKey: Guid(9f50362e3fa90440b8caef63181d40de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit The Stone/ResourceData/Sprites/Component/Button/Btn_MainButton_Brown.Png using Guid(9f50362e3fa90440b8caef63181d40de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5c269fb9c48f7a04a7fe34aedd9f6022') in 0.014775 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.050156 seconds.
+  path: Assets/GUI Kit The Stone/ResourceData/Sprites/Component/Frame/frame_basicframe_circle_40_White.png
+  artifactKey: Guid(3a0c5b8c7800f489bb8d3dc7d5065495) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit The Stone/ResourceData/Sprites/Component/Frame/frame_basicframe_circle_40_White.png using Guid(3a0c5b8c7800f489bb8d3dc7d5065495) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2b816fef7cf87a7cdc7faf92df9c2699') in 0.015109 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/GUI Kit The Stone/ResourceData/Sprites/Component/Frame/frame_basicframe_circle_241_Demo.png
+  artifactKey: Guid(324bf24c4f1e148998c19515202858cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit The Stone/ResourceData/Sprites/Component/Frame/frame_basicframe_circle_241_Demo.png using Guid(324bf24c4f1e148998c19515202858cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4dfeb68944f14a11735c02e31cacb1d8') in 0.019019 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/GUI Kit The Stone/ResourceData/Sprites/Component/Frame/frame_basicframe_square01_White.png
+  artifactKey: Guid(c408723e5b65f418fb6e6638f44eb182) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit The Stone/ResourceData/Sprites/Component/Frame/frame_basicframe_square01_White.png using Guid(c408723e5b65f418fb6e6638f44eb182) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9814b0069836fe1929f052898ee1e7d4') in 0.016591 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/GUI Kit The Stone/ResourceData/Sprites/Component/Frame/frame_basicframe_circle_241_White.png
+  artifactKey: Guid(67a8387a5cad44016803e17dd307633c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit The Stone/ResourceData/Sprites/Component/Frame/frame_basicframe_circle_241_White.png using Guid(67a8387a5cad44016803e17dd307633c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4bff67b0f8b75bdd614621d9bd0f7e81') in 0.015463 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/GUI Kit The Stone/ResourceData/Sprites/Component/Frame/frame_basicframe_oval_48_Demo.png
+  artifactKey: Guid(7494cf6ff5eb54031bc7147d24cb7954) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit The Stone/ResourceData/Sprites/Component/Frame/frame_basicframe_oval_48_Demo.png using Guid(7494cf6ff5eb54031bc7147d24cb7954) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c081f9ab1d48ce3b021e0db4f10069c1') in 0.015997 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/GUI Kit The Stone/ResourceData/Sprites/Component/Frame/frame_basicframe_square03_Demo.png
+  artifactKey: Guid(6b4defef2eaaf4cab9fdae80166dd150) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit The Stone/ResourceData/Sprites/Component/Frame/frame_basicframe_square03_Demo.png using Guid(6b4defef2eaaf4cab9fdae80166dd150) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4e840b63c6e868ef7cf507e41cc10460') in 0.017814 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/GUI Kit The Stone/ResourceData/Sprites/Component/Frame/frame_edgeframe_large1.png
+  artifactKey: Guid(913ffa3567ef64565b93084ec8a4fcac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit The Stone/ResourceData/Sprites/Component/Frame/frame_edgeframe_large1.png using Guid(913ffa3567ef64565b93084ec8a4fcac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c3b270440c03f69177bdc02f68d6d9c0') in 0.019996 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/GUI Kit The Stone/ResourceData/Sprites/Component/Frame/frame_basicframe_square02_Demo.png
+  artifactKey: Guid(89833f9f146134c9184399fdde931fcf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit The Stone/ResourceData/Sprites/Component/Frame/frame_basicframe_square02_Demo.png using Guid(89833f9f146134c9184399fdde931fcf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ba6118bf788099dfd65eb2fd6719ad90') in 0.017991 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/GUI Kit The Stone/ResourceData/Sprites/Component/Frame/frame_edgeframe_small1.png
+  artifactKey: Guid(b264386ec04e54d6e9c61eb484e0c9a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit The Stone/ResourceData/Sprites/Component/Frame/frame_edgeframe_small1.png using Guid(b264386ec04e54d6e9c61eb484e0c9a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e72b23e1cb985c46ccffcb96184e3d35') in 0.016062 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/GUI Kit The Stone/ResourceData/Sprites/Component/Frame/frame_basicframe_square03_White.png
+  artifactKey: Guid(49084f5d97e6347428504c9bbd216abf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit The Stone/ResourceData/Sprites/Component/Frame/frame_basicframe_square03_White.png using Guid(49084f5d97e6347428504c9bbd216abf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3f51944ec2fb4723f5e188f779c83226') in 0.015796 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/GUI Kit The Stone/ResourceData/Sprites/Component/Frame/frame_basicframe_oval_48_White.png
+  artifactKey: Guid(6dfc483e33354476fa0d6f22551fd419) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit The Stone/ResourceData/Sprites/Component/Frame/frame_basicframe_oval_48_White.png using Guid(6dfc483e33354476fa0d6f22551fd419) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f3d5330788860cd08ee75703fcd0944a') in 0.014047 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.035086 seconds.
+  path: Assets/GUI Kit The Stone/ResourceData/Sprites/Component/Icon_ItemIcons_(original)/Icon_ItemIcon_Arrow.Png
+  artifactKey: Guid(f9370a85701a54a6694e1269307d1681) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit The Stone/ResourceData/Sprites/Component/Icon_ItemIcons_(original)/Icon_ItemIcon_Arrow.Png using Guid(f9370a85701a54a6694e1269307d1681) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '63e4c5a6fab355765fb43b9b81700d32') in 0.016200 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/GUI Kit The Stone/ResourceData/Sprites/Component/Icon_ItemIcons_(original)/Icon_ItemIcon_Crown.Png
+  artifactKey: Guid(d479fbb4b257a410db2d438a01ab62bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit The Stone/ResourceData/Sprites/Component/Icon_ItemIcons_(original)/Icon_ItemIcon_Crown.Png using Guid(d479fbb4b257a410db2d438a01ab62bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '696539855a5435ee5983e44d8b5e6699') in 0.018036 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/GUI Kit The Stone/ResourceData/Sprites/Component/Icon_ItemIcons_(original)/Icon_ItemIcon_Key.Png
+  artifactKey: Guid(2ae03f3ab16384724b598413d008c4d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit The Stone/ResourceData/Sprites/Component/Icon_ItemIcons_(original)/Icon_ItemIcon_Key.Png using Guid(2ae03f3ab16384724b598413d008c4d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8d3389f44f5f107b33e9461646352d2e') in 0.016730 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/GUI Kit The Stone/ResourceData/Sprites/Component/Icon_ItemIcons_(original)/Icon_ItemIcon_Letter.Png
+  artifactKey: Guid(6c573677ae6f34678865170ab30e76d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit The Stone/ResourceData/Sprites/Component/Icon_ItemIcons_(original)/Icon_ItemIcon_Letter.Png using Guid(6c573677ae6f34678865170ab30e76d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '078b3b65e5ced3935c2959ecb9290f47') in 0.016452 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/GUI Kit The Stone/ResourceData/Sprites/Component/Icon_ItemIcons_(original)/Icon_ItemIcon_Medal_Silver.Png
+  artifactKey: Guid(17109f59e55f941a9ba17e827e9f208e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit The Stone/ResourceData/Sprites/Component/Icon_ItemIcons_(original)/Icon_ItemIcon_Medal_Silver.Png using Guid(17109f59e55f941a9ba17e827e9f208e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0af8ad04294aa32d8cf3a7cfa5d030b9') in 0.018695 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/GUI Kit The Stone/ResourceData/Sprites/Component/Icon_ItemIcons_(original)/Icon_ItemIcon_Clover.Png
+  artifactKey: Guid(cec60a7055c064a05995347d1814bd9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit The Stone/ResourceData/Sprites/Component/Icon_ItemIcons_(original)/Icon_ItemIcon_Clover.Png using Guid(cec60a7055c064a05995347d1814bd9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f1c8b66171b59787a17f5efbe0859485') in 0.015539 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/GUI Kit The Stone/ResourceData/Sprites/Component/Icon_ItemIcons_(original)/Icon_ItemIcon_Bomb.Png
+  artifactKey: Guid(271ea8e9b26a94b2d8a6773b72812c27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit The Stone/ResourceData/Sprites/Component/Icon_ItemIcons_(original)/Icon_ItemIcon_Bomb.Png using Guid(271ea8e9b26a94b2d8a6773b72812c27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '20680bec57467e3af800c35c590aed9d') in 0.018570 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/GUI Kit The Stone/ResourceData/Sprites/Component/Icon_ItemIcons_(original)/Icon_ItemIcon_Hammer.Png
+  artifactKey: Guid(dfe1969143b334f5e93fd704efd115f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit The Stone/ResourceData/Sprites/Component/Icon_ItemIcons_(original)/Icon_ItemIcon_Hammer.Png using Guid(dfe1969143b334f5e93fd704efd115f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ccac20fbccaf2535f06b47449cab0938') in 0.017924 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/GUI Kit The Stone/ResourceData/Sprites/Component/Icon_ItemIcons_(original)/Icon_ItemIcon_Medal_Gold.Png
+  artifactKey: Guid(42eec34de14e04107ba2fcc48534b6e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit The Stone/ResourceData/Sprites/Component/Icon_ItemIcons_(original)/Icon_ItemIcon_Medal_Gold.Png using Guid(42eec34de14e04107ba2fcc48534b6e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e07ff1fc2684d2d13c2b1f35644c6827') in 0.014932 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/GUI Kit The Stone/ResourceData/Sprites/Component/Icon_ItemIcons_(original)/Icon_ItemIcon_Gem.Png
+  artifactKey: Guid(4cfbb3b1fa3764eb1806d1670d29abf1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit The Stone/ResourceData/Sprites/Component/Icon_ItemIcons_(original)/Icon_ItemIcon_Gem.Png using Guid(4cfbb3b1fa3764eb1806d1670d29abf1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5125f06f17c32643de6f6be513f0134d') in 0.019402 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/GUI Kit The Stone/ResourceData/Sprites/Component/Icon_ItemIcons_(original)/Icon_ItemIcon_Laurel.Png
+  artifactKey: Guid(f5a6003757a4945e5a989cc9a677492f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit The Stone/ResourceData/Sprites/Component/Icon_ItemIcons_(original)/Icon_ItemIcon_Laurel.Png using Guid(f5a6003757a4945e5a989cc9a677492f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5cc4483dcc7190883b94a8341e3315c7') in 0.020713 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/GUI Kit The Stone/ResourceData/Sprites/Component/Icon_ItemIcons_(original)/Icon_ItemIcon_Gift_Blue.Png
+  artifactKey: Guid(12823fdd5b5df45309f79e631a4aceda) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit The Stone/ResourceData/Sprites/Component/Icon_ItemIcons_(original)/Icon_ItemIcon_Gift_Blue.Png using Guid(12823fdd5b5df45309f79e631a4aceda) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd5b66b444a6ab6d9f30112e4e23248a5') in 0.015361 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.761245 seconds.
+  path: Assets/GUI Kit The Stone/ResourceData/Sprites/Component/Icon_PictoIcon_(orginal)/Icon_PictoIcon_Add.png
+  artifactKey: Guid(fc80299100f524115a01e14a17427a03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit The Stone/ResourceData/Sprites/Component/Icon_PictoIcon_(orginal)/Icon_PictoIcon_Add.png using Guid(fc80299100f524115a01e14a17427a03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3ad9ea7ce35669d63da126cdad476cfa') in 0.019177 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/GUI Kit The Stone/ResourceData/Sprites/Component/Icon_PictoIcon_(orginal)/Icon_PictoIcon_Binoculars.png
+  artifactKey: Guid(c229572364a9145ffb1901b2729a45c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit The Stone/ResourceData/Sprites/Component/Icon_PictoIcon_(orginal)/Icon_PictoIcon_Binoculars.png using Guid(c229572364a9145ffb1901b2729a45c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6796929c6805c90bd02021510ebb1d5d') in 0.018217 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/GUI Kit The Stone/ResourceData/Sprites/Component/Icon_PictoIcon_(orginal)/Icon_PictoIcon_Bad.png
+  artifactKey: Guid(c73b8d4e18ef7452099113597cadb405) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit The Stone/ResourceData/Sprites/Component/Icon_PictoIcon_(orginal)/Icon_PictoIcon_Bad.png using Guid(c73b8d4e18ef7452099113597cadb405) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '38a67d3772e2614316931426bc8f854f') in 0.017098 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/GUI Kit The Stone/ResourceData/Sprites/Component/Icon_PictoIcon_(orginal)/Icon_PictoIcon_ArrowDown.png
+  artifactKey: Guid(87a096d11b490479da8f95576b69c8a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit The Stone/ResourceData/Sprites/Component/Icon_PictoIcon_(orginal)/Icon_PictoIcon_ArrowDown.png using Guid(87a096d11b490479da8f95576b69c8a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '029f7136c4dbb9562ffa07712eae72a5') in 0.019872 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/GUI Kit The Stone/ResourceData/Sprites/Component/Icon_PictoIcon_(orginal)/Icon_PictoIcon_Battle.png
+  artifactKey: Guid(8cd9ba8c2545f4570b8b9b186324532b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit The Stone/ResourceData/Sprites/Component/Icon_PictoIcon_(orginal)/Icon_PictoIcon_Battle.png using Guid(8cd9ba8c2545f4570b8b9b186324532b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd475dfc60dde4e0b862d006b76cfb330') in 0.017353 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/GUI Kit The Stone/ResourceData/Sprites/Component/Icon_PictoIcon_(orginal)/Icon_PictoIcon_Bank.png
+  artifactKey: Guid(fa5715cd12a534054bff4431772783a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit The Stone/ResourceData/Sprites/Component/Icon_PictoIcon_(orginal)/Icon_PictoIcon_Bank.png using Guid(fa5715cd12a534054bff4431772783a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '68c6480c8896b2186d45235554eaa853') in 0.016360 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/GUI Kit The Stone/ResourceData/Sprites/Component/Icon_PictoIcon_(orginal)/Icon_PictoIcon_Bin.png
+  artifactKey: Guid(f46fe764f39714a97af4bed6ed3be184) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit The Stone/ResourceData/Sprites/Component/Icon_PictoIcon_(orginal)/Icon_PictoIcon_Bin.png using Guid(f46fe764f39714a97af4bed6ed3be184) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0482f07cfe1edf207d75c640c3ac4bd6') in 0.018937 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/GUI Kit The Stone/ResourceData/Sprites/Component/Icon_PictoIcon_(orginal)/Icon_PictoIcon_ArrowUp.png
+  artifactKey: Guid(a52342ebbb0de4d42b40038ec099a59b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit The Stone/ResourceData/Sprites/Component/Icon_PictoIcon_(orginal)/Icon_PictoIcon_ArrowUp.png using Guid(a52342ebbb0de4d42b40038ec099a59b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '620a849d0dcac5eb4932a1dab6b66b4f') in 0.015122 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/GUI Kit The Stone/ResourceData/Sprites/Component/Icon_PictoIcon_(orginal)/Icon_PictoIcon_Attachment.png
+  artifactKey: Guid(af990f20e43514ee8948d94242ddbe96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit The Stone/ResourceData/Sprites/Component/Icon_PictoIcon_(orginal)/Icon_PictoIcon_Attachment.png using Guid(af990f20e43514ee8948d94242ddbe96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8a42888eeecbd9f385e3d4af1fc46bce') in 0.018040 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/GUI Kit The Stone/ResourceData/Sprites/Component/Icon_PictoIcon_(orginal)/Icon_PictoIcon_Alram.png
+  artifactKey: Guid(11365fadd0932400789a1dfe5d52ec23) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit The Stone/ResourceData/Sprites/Component/Icon_PictoIcon_(orginal)/Icon_PictoIcon_Alram.png using Guid(11365fadd0932400789a1dfe5d52ec23) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fd96f577cd29f7bf00d17db34c5170a1') in 0.018462 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/GUI Kit The Stone/ResourceData/Sprites/Component/Icon_PictoIcon_(orginal)/Icon_PictoIcon_Bitcoin.png
+  artifactKey: Guid(70ae0af0cca034ec8920a459291978ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit The Stone/ResourceData/Sprites/Component/Icon_PictoIcon_(orginal)/Icon_PictoIcon_Bitcoin.png using Guid(70ae0af0cca034ec8920a459291978ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7b800c3adae70f2f24aa8f8ee5364573') in 0.019598 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/GUI Kit The Stone/ResourceData/Sprites/Component/Icon_PictoIcon_(orginal)/Icon_PictoIcon_AddFriend.png
+  artifactKey: Guid(a66577b5b826a4a4fb46ae7e6108b830) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit The Stone/ResourceData/Sprites/Component/Icon_PictoIcon_(orginal)/Icon_PictoIcon_AddFriend.png using Guid(a66577b5b826a4a4fb46ae7e6108b830) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '707b89279ed7473f3228f2089ec6dd27') in 0.014278 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 11.213622 seconds.
+  path: Assets/GUI Kit The Stone/Prefab/Prefabs_Component_Frames/Frame_BasicFrame_Circle_40.prefab
+  artifactKey: Guid(d46712c36576e405c99a7d632c82312f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit The Stone/Prefab/Prefabs_Component_Frames/Frame_BasicFrame_Circle_40.prefab using Guid(d46712c36576e405c99a7d632c82312f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e374f54f55067cde3d952dfcee78a4a3') in 0.010413 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/GUI Kit The Stone/Prefab/Prefabs_Component_Frames/Frame_BasicFrame_Oval_48_White.prefab
+  artifactKey: Guid(f3316c22e767f42afb5dabb3b0c17b1f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit The Stone/Prefab/Prefabs_Component_Frames/Frame_BasicFrame_Oval_48_White.prefab using Guid(f3316c22e767f42afb5dabb3b0c17b1f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a835c6332c52eddafc9f1b4e5543ee5f') in 0.008963 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/GUI Kit The Stone/Prefab/Prefabs_Component_Frames/Frame_BasicFrame_Oval_56.prefab
+  artifactKey: Guid(e2610a972675c478489e951c3ae9c4a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit The Stone/Prefab/Prefabs_Component_Frames/Frame_BasicFrame_Oval_56.prefab using Guid(e2610a972675c478489e951c3ae9c4a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a00d7a2bfe936381fe269d9bb5f1b061') in 0.009429 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/GUI Kit The Stone/Prefab/Prefabs_Component_Frames/Frame_BasicFrame_Circle_52.prefab
+  artifactKey: Guid(aaeb9c8c26702498883aaf27342476d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit The Stone/Prefab/Prefabs_Component_Frames/Frame_BasicFrame_Circle_52.prefab using Guid(aaeb9c8c26702498883aaf27342476d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ebe93299dd709f54b4d39ccbd92b349b') in 0.011166 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/GUI Kit The Stone/Prefab/Prefabs_Component_Frames/Frame_BasicFrame_Circle_164.prefab
+  artifactKey: Guid(ad21310171d354b21b2024ec1572ace9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit The Stone/Prefab/Prefabs_Component_Frames/Frame_BasicFrame_Circle_164.prefab using Guid(ad21310171d354b21b2024ec1572ace9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c78cca18217a7098377b285a4802864e') in 0.010116 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/GUI Kit The Stone/Prefab/Prefabs_Component_Frames/Frame_BasicFrame_Oval_56_Demo.prefab
+  artifactKey: Guid(14ef00aea5fa14a768931e6a9f8474e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit The Stone/Prefab/Prefabs_Component_Frames/Frame_BasicFrame_Oval_56_Demo.prefab using Guid(14ef00aea5fa14a768931e6a9f8474e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '730b4afc1cc9c1e04a3add2a4025f3b8') in 0.008913 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/GUI Kit The Stone/Prefab/Prefabs_Component_Frames/Frame_BasicFrame_Oval_48_Demo.prefab
+  artifactKey: Guid(2761c297ac46d4e05af442281025c031) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit The Stone/Prefab/Prefabs_Component_Frames/Frame_BasicFrame_Oval_48_Demo.prefab using Guid(2761c297ac46d4e05af442281025c031) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b3690cf9c323854423b07a379b7b2371') in 0.009507 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/GUI Kit The Stone/Prefab/Prefabs_Component_Frames/Frame_BasicFrame_Circle_241_White.prefab
+  artifactKey: Guid(75a9874ea39c746daa3c7b48dde8082c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit The Stone/Prefab/Prefabs_Component_Frames/Frame_BasicFrame_Circle_241_White.prefab using Guid(75a9874ea39c746daa3c7b48dde8082c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3986943aedf3208d0c432546a1c8042c') in 0.009152 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/GUI Kit The Stone/Prefab/Prefabs_Component_Frames/Frame_BasicFrame_Circle_40_White.prefab
+  artifactKey: Guid(9ae95ab69a1d5472bb0718659bc5d165) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit The Stone/Prefab/Prefabs_Component_Frames/Frame_BasicFrame_Circle_40_White.prefab using Guid(9ae95ab69a1d5472bb0718659bc5d165) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f708a54b72e05e3588bcdc82ba1e68fb') in 0.011574 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/GUI Kit The Stone/Prefab/Prefabs_Component_Frames/Frame_BasicFrame_Square01.prefab
+  artifactKey: Guid(8bca2b37c2fae44698ac4b24bb218564) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit The Stone/Prefab/Prefabs_Component_Frames/Frame_BasicFrame_Square01.prefab using Guid(8bca2b37c2fae44698ac4b24bb218564) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3417c03d798a16631f460f6349227c50') in 0.012135 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/GUI Kit The Stone/Prefab/Prefabs_Component_Frames/Frame_BasicFrame_Square01_White.prefab
+  artifactKey: Guid(9916a01f695d845ce9cae2f1a3b37fea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit The Stone/Prefab/Prefabs_Component_Frames/Frame_BasicFrame_Square01_White.prefab using Guid(9916a01f695d845ce9cae2f1a3b37fea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '452d92dc61054dc89b6fadefd4fd8e62') in 0.009057 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/GUI Kit The Stone/Prefab/Prefabs_Component_Frames/Frame_BasicFrame_Circle_164_White.prefab
+  artifactKey: Guid(b54dda8b1a59a4060874c15878e44053) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit The Stone/Prefab/Prefabs_Component_Frames/Frame_BasicFrame_Circle_164_White.prefab using Guid(b54dda8b1a59a4060874c15878e44053) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b1aa403ead200921bd1b2fe871d3cbad') in 0.012296 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/GUI Kit The Stone/Prefab/Prefabs_Component_Frames/Frame_BasicFrame_Oval_56_White.prefab
+  artifactKey: Guid(aa0793e3a088e4137b9f496bf5736ec6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit The Stone/Prefab/Prefabs_Component_Frames/Frame_BasicFrame_Oval_56_White.prefab using Guid(aa0793e3a088e4137b9f496bf5736ec6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2c588b7c8a62a46adb23605d44fb9333') in 0.012798 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 25.910492 seconds.
+  path: Assets/GUI Kit The Stone/ResourceData/Sprites/Demo/Demo_UI/Input_Field_Icon_Error.Png
+  artifactKey: Guid(12b2ac95fd5f9401ca0069c759efe3fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit The Stone/ResourceData/Sprites/Demo/Demo_UI/Input_Field_Icon_Error.Png using Guid(12b2ac95fd5f9401ca0069c759efe3fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '31c222f00914c46e42d70ab4bdcddddc') in 0.026346 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/GUI Kit The Stone/ResourceData/Sprites/Demo/Demo_UI/Status_Button_Icon.Png
+  artifactKey: Guid(7e8847e62eed749368e48ebb877c19c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit The Stone/ResourceData/Sprites/Demo/Demo_UI/Status_Button_Icon.Png using Guid(7e8847e62eed749368e48ebb877c19c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dfdd49f91d6290eff3505dd50476e927') in 0.027389 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/GUI Kit The Stone/ResourceData/Sprites/Demo/Demo_UI/Pagenavi_Bg1.Png
+  artifactKey: Guid(6cde54478b0284a7195733f973301af0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit The Stone/ResourceData/Sprites/Demo/Demo_UI/Pagenavi_Bg1.Png using Guid(6cde54478b0284a7195733f973301af0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cf689d69c957723e2875aea99285474f') in 0.015775 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/GUI Kit The Stone/ResourceData/Sprites/Demo/Demo_UI/InputField_Frame_Normal.Png
+  artifactKey: Guid(638ccc342b0db4c338682f021c3669aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit The Stone/ResourceData/Sprites/Demo/Demo_UI/InputField_Frame_Normal.Png using Guid(638ccc342b0db4c338682f021c3669aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b7cfe42e350dbf8c1c117423d023ca06') in 0.025343 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/GUI Kit The Stone/ResourceData/Sprites/Demo/Demo_UI/InputField_Frame_Hint.Png
+  artifactKey: Guid(43d96aab8b4ed442395aafb1e721ccd0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit The Stone/ResourceData/Sprites/Demo/Demo_UI/InputField_Frame_Hint.Png using Guid(43d96aab8b4ed442395aafb1e721ccd0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '56c65e901f39bc86afd4911f14afaae5') in 0.029224 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/GUI Kit The Stone/ResourceData/Sprites/Demo/Demo_UI/Status_Frame01.Png
+  artifactKey: Guid(1b15a352d8ad64af49cacb2bde37cd85) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit The Stone/ResourceData/Sprites/Demo/Demo_UI/Status_Frame01.Png using Guid(1b15a352d8ad64af49cacb2bde37cd85) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f169b11a14e87e4ddb90276d4fa801b4') in 0.031298 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/GUI Kit The Stone/ResourceData/Sprites/Demo/Demo_UI/Status_Frame02.Png
+  artifactKey: Guid(85bfed4a959db4f9bb133a159862825a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit The Stone/ResourceData/Sprites/Demo/Demo_UI/Status_Frame02.Png using Guid(85bfed4a959db4f9bb133a159862825a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '898e9ebfb9bda545dcb686c065907130') in 0.025157 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/GUI Kit The Stone/ResourceData/Sprites/Demo/Demo_UI/Input_Field_Icon_Pw.Png
+  artifactKey: Guid(a0c03645568464f57b0099e1cfd00863) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit The Stone/ResourceData/Sprites/Demo/Demo_UI/Input_Field_Icon_Pw.Png using Guid(a0c03645568464f57b0099e1cfd00863) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '18e3d2cb3894c8ce30777bdec6a77581') in 0.025279 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000050 seconds.
+  path: Assets/GUI Kit The Stone/ResourceData/Sprites/Demo/Demo_UI/Input_Field_Icon_Required_Circle.Png
+  artifactKey: Guid(bd8d9d1883d6b4465bbe7b4ad0621d4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit The Stone/ResourceData/Sprites/Demo/Demo_UI/Input_Field_Icon_Required_Circle.Png using Guid(bd8d9d1883d6b4465bbe7b4ad0621d4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '34f58c15ed77459d8eca037e2cf2495c') in 0.016930 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/GUI Kit The Stone/ResourceData/Sprites/Demo/Demo_UI/InputField_Frame_Error.Png
+  artifactKey: Guid(400f030195d9943f3b42839c0ce1cf2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit The Stone/ResourceData/Sprites/Demo/Demo_UI/InputField_Frame_Error.Png using Guid(400f030195d9943f3b42839c0ce1cf2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fca9ad3b83268b705161870477e81d7a') in 0.016883 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/GUI Kit The Stone/ResourceData/Sprites/Demo/Demo_UI/Pagenavi_Bg2.Png
+  artifactKey: Guid(1b77d3f351fa24dbd931e728028c4241) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit The Stone/ResourceData/Sprites/Demo/Demo_UI/Pagenavi_Bg2.Png using Guid(1b77d3f351fa24dbd931e728028c4241) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'edef2e228eb4fe324ec9f374a7155d61') in 0.015786 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/GUI Kit The Stone/ResourceData/Sprites/Demo/Demo_UI/Pagenavi_Point.Png
+  artifactKey: Guid(168143c14069349e2b6c0e925595c432) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit The Stone/ResourceData/Sprites/Demo/Demo_UI/Pagenavi_Point.Png using Guid(168143c14069349e2b6c0e925595c432) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6c16a2937a286b0fb3cd7e2d5e204049') in 0.015476 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.397630 seconds.
+  path: Assets/GUI Kit The Stone/ResourceData/Sprites/Demo/Demo_image/Image_Deco_Laurel_L.Png
+  artifactKey: Guid(0094e3725e375433fa8e6d3019a30d6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit The Stone/ResourceData/Sprites/Demo/Demo_image/Image_Deco_Laurel_L.Png using Guid(0094e3725e375433fa8e6d3019a30d6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7ef1c3dabc994b2c39e66a560bb5f042') in 0.018254 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/GUI Kit The Stone/ResourceData/Sprites/Demo/Demo_image/Image_Effect_Particle_05.Png
+  artifactKey: Guid(e57ae661684df451a9b7bc4904b32e43) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit The Stone/ResourceData/Sprites/Demo/Demo_image/Image_Effect_Particle_05.Png using Guid(e57ae661684df451a9b7bc4904b32e43) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f698a6c05d46dcb844512b176307f059') in 0.016787 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/GUI Kit The Stone/ResourceData/Sprites/Demo/Demo_image/Image_LevelupScene_Mark1.Png
+  artifactKey: Guid(a19be6f051d954467869ef0b5e94595f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit The Stone/ResourceData/Sprites/Demo/Demo_image/Image_LevelupScene_Mark1.Png using Guid(a19be6f051d954467869ef0b5e94595f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dd77a3636f3a84d32f300516b8bb9381') in 0.020393 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/GUI Kit The Stone/ResourceData/Sprites/Demo/Demo_image/Image_LevelupScene_Mark2.Png
+  artifactKey: Guid(8d29a851b49f84ae1b85b922436b0339) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit The Stone/ResourceData/Sprites/Demo/Demo_image/Image_LevelupScene_Mark2.Png using Guid(8d29a851b49f84ae1b85b922436b0339) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'de606d8e4b34973f2d99ef60f27b3408') in 0.016614 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/GUI Kit The Stone/ResourceData/Sprites/Demo/Demo_image/Image_Iconscene_Samplearea.Png
+  artifactKey: Guid(1c38c5762108340239b88a4c9ff83842) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit The Stone/ResourceData/Sprites/Demo/Demo_image/Image_Iconscene_Samplearea.Png using Guid(1c38c5762108340239b88a4c9ff83842) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5da65b9d9f9edfa4e64908c23468f270') in 0.016805 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/GUI Kit The Stone/ResourceData/Sprites/Demo/Demo_image/Image_Deco_Laurel_R.Png
+  artifactKey: Guid(6471a61214608430ab45317eb36d61b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit The Stone/ResourceData/Sprites/Demo/Demo_image/Image_Deco_Laurel_R.Png using Guid(6471a61214608430ab45317eb36d61b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '824c5b3d12410f7caac014ea1eaa54ac') in 0.018251 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/GUI Kit The Stone/ResourceData/Sprites/Demo/Demo_image/Image_DefeatScene_Arrow3.Png
+  artifactKey: Guid(fe5f9801809014030a5f78696df51a59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit The Stone/ResourceData/Sprites/Demo/Demo_image/Image_DefeatScene_Arrow3.Png using Guid(fe5f9801809014030a5f78696df51a59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '962483fd7b7659bcaf0c0b89db282aec') in 0.016407 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/GUI Kit The Stone/ResourceData/Sprites/Demo/Demo_image/Image_LevelupScene_Mark4.Png
+  artifactKey: Guid(7d0f94c42f0ef4a64945326f31f1ffaa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit The Stone/ResourceData/Sprites/Demo/Demo_image/Image_LevelupScene_Mark4.Png using Guid(7d0f94c42f0ef4a64945326f31f1ffaa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ca8c6fae7ed7246e9ce4a8c9de328d32') in 0.018809 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/GUI Kit The Stone/ResourceData/Sprites/Demo/Demo_image/Image_LevelupScene_Mark5.Png
+  artifactKey: Guid(82b9478a250954d3981e7749934fc7f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit The Stone/ResourceData/Sprites/Demo/Demo_image/Image_LevelupScene_Mark5.Png using Guid(82b9478a250954d3981e7749934fc7f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f9e1a15a2eddfe0a072d2873f6d7ac92') in 0.016522 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/GUI Kit The Stone/ResourceData/Sprites/Demo/Demo_image/Image_DefeatScene_Skull3.Png
+  artifactKey: Guid(9cebafe5c38a548c6b1571f18ea7e6df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit The Stone/ResourceData/Sprites/Demo/Demo_image/Image_DefeatScene_Skull3.Png using Guid(9cebafe5c38a548c6b1571f18ea7e6df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5539e7758cd23fa06a976bde9dd69580') in 0.015646 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/GUI Kit The Stone/ResourceData/Sprites/Demo/Demo_image/Image_Effect_Rainbow.Png
+  artifactKey: Guid(14b668d206a564542a207256da413f03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit The Stone/ResourceData/Sprites/Demo/Demo_image/Image_Effect_Rainbow.Png using Guid(14b668d206a564542a207256da413f03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e10217f536d2e8f6060dd022a1daf2a8') in 0.018408 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/GUI Kit The Stone/ResourceData/Sprites/Demo/Demo_image/Image_DefeatScene_Arrow2.Png
+  artifactKey: Guid(6164358a7def74701b15fd6bcc7d93ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit The Stone/ResourceData/Sprites/Demo/Demo_image/Image_DefeatScene_Arrow2.Png using Guid(6164358a7def74701b15fd6bcc7d93ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2c8ac5a0209cbe98a92aad3e42096a19') in 0.017229 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/GUI Kit The Stone/ResourceData/Sprites/Demo/Demo_image/Image_Effect_Particle_01.Png
+  artifactKey: Guid(18ad93c36667445aca5245e43e1d1c7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit The Stone/ResourceData/Sprites/Demo/Demo_image/Image_Effect_Particle_01.Png using Guid(18ad93c36667445aca5245e43e1d1c7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3baa96429135152f0cc0161f351edfaf') in 0.013900 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/GUI Kit The Stone/ResourceData/Sprites/Demo/Demo_image/Image_DefeatScene_Skull1.Png
+  artifactKey: Guid(f41535b58b3014601b2338de5c554be1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit The Stone/ResourceData/Sprites/Demo/Demo_image/Image_DefeatScene_Skull1.Png using Guid(f41535b58b3014601b2338de5c554be1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3cb2ac954b352cd908b586b3a250b074') in 0.016391 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/GUI Kit The Stone/ResourceData/Sprites/Demo/Demo_image/Image_Effect_Particle_02.Png
+  artifactKey: Guid(1d03a0a7412804d409267d17eafbce67) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit The Stone/ResourceData/Sprites/Demo/Demo_image/Image_Effect_Particle_02.Png using Guid(1d03a0a7412804d409267d17eafbce67) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e15e2e0a86c8a9047de09d2efa0b9123') in 0.014188 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/GUI Kit The Stone/ResourceData/Sprites/Demo/Demo_image/Image_LevelupScene_Mark3.Png
+  artifactKey: Guid(cf3b10b8eb03448d699575a33c0e81a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit The Stone/ResourceData/Sprites/Demo/Demo_image/Image_LevelupScene_Mark3.Png using Guid(cf3b10b8eb03448d699575a33c0e81a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a659d0985e0c4b1d9af94ce137368f58') in 0.016032 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.052589 seconds.
+  path: Assets/GUI Kit The Stone/ResourceData/Sprites/Demo/Demo_Icon/Icon_ImageIcon_Check_s.Png
+  artifactKey: Guid(e07bd2b5a314b449692fca2e0ef80194) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit The Stone/ResourceData/Sprites/Demo/Demo_Icon/Icon_ImageIcon_Check_s.Png using Guid(e07bd2b5a314b449692fca2e0ef80194) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e022ed6b5614388b52991ce655ea780e') in 0.015662 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/GUI Kit The Stone/ResourceData/Sprites/Demo/Demo_Icon/Icon_ImageIcon_Coin.Png
+  artifactKey: Guid(ade56b7149c6940ecbc3fe38cd065543) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit The Stone/ResourceData/Sprites/Demo/Demo_Icon/Icon_ImageIcon_Coin.Png using Guid(ade56b7149c6940ecbc3fe38cd065543) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b9e988c405a5dfaea574a72fce402321') in 0.017980 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/GUI Kit The Stone/ResourceData/Sprites/Demo/Demo_Icon/Icon_ImageIcon_Gem.Png
+  artifactKey: Guid(571e655c7ab4a4d7abd6f5e57b144596) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit The Stone/ResourceData/Sprites/Demo/Demo_Icon/Icon_ImageIcon_Gem.Png using Guid(571e655c7ab4a4d7abd6f5e57b144596) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '975dd57d1d36a0fe74f90e407e07e03f') in 0.017237 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/GUI Kit The Stone/ResourceData/Sprites/Demo/Demo_Icon/Icon_ImageIcon_Key.Png
+  artifactKey: Guid(1897ecea99cf84580bc3a541451ec66f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit The Stone/ResourceData/Sprites/Demo/Demo_Icon/Icon_ImageIcon_Key.Png using Guid(1897ecea99cf84580bc3a541451ec66f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5a7cbc29dfc0a93d0f7ed7fbcfc0ddb6') in 0.019387 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/GUI Kit The Stone/ResourceData/Sprites/Demo/Demo_Icon/Icon_ImageIcon_Soulgem.Png
+  artifactKey: Guid(7e30376514d7c44acbc0f231178e446a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit The Stone/ResourceData/Sprites/Demo/Demo_Icon/Icon_ImageIcon_Soulgem.Png using Guid(7e30376514d7c44acbc0f231178e446a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7f04d71a64d6661dec79efd0737ba0d1') in 0.021230 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/GUI Kit The Stone/ResourceData/Sprites/Demo/Demo_Icon/Icon_ImageIcon_Page_Next.Png
+  artifactKey: Guid(3d578f8b07856461c9c2e277f5543e4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit The Stone/ResourceData/Sprites/Demo/Demo_Icon/Icon_ImageIcon_Page_Next.Png using Guid(3d578f8b07856461c9c2e277f5543e4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '90ae56fbd53daa0f599c6748bb4d7030') in 0.017568 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/GUI Kit The Stone/ResourceData/Sprites/Demo/Demo_Icon/Icon_ImageIcon_Star01_On.Png
+  artifactKey: Guid(6cd2e4f7622ab468686a5d750551e633) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit The Stone/ResourceData/Sprites/Demo/Demo_Icon/Icon_ImageIcon_Star01_On.Png using Guid(6cd2e4f7622ab468686a5d750551e633) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '49e72ff6e070f9f6609edb9e4f06bf49') in 0.018837 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/GUI Kit The Stone/ResourceData/Sprites/Demo/Demo_Icon/Icon_ImageIcon_Clover.Png
+  artifactKey: Guid(a15be1c5df2514c09833edbec3afd26b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit The Stone/ResourceData/Sprites/Demo/Demo_Icon/Icon_ImageIcon_Clover.Png using Guid(a15be1c5df2514c09833edbec3afd26b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f1f352e1adb8bff264e4824ea43c87d3') in 0.016291 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/GUI Kit The Stone/ResourceData/Sprites/Demo/Demo_Icon/Icon_ImageIcon_Star02_On.Png
+  artifactKey: Guid(1d3a6f2d5f11b4eb5a16c632c2e98799) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit The Stone/ResourceData/Sprites/Demo/Demo_Icon/Icon_ImageIcon_Star02_On.Png using Guid(1d3a6f2d5f11b4eb5a16c632c2e98799) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '38710e4d64cc869e322cc4f388fbe41d') in 0.015394 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/GUI Kit The Stone/ResourceData/Sprites/Demo/Demo_Icon/Icon_ImageIcon_Medal_Gray.Png
+  artifactKey: Guid(06cea55f7f045402f8ea9eacb9924fa5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit The Stone/ResourceData/Sprites/Demo/Demo_Icon/Icon_ImageIcon_Medal_Gray.Png using Guid(06cea55f7f045402f8ea9eacb9924fa5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '355c6416de9e709bf3ef72c3325fa8b8') in 0.016857 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/GUI Kit The Stone/ResourceData/Sprites/Demo/Demo_Icon/Icon_ImageIcon_Medal_Gold.Png
+  artifactKey: Guid(0ee67a1a648dc4b2fbc77f39591a6307) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit The Stone/ResourceData/Sprites/Demo/Demo_Icon/Icon_ImageIcon_Medal_Gold.Png using Guid(0ee67a1a648dc4b2fbc77f39591a6307) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5e580156c00f67af96ab4c18a2eeb013') in 0.017674 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/GUI Kit The Stone/ResourceData/Sprites/Demo/Demo_Icon/Icon_ImageIcon_Star00.Png
+  artifactKey: Guid(4ba32932c5e95473085578d10429742c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GUI Kit The Stone/ResourceData/Sprites/Demo/Demo_Icon/Icon_ImageIcon_Star00.Png using Guid(4ba32932c5e95473085578d10429742c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '584f7eed68d94cc044a42127b686ce9d') in 0.016203 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.008339 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Sang\Project03\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Sang\Project03\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Refreshing native plugins compatible for Editor in 0.62 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.077 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1077ms)
+		BeginReloadAssembly (169ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (45ms)
+		EndReloadAssembly (801ms)
+			LoadAssemblies (111ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (265ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (41ms)
+			SetupLoadedEditorAssemblies (347ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (24ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (79ms)
+				ProcessInitializeOnLoadAttributes (203ms)
+				ProcessInitializeOnLoadMethodAttributes (27ms)
+				AfterProcessingInitializeOnLoad (12ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (11ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 2.25 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3390 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 22 unused Assets / (80.0 KB). Loaded Objects now: 4119.
+Memory consumption went from 129.3 MB to 129.2 MB.
+Total: 2.503900 ms (FindLiveObjects: 0.247500 ms CreateObjectMapping: 0.154500 ms MarkObjects: 2.029400 ms  DeleteObjects: 0.071900 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -167,49 +1199,220 @@ AssetImportParameters requested are different than current active one (requested
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.008206 seconds.
+Registered in 0.010967 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Sang\Project03\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image C:\Sang\Project03\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
-Refreshing native plugins compatible for Editor in 0.59 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 1.22 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.306 seconds
+- Completed reload, in  1.617 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1306ms)
-		BeginReloadAssembly (207ms)
+	ReloadAssembly (1618ms)
+		BeginReloadAssembly (232ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (9ms)
+			DisableScriptedObjects (7ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (56ms)
-		EndReloadAssembly (964ms)
-			LoadAssemblies (126ms)
+			CreateAndSetChildDomain (47ms)
+		EndReloadAssembly (1239ms)
+			LoadAssemblies (189ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (339ms)
+			SetupTypeCache (368ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (56ms)
-			SetupLoadedEditorAssemblies (398ms)
+			RebuildScriptCaches (47ms)
+			SetupLoadedEditorAssemblies (637ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (30ms)
+				InitializePlatformSupportModulesInManaged (42ms)
 				SetLoadedEditorAssemblies (1ms)
 				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (96ms)
-				ProcessInitializeOnLoadAttributes (227ms)
-				ProcessInitializeOnLoadMethodAttributes (29ms)
-				AfterProcessingInitializeOnLoad (14ms)
+				BeforeProcessingInitializeOnLoad (203ms)
+				ProcessInitializeOnLoadAttributes (339ms)
+				ProcessInitializeOnLoadMethodAttributes (36ms)
+				AfterProcessingInitializeOnLoad (15ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (12ms)
+			AwakeInstancesAfterBackupRestoration (13ms)
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 2.07 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 2.36 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3403 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 33 unused Assets / (0.7 MB). Loaded Objects now: 3857.
-Memory consumption went from 123.1 MB to 122.3 MB.
-Total: 3.221000 ms (FindLiveObjects: 0.238100 ms CreateObjectMapping: 0.145300 ms MarkObjects: 2.488800 ms  DeleteObjects: 0.347600 ms)
+Unloading 3394 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 20 unused Assets / (80.0 KB). Loaded Objects now: 4126.
+Memory consumption went from 129.4 MB to 129.3 MB.
+Total: 3.497100 ms (FindLiveObjects: 0.240900 ms CreateObjectMapping: 0.200000 ms MarkObjects: 2.952200 ms  DeleteObjects: 0.102600 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.008802 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Sang\Project03\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Sang\Project03\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Refreshing native plugins compatible for Editor in 0.66 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.249 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1251ms)
+		BeginReloadAssembly (172ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (7ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (41ms)
+		EndReloadAssembly (964ms)
+			LoadAssemblies (111ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (296ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (42ms)
+			SetupLoadedEditorAssemblies (466ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (29ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (105ms)
+				ProcessInitializeOnLoadAttributes (281ms)
+				ProcessInitializeOnLoadMethodAttributes (32ms)
+				AfterProcessingInitializeOnLoad (17ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (15ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 2.29 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3394 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 20 unused Assets / (80.0 KB). Loaded Objects now: 4129.
+Memory consumption went from 129.4 MB to 129.3 MB.
+Total: 3.008000 ms (FindLiveObjects: 0.354600 ms CreateObjectMapping: 0.296200 ms MarkObjects: 2.277400 ms  DeleteObjects: 0.078900 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.012939 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Sang\Project03\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Sang\Project03\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Refreshing native plugins compatible for Editor in 0.66 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.177 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1178ms)
+		BeginReloadAssembly (171ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (35ms)
+		EndReloadAssembly (887ms)
+			LoadAssemblies (135ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (311ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (42ms)
+			SetupLoadedEditorAssemblies (365ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (26ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (81ms)
+				ProcessInitializeOnLoadAttributes (217ms)
+				ProcessInitializeOnLoadMethodAttributes (28ms)
+				AfterProcessingInitializeOnLoad (13ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (13ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 2.38 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3400 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 25 unused Assets / (80.1 KB). Loaded Objects now: 4133.
+Memory consumption went from 129.6 MB to 129.5 MB.
+Total: 2.657400 ms (FindLiveObjects: 0.246300 ms CreateObjectMapping: 0.145500 ms MarkObjects: 2.181500 ms  DeleteObjects: 0.083500 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.012919 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Sang\Project03\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Sang\Project03\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Refreshing native plugins compatible for Editor in 0.67 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.222 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1223ms)
+		BeginReloadAssembly (195ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (8ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (42ms)
+		EndReloadAssembly (908ms)
+			LoadAssemblies (143ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (295ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (43ms)
+			SetupLoadedEditorAssemblies (407ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (27ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (111ms)
+				ProcessInitializeOnLoadAttributes (229ms)
+				ProcessInitializeOnLoadMethodAttributes (24ms)
+				AfterProcessingInitializeOnLoad (15ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (14ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 3.51 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3400 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 26 unused Assets / (80.0 KB). Loaded Objects now: 4136.
+Memory consumption went from 129.6 MB to 129.5 MB.
+Total: 3.359700 ms (FindLiveObjects: 0.296900 ms CreateObjectMapping: 0.219300 ms MarkObjects: 2.719200 ms  DeleteObjects: 0.123200 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 

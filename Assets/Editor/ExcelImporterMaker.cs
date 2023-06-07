@@ -255,8 +255,8 @@ public class ExcelImporterMaker
         entittyTemplate = entittyTemplate.Replace("$ExcelData$", className);
         entittyTemplate = entittyTemplate.Replace("$LoadData$", loadData);
 
-        Directory.CreateDirectory("Assets/Script/DataBase/");
-        File.WriteAllText("Assets/Script/DataBase/" + className + ".cs", entittyTemplate);
+        Directory.CreateDirectory("Assets/Language/DataBase/");
+        File.WriteAllText("Assets/Language/DataBase/" + className + ".cs", entittyTemplate);
     }
 
     public static string InvokeStringMethod5(string assemblyName, string namespaceName, string typeName, string methodName, string stringParam)
