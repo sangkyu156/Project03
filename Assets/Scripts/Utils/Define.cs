@@ -8,6 +8,8 @@ public class Define
     {
         Unknown,
         Title,
+        Intro,
+        Stage01,
     }
 
     public enum UIEvent
