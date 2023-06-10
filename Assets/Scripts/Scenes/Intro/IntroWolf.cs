@@ -24,7 +24,6 @@ public class IntroWolf : MonoBehaviour
         head2.SetActive(false);
     }
 
-    // Update is called once per frame
     void Update()
     {
         time += Time.deltaTime;

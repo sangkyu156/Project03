@@ -11,7 +11,8 @@ public abstract class UI_Base : MonoBehaviour
 
 	public abstract void Init();
 
-	protected void Bind<T>(Type type) where T : UnityEngine.Object
+    //해당 씬에 사용하는 UI(버튼,이미지..)들을 _objects에 저장 하는 함수
+    protected void Bind<T>(Type type) where T : UnityEngine.Object
 	{
 		string[] names = Enum.GetNames(type);
 		UnityEngine.Object[] objects = new UnityEngine.Object[names.Length];
@@ -29,7 +30,8 @@ public abstract class UI_Base : MonoBehaviour
 		}
 	}
 
-	protected T Get<T>(int idx) where T : UnityEngine.Object
+    //_objects에 저장한 UI(버튼,이미지..)들을 꺼내 사용하는 함수
+    protected T Get<T>(int idx) where T : UnityEngine.Object
 	{
 		UnityEngine.Object[] objects = null;
 		if (_objects.TryGetValue(typeof(T), out objects) == false)

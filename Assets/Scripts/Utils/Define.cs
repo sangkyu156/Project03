@@ -9,12 +9,21 @@ public class Define
         Unknown,
         Title,
         Intro,
-        Stage01,
+        Stage,
     }
 
     public enum UIEvent
     {
         Click,
         Drag,
+    }
+
+    public enum Stage
+    {
+        Stage01,
+        Stage02,
+        Stage03,
+        Stage04,
+        Stage05
     }
 }

@@ -30,7 +30,6 @@ public static class Initiate
         scr.start = true;
         areWeFading = true;
         scr.InitiateFader();
-        
     }
 
     public static void DoneFading() 

@@ -18,6 +18,7 @@ public class Title_Canvas : UI_Base
     {
         Bind<Button>(typeof(Buttons));//Dictionary에 버튼 종류를 저장함
 
+        //각각의 버튼에 클릭했을때 함수 연결해줌
         GetButton((int)Buttons.StartButton).gameObject.BindEvent(StartButton);
         GetButton((int)Buttons.SetupButton).gameObject.BindEvent(SetupButton);
         GetButton((int)Buttons.QuitButton).gameObject.BindEvent(Button3);
@@ -40,7 +41,9 @@ public class Title_Canvas : UI_Base
 
     public void SetupButton(PointerEventData data)
     {
-        Managers.Resource.Instantiate("UI/Popup/Set-upPopup", this.transform);
+        SetupPopup popup = Managers.UI.ShowPopupUI<SetupPopup>();//SetupPopup 프리팹 팝업 생성
+        GameObject go = popup.gameObject;
+        go.transform.SetParent(this.transform, false);
     }
 
     public void Button3(PointerEventData data)
@@ -63,5 +66,6 @@ public class Title_Canvas : UI_Base
     {
         //인트로 씬으로 넘어가야함
         Managers.Scene.LoadScene(Define.Scene.Intro);
+        Managers.currStage = (int)Define.Stage.Stage01;
     }
 }

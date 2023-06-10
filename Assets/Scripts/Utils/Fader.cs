@@ -80,7 +80,6 @@ public class Fader : MonoBehaviour
                     startedLoading = true;
                     SceneManager.LoadScene(fadeScene);
                 }
-
             }
             else
             {
@@ -90,8 +89,6 @@ public class Fader : MonoBehaviour
                 {
                     hasFadedIn = true;
                 }
-
-
             }
             lastTime = Time.time;
             myCanvas.alpha = alpha;

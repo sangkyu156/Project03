@@ -15,9 +15,7 @@ public class IntroSceneManager : BaseScene
             DontDestroyOnLoad(this.gameObject);
         }
         else
-        {
             Destroy(this.gameObject);
-        }
     }
 
     public static IntroSceneManager Instance
@@ -28,17 +26,16 @@ public class IntroSceneManager : BaseScene
             {
                 return null;
             }
+
             return instance;
         }
     }
 
     void Start()
     {
-        Invoke("GoStage01", 9.8f);
+        //Invoke("GoStage", 9.8f);
 
-        //Invoke("GoStage01", 0.3f);
-
-        //GameObject homeManager = Instantiate(Resources.Load<GameObject>("Home/HomeManager"));
+        Invoke("GoStage", 2.3f);
     }
 
     private void Update()
@@ -46,9 +43,9 @@ public class IntroSceneManager : BaseScene
 
     }
 
-    void GoStage01()
+    void GoStage()
     {
-        Managers.Scene.LoadScene(Define.Scene.Stage01);
+        Managers.Scene.LoadScene(Define.Scene.Stage);
     }
 
     public override void Clear()
