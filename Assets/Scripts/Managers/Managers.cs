@@ -26,7 +26,16 @@ public class Managers : MonoBehaviour
 
     void Update()
     {
-        
+        //TEMP
+        if (Input.GetKeyDown(KeyCode.Z))
+        {
+            TextUtil.languageNumber = 2; //영어
+        }
+
+        if (Input.GetKeyDown(KeyCode.X))
+        {
+            TextUtil.languageNumber = 1; //한국어
+        }
     }
 
     static void Init()

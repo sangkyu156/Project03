@@ -52,7 +52,7 @@ public class UIManager
 		return sceneUI;
 	}
 
-    //움직일수 있는 팝업 유아이 생성
+    //스크립트를 가지고있는 팝업 유아이 생성
     public T ShowPopupUI<T>(string name = null) where T : UI_Popup
     {
         if (string.IsNullOrEmpty(name))

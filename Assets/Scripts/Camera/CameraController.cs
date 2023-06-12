@@ -25,7 +25,6 @@ public class CameraController : MonoBehaviour
     //플레이어 찾는 함수
     public void SetPlayer()
     {
-        Debug.Log("실행됨");
         player = GameObject.FindGameObjectWithTag("Player");
     }
 }

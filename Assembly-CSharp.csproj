@@ -114,7 +114,7 @@
     <Compile Include="Assets\Scripts\Skills\SawBlade_Skill.cs" />
     <Compile Include="Assets\Language\DataBase\TextDB.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexJitter.cs" />
-    <Compile Include="Assets\Scripts\Canvas\Title_Canvas.cs" />
+    <Compile Include="Assets\Scripts\Canvas\TitleCanvas.cs" />
     <Compile Include="Assets\Scripts\Managers\SceneManagerEx.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextEventHandler.cs" />
     <Compile Include="Assets\Classification\Monsters\Scripts\Monster.cs" />
@@ -135,6 +135,11 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexZoom.cs" />
     <Compile Include="Assets\Classification\Monsters\Scripts\MonsterState.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
+    <Compile Include="Assets\Scripts\Utils\DamageTextCanvas.cs" />
+    <Compile Include="Assets\Scripts\Utils\GuideText.cs" />
+    <Compile Include="Assets\Scripts\UI\Scene\TargetSpotUI.cs" />
+    <Compile Include="Assets\Scripts\Canvas\StageCanvas.cs" />
+    <Compile Include="Assets\Scripts\UI\Popup\PausePopup.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

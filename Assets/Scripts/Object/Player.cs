@@ -1,12 +1,18 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Player : MonoBehaviour
 {
     public float moveSpeed = 7;
+    public Transform textPostion;
+    float dist = 0f;
 
     Vector2 vector2;
+    GameObject stageCamera;
     Animator animator;
     SpriteRenderer spriteRenderer;
     new Rigidbody2D rigidbody2D;
@@ -109,7 +115,32 @@ public class Player : MonoBehaviour
             animator.SetBool("D_Idle", false);
             animator.SetBool("L_Idle", false);
         }
-    }
         #endregion
 
+        if(stageCamera != null)
+        {
+            dist = Vector2.Distance(stageCamera.transform.position, transform.position);
+
+            if (dist > 19) //왼쪽으로 더이상 못가게 막음
+            {
+                float posY = transform.position.y;
+                transform.position = stageCamera.transform.position + new Vector3(-16.2f, posY, +10);//GuideTextCanvas
+
+                //가이드Text 출력
+                GameObject guideText = Managers.Resource.Instantiate("UI/Text/GuideTextCanvas");
+                guideText.transform.SetParent(textPostion, false);
+            }
+        }
+
+        //y값이 일정범위 넘어갔을때 다시 초기화
+        if (transform.position.y > -3.5f || transform.position.y < -11)
+        {
+            transform.position = new Vector3(transform.position.x, -7);
+        }
+    }
+
+    public void SetCamera()
+    {
+        stageCamera = GameObject.FindGameObjectWithTag("Camera");
+    }
 }

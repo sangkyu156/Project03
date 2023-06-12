@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - Skill
+  - Camera
   layers:
   - Default
   - TransparentFX
