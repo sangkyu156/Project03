@@ -129,7 +129,7 @@ public class TitleScene : BaseScene
     {
         base.Init();
 
-        SceneType = Define.Scene.Title;
+        Managers.currScene = (int)Define.Scene.Title;
     }
 
 

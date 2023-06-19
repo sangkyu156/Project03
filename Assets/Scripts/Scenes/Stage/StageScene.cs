@@ -24,7 +24,7 @@ public class StageScene : BaseScene
     {
         base.Init();
 
-        SceneType = Define.Scene.Stage;
+        Managers.currScene = (int)Define.Scene.Stage;
 
         SetScreen();
     }

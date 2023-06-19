@@ -56,6 +56,7 @@
     <Analyzer Include="C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\UI\Popup\PausePopup.cs" />
     <Compile Include="Assets\Classification\Monsters\Scripts\SoloState.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\SkewTextExample.cs" />
     <Compile Include="Assets\Scripts\Managers\UIManager.cs" />
@@ -94,6 +95,7 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextInfoDebugTool.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextEventCheck.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ShaderPropAnimator.cs" />
+    <Compile Include="Assets\Scripts\UI\Scene\TargetSpotUI.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\WarpTextExample.cs" />
     <Compile Include="Assets\Scripts\Scenes\Stage\StageScene.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_DigitValidator.cs" />
@@ -105,6 +107,7 @@
     <Compile Include="Assets\Classification\Monsters\Scripts\MonsterVariation.cs" />
     <Compile Include="Assets\Scripts\Utils\Extension.cs" />
     <Compile Include="Assets\Scripts\Utils\Fader.cs" />
+    <Compile Include="Assets\Scripts\Utils\GuideText.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark03.cs" />
     <Compile Include="Assets\Scripts\UI\UI_EventHandler.cs" />
     <Compile Include="Assets\Scripts\Managers\ObjectManager.cs" />
@@ -120,6 +123,7 @@
     <Compile Include="Assets\Classification\Monsters\Scripts\Monster.cs" />
     <Compile Include="Assets\Classification\Monsters\Scripts\LayerManager.cs" />
     <Compile Include="Assets\Classification\StateEffect\Demo.cs" />
+    <Compile Include="Assets\Scripts\Utils\DamageTextCanvas.cs" />
     <Compile Include="Assets\Classification\Monsters\Scripts\StateHandler.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextSelector_B.cs" />
     <Compile Include="Assets\Scripts\Scenes\Intro\IntroSceneManager.cs" />
@@ -128,6 +132,7 @@
     <Compile Include="Assets\Scripts\Scenes\Intro\IntroBoss.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\DropdownSample.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_PhoneNumberValidator.cs" />
+    <Compile Include="Assets\Scripts\Canvas\StageCanvas.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexColorCycler.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TeleType.cs" />
     <Compile Include="Assets\Scripts\Managers\Managers.cs" />
@@ -135,11 +140,6 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexZoom.cs" />
     <Compile Include="Assets\Classification\Monsters\Scripts\MonsterState.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
-    <Compile Include="Assets\Scripts\Utils\DamageTextCanvas.cs" />
-    <Compile Include="Assets\Scripts\Utils\GuideText.cs" />
-    <Compile Include="Assets\Scripts\UI\Scene\TargetSpotUI.cs" />
-    <Compile Include="Assets\Scripts\Canvas\StageCanvas.cs" />
-    <Compile Include="Assets\Scripts\UI\Popup\PausePopup.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
