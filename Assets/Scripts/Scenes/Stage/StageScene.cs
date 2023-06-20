@@ -53,6 +53,10 @@ public class StageScene : BaseScene
         GameObject bi = Managers.Resource.Instantiate("UI/Scene/BossImage");//보스 UI
         bi.transform.SetParent(canvas, false);
 
+        Managers.Resource.Instantiate("UI/Scene/Information");//안내UI
+
+        Managers.Resource.Instantiate("Object/FirstPortal");//첫 포탈상점
+
 
         //스테이지에 맞게 맵 구현
         switch (Managers.currStage)

@@ -378,6 +378,7 @@
 "Assets/Scripts/Managers/SceneManagerEx.cs"
 "Assets/Scripts/Managers/UIManager.cs"
 "Assets/Scripts/Object/Boss.cs"
+"Assets/Scripts/Object/FirstPortal.cs"
 "Assets/Scripts/Object/Player.cs"
 "Assets/Scripts/Scenes/BaseScene.cs"
 "Assets/Scripts/Scenes/Intro/IntroBoss.cs"

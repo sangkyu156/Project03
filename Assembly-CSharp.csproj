@@ -110,6 +110,7 @@
     <Compile Include="Assets\Scripts\Utils\GuideText.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark03.cs" />
     <Compile Include="Assets\Scripts\UI\UI_EventHandler.cs" />
+    <Compile Include="Assets\Scripts\UI\Scene\BossImage.cs" />
     <Compile Include="Assets\Scripts\Managers\ObjectManager.cs" />
     <Compile Include="Assets\Scripts\UI\Scene\StageBG.cs" />
     <Compile Include="Assets\Classification\Monsters\Scripts\Demo.cs" />
@@ -136,12 +137,12 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexColorCycler.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TeleType.cs" />
     <Compile Include="Assets\Scripts\Managers\Managers.cs" />
+    <Compile Include="Assets\Scripts\Object\Boss.cs" />
     <Compile Include="Assets\Classification\Monsters\Scripts\Tweens\TweenBase.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexZoom.cs" />
     <Compile Include="Assets\Classification\Monsters\Scripts\MonsterState.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
-    <Compile Include="Assets\Scripts\Object\Boss.cs" />
-    <Compile Include="Assets\Scripts\UI\Scene\BossImage.cs" />
+    <Compile Include="Assets\Scripts\Object\FirstPortal.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
