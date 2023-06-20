@@ -11,11 +11,8 @@ public class StageBG : UI_Scene
 
     private void Update()
     {
-        Debug.Log("1");
         if (Managers.currScene != (int)Define.Scene.Stage)
             return;
-
-        Debug.Log("2");
 
         for (int i = 0; i < map.Length; i++)
         {

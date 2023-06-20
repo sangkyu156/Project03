@@ -7,6 +7,7 @@ public class StageScene : BaseScene
     public new GameObject camera;
     public Transform canvas;
     GameObject player;
+    GameObject boss;
     TextMeshProUGUI fieldMoney;
     TextMeshProUGUI fieldDiamond;
 
@@ -36,21 +37,27 @@ public class StageScene : BaseScene
 
     public void SetScreen()
     {
-        player = Managers.Object.CreateObject("Player");
+        player = Managers.Resource.Instantiate("Object/Player");
         camera.GetComponent<CameraController>().SetPlayer();//카메라에 플레이어 연결
         player.GetComponent<Player>().SetCamera();//플레이어에 카메라 연결
 
-        TargetSpotUI ts = Managers.UI.ShowSceneUI<TargetSpotUI>("TargetSpotUI");//진행률 UI
+        GameObject ts = Managers.Resource.Instantiate("UI/Scene/TargetSpotUI");//진행률 UI
         ts.transform.SetParent(canvas, false);
 
         fieldMoney = Util.FindChild<TextMeshProUGUI>(Managers.Resource.Instantiate("UI/Scene/FieldMoney", canvas), null, true);//금화창 생성 & 연결
         fieldDiamond = Util.FindChild<TextMeshProUGUI>(Managers.Resource.Instantiate("UI/Scene/FieldDiamond", canvas), null, true);//다야몬드창 생성 & 연결
         Managers.Resource.Instantiate("UI/Scene/PauseButton", canvas);
 
+        boss = Managers.Resource.Instantiate("Object/Boss");//보스생성
+
+        GameObject bi = Managers.Resource.Instantiate("UI/Scene/BossImage");//보스 UI
+        bi.transform.SetParent(canvas, false);
+
+
         //스테이지에 맞게 맵 구현
         switch (Managers.currStage)
         {
-            case (int)Define.Stage.Stage01: Managers.UI.ShowSceneUI<StageBG>("Stage01_BG"); break;//배경
+            case (int)Define.Stage.Stage01: Managers.Resource.Instantiate("UI/Scene/Stage01_BG"); break;//배경
             case (int)Define.Stage.Stage02: break;
             case (int)Define.Stage.Stage03: break;
             case (int)Define.Stage.Stage04: break;

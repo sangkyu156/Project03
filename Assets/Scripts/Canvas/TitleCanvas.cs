@@ -36,9 +36,8 @@ public class TitleCanvas : UI_Base
 
     public void SetupButton(PointerEventData data)
     {
-        SetupPopup popup = Managers.UI.ShowPopupUI<SetupPopup>();//SetupPopup 橇府普 扑诀 积己
-        GameObject go = popup.gameObject;
-        go.transform.SetParent(this.transform, false);
+        GameObject popup = Managers.Resource.Instantiate("UI/Popup/SetupPopup");//SetupPopup 橇府普 扑诀 积己
+        popup.transform.SetParent(this.transform, false);
     }
 
     public void QuitButton(PointerEventData data)
