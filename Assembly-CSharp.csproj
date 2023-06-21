@@ -63,11 +63,13 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\SimpleScript.cs" />
     <Compile Include="Assets\Scripts\Utils\Initiate.cs" />
     <Compile Include="Assets\Classification\Monsters\Scripts\CustomGrid.cs" />
+    <Compile Include="Assets\Scripts\Utils\WeightedRandomPicker.cs" />
     <Compile Include="Assets\Classification\Monsters\Scripts\Tweens\ScaleSpring.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01_UGUI.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextSelector_A.cs" />
     <Compile Include="Assets\Scripts\Scenes\Intro\IntroWolf.cs" />
     <Compile Include="Assets\Scripts\Utils\Util.cs" />
+    <Compile Include="Assets\Scripts\Utils\ParticaleAnimator.cs" />
     <Compile Include="Assets\Scripts\Localizing\Setup.cs" />
     <Compile Include="Assets\Scripts\UI\UI_Base.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexShakeA.cs" />
@@ -76,8 +78,11 @@
     <Compile Include="Assets\Scripts\Scenes\Intro\IntroPlayer.cs" />
     <Compile Include="Assets\Scripts\UI\Popup\SetupPopup.cs" />
     <Compile Include="Assets\Classification\Monsters\Scripts\Inanimate.cs" />
+    <Compile Include="Assets\Scripts\UI\Popup\StoreItems.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ChatController.cs" />
+    <Compile Include="Assets\Scripts\Object\FirstPortal.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextMeshProFloatingText.cs" />
+    <Compile Include="Assets\Classification\Effects\Demo\Scripts\Confetti2Cycler.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexShakeB.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\EnvMapAnimator.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_UiFrameRateCounter.cs" />
@@ -86,6 +91,7 @@
     <Compile Include="Assets\Scripts\UI\Scene\UI_Scene.cs" />
     <Compile Include="Assets\Scripts\Object\Player.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\CameraController.cs" />
+    <Compile Include="Assets\Classification\Effects\Demo\Scripts\Confetti2SceneSelect.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMPro_InstructionOverlay.cs" />
     <Compile Include="Assets\Scripts\Utils\Define.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_ExampleScript_01.cs" />
@@ -109,6 +115,7 @@
     <Compile Include="Assets\Scripts\Utils\Fader.cs" />
     <Compile Include="Assets\Scripts\Utils\GuideText.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark03.cs" />
+    <Compile Include="Assets\Classification\Effects\Demo\Scripts\Confetti2TimeSlider.cs" />
     <Compile Include="Assets\Scripts\UI\UI_EventHandler.cs" />
     <Compile Include="Assets\Scripts\UI\Scene\BossImage.cs" />
     <Compile Include="Assets\Scripts\Managers\ObjectManager.cs" />
@@ -120,6 +127,7 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexJitter.cs" />
     <Compile Include="Assets\Scripts\Canvas\TitleCanvas.cs" />
     <Compile Include="Assets\Scripts\Managers\SceneManagerEx.cs" />
+    <Compile Include="Assets\Scripts\UI\Popup\StorePopup.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextEventHandler.cs" />
     <Compile Include="Assets\Classification\Monsters\Scripts\Monster.cs" />
     <Compile Include="Assets\Classification\Monsters\Scripts\LayerManager.cs" />
@@ -142,11 +150,11 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexZoom.cs" />
     <Compile Include="Assets\Classification\Monsters\Scripts\MonsterState.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
-    <Compile Include="Assets\Scripts\Object\FirstPortal.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
     <None Include="Assets\Classification\StateEffect\EffectMaterials\Shader\EffectStateColorNegate.shader" />
+    <None Include="Assets\Classification\RPG Icons\readme.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
     <None Include="Assets\TextMesh Pro\Examples &amp; Extras\Fonts\Oswald-Bold - OFL.txt" />
@@ -163,6 +171,7 @@
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Properties.cginc" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Surface.cginc" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
+    <None Include="Assets\Classification\Effects\Super Confetti FX.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF Overlay.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Mobile.shader" />

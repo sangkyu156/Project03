@@ -8,7 +8,8 @@ public class StageScene : BaseScene
     public Transform canvas;
     GameObject player;
     GameObject boss;
-    TextMeshProUGUI fieldMoney;
+    GameObject fieldMoney;
+    TextMeshProUGUI fieldMoney_Text;
     TextMeshProUGUI fieldDiamond;
 
     private void Awake()
@@ -28,6 +29,7 @@ public class StageScene : BaseScene
         Managers.currScene = (int)Define.Scene.Stage;
 
         SetScreen();
+        PrintFieldMoney();
     }
 
     public override void Clear()
@@ -44,7 +46,8 @@ public class StageScene : BaseScene
         GameObject ts = Managers.Resource.Instantiate("UI/Scene/TargetSpotUI");//진행률 UI
         ts.transform.SetParent(canvas, false);
 
-        fieldMoney = Util.FindChild<TextMeshProUGUI>(Managers.Resource.Instantiate("UI/Scene/FieldMoney", canvas), null, true);//금화창 생성 & 연결
+        fieldMoney = Managers.Resource.Instantiate("UI/Scene/FieldMoney", canvas);//금화창 생성
+        fieldMoney_Text = Util.FindChild<TextMeshProUGUI>(fieldMoney, null, true);//금화창 연결
         fieldDiamond = Util.FindChild<TextMeshProUGUI>(Managers.Resource.Instantiate("UI/Scene/FieldDiamond", canvas), null, true);//다야몬드창 생성 & 연결
         Managers.Resource.Instantiate("UI/Scene/PauseButton", canvas);
 
@@ -69,8 +72,13 @@ public class StageScene : BaseScene
         }
     }
 
-    void UISite()
+    public void FieldMoneyLastSibling()
     {
+        fieldMoney.transform.SetAsLastSibling();
+    }
 
+    public void PrintFieldMoney()
+    {
+        fieldMoney_Text.text = Managers.fieldMoney.ToString();
     }
 }

@@ -9,6 +9,7 @@ public class Managers : MonoBehaviour
     static Managers Instance { get { Init(); return s_instance; } } // 유일한 매니저를 갖고온다
     static public int currStage = (int)Define.Stage.Stage01;
     static public int currScene = (int)Define.Scene.Title;
+    static public int fieldMoney { get; set; } = 0;
 
     //ObjectManager _oj = new ObjectManager();
     ResourceManager _resource = new ResourceManager();
@@ -23,6 +24,8 @@ public class Managers : MonoBehaviour
     void Start()
     {
         Init();
+        //TEMP
+        fieldMoney = 5000;
     }
 
     void Update()
