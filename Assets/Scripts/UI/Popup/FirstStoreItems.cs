@@ -1,22 +1,20 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
-using static UnityEditor.Progress;
 
-public class StoreItems : MonoBehaviour
+public class FirstStoreItems : MonoBehaviour
 {
-    GameObject stageScene;
     GameObject[] items;
-    string[] skillNameArray; //스킬명 모와두는곳
-    int[] skillWeightedArray; //스킬 가중치 모와두는곳
-    public WRandom.WeightedRandomPicker<string> weightedRandom = new WRandom.WeightedRandomPicker<string>(); //'가중치랜덤' 변수 생성 & 초기화
+    GameObject stageScene;
+
+    string[] firstSkillArray; //첫 상점에서 나와야 하는 스킬 모와두는곳
+    int[] firstSkillWeightedArray; //첫 상점에서 나와야 하는 스킬 가중치 모와두는곳
+    public WRandom.WeightedRandomPicker<string> weightedRandomFirst = new WRandom.WeightedRandomPicker<string>(); //'가중치랜덤' 변수 생성 & 초기화
 
     private void Awake()
     {
-        AddSkills();
-
+        firstAddSkills();
         items = new GameObject[4];
         for (int i = 0; i < items.Length; i++)
         {
@@ -26,46 +24,36 @@ public class StoreItems : MonoBehaviour
 
     void Start()
     {
-        Time.timeScale = 0;
-        //스토어카운트 증가 해야함
-
-        SetSkills();
         stageScene = GameObject.FindGameObjectWithTag("StageScene");
+        SetSkills();
     }
 
-    void Update()
+    //첫 상점에서 랜덤으로 뽑을 스킬 추가
+    void firstAddSkills()
     {
-        if(Input.GetKeyDown(KeyCode.R))
+        firstSkillArray = new string[8];
+        firstSkillArray[0] = "FireBall_Store";
+        firstSkillArray[1] = "SawBlade_Store";
+        firstSkillArray[2] = "WaveEnergy_Store";
+        firstSkillArray[3] = "Tornado_Store";
+        firstSkillArray[4] = "Spark_Store";
+        firstSkillArray[5] = "Trident_Store";
+        firstSkillArray[6] = "RageExplosion_Store";
+        firstSkillArray[7] = "Volcano_Store";
+
+        firstSkillWeightedArray = new int[8];
+        firstSkillWeightedArray[0] = 1000;
+        firstSkillWeightedArray[1] = 1001;
+        firstSkillWeightedArray[2] = 1002;
+        firstSkillWeightedArray[3] = 600;
+        firstSkillWeightedArray[4] = 601;
+        firstSkillWeightedArray[5] = 602;
+        firstSkillWeightedArray[6] = 603;
+        firstSkillWeightedArray[7] = 31;
+
+        for (int i = 0; i < 8; i++)
         {
-            OverlapRedraw();
-        }
-    }
-
-    //랜덤으로 뽑을 스킬 추가
-    void AddSkills()
-    {
-        skillNameArray = new string[Enum.GetValues(typeof(Define.Skills)).Length];
-        skillWeightedArray = new int[Enum.GetValues(typeof(Define.Skills)).Length];
-
-        Debug.Log($"스킬 개수 = {Enum.GetValues(typeof(Define.Skills)).Length}");
-
-        skillNameArray = typeof(Define.Skills).GetEnumNames();//'Skills'에서 이름 있는 것들만 뽑아오기 (skillNameArray 세팅)
-        SetSkillWeightedArray();//스킬 가중치 모와두기 (skillWeightedArray 세팅)
-
-        //스킬,가중치 하나씩 추가 (가중치가 높을수록 잘뽑힘)
-        for (int i = 0; i < skillNameArray.Length; i++)
-        {
-            Debug.Log($"[{i + 1}]번째 스킬 이름 = {skillNameArray[i]}\n[{i + 1}]번째 스킬 가중치 = {skillWeightedArray[i]}");
-            weightedRandom.Add($"{skillNameArray[i]}", skillWeightedArray[i]);
-        }
-    }
-
-    //'SkillData.Skills'에서 key를 하나씩 넣어서 key에 해당하는 value를 저장하는 함수
-    void SetSkillWeightedArray()
-    {
-        for (int i = 0; i < skillNameArray.Length; i++)
-        {
-            skillWeightedArray[i] = (int)Enum.Parse(typeof(Define.Skills), skillNameArray[i]);
+            weightedRandomFirst.Add($"{firstSkillArray[i]}", firstSkillWeightedArray[i]);
         }
     }
 
@@ -80,7 +68,7 @@ public class StoreItems : MonoBehaviour
 
         for (int i = 0; i < items.Length; i++)
         {
-            skillName = weightedRandom.GetRandomPick();
+            skillName = weightedRandomFirst.GetRandomPick();
             skillList.Add(skillName);
 
             prefeb = Resources.Load<GameObject>($"Prefabs/Skills/{skillName}");//프리펩 찾음
@@ -103,7 +91,6 @@ public class StoreItems : MonoBehaviour
         {
             Destroy(items[i].transform.GetChild(0).gameObject);
         }
-
         SetSkills();
     }
 
@@ -128,7 +115,7 @@ public class StoreItems : MonoBehaviour
         }
         SetSkills();
 
-        if(stageScene != null)
+        if (stageScene != null)
             stageScene.GetComponent<StageScene>().PrintFieldMoney();
     }
 

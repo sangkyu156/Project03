@@ -1,9 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using static UnityEditor.Experimental.AssetDatabaseExperimental.AssetDatabaseCounters;
 
 public class StageBG : UI_Scene
 {
+    public int countBG = 0;
     public GameObject[] map;
     GameObject player;
 
@@ -24,6 +26,14 @@ public class StageBG : UI_Scene
             if (dist > map[i].transform.position.x)
             {
                 map[i].transform.position += new Vector3(150, 0, 0);//맵이동
+                countBG++;
+
+                //상점 생성
+                if (countBG % 2 == 0)
+                {
+                    GameObject portal = Managers.Resource.Instantiate("Object/Portal");
+                    portal.transform.position = new Vector3(map[i].transform.position.x - 50, -3.5f, 0);
+                }
             }
         }
     }

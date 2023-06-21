@@ -1,9 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 
-public class FirstPortal : MonoBehaviour
+public class Portal : MonoBehaviour
 {
     GameObject stageCanvas;
     GameObject stageScene;
@@ -13,7 +12,7 @@ public class FirstPortal : MonoBehaviour
         if (collision.tag == "Player" || collision.tag == "NoDamage")
         {
             Time.timeScale = 0;
-            GameObject store = Managers.Resource.Instantiate("UI/Popup/FirstStorePopup");
+            GameObject store = Managers.Resource.Instantiate("UI/Popup/StorePopup");
             store.transform.SetParent(stageCanvas.transform, false);
             stageScene.GetComponent<StageScene>().FieldMoneyLastSibling();
             Destroy(gameObject);
