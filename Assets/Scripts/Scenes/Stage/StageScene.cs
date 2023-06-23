@@ -27,6 +27,7 @@ public class StageScene : BaseScene
         base.Init();
 
         Managers.currScene = (int)Define.Scene.Stage;
+        Managers.Instance.GetStageScene();
 
         SetScreen();
         PrintFieldMoney();

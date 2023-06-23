@@ -63,7 +63,7 @@ public class Define
         /**********40************/
 
         /**********30************/
-        BlackHole_Store = 30, Volcano_Store, Slowdown_Store, Redraw3_Store
+        BlackHole_Store = 3000, Volcano_Store, Slowdown_Store, Redraw3_Store
         /**********20************/
 
         /**********10************/

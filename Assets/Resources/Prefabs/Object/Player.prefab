@@ -14788,6 +14788,7 @@ GameObject:
   - component: {fileID: 3386951395858889047}
   - component: {fileID: 3386951395858889049}
   - component: {fileID: 1338010743250306001}
+  - component: {fileID: 7095265772013532893}
   m_Layer: 6
   m_Name: Player
   m_TagString: Player
@@ -14949,8 +14950,59 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 909bd904017f06d419939c169e49a2fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fireBallLevel: 0
+  fireBallCooldown: 0
+  tornadoLevel: 0
+  tornadoCooldown: 0
+  blackholeLevel: 0
+  blackholeCooldown: 0
+  sawBladeLevel: 0
+  sparkLevel: 0
+  sparkCooldown: 0
+  waveEnergyLevel: 0
+  waveEnergyCooldown: 0
+  volcanoLevel: 0
+  volcanoCooldown: 0
+  volcano: 0
+  tridentLevel: 0
+  tridentCooldown: 0
+  trident: 0
+  quicknessLevel: 0
+  slowdownLevel: 0
+  regenerateLevel: 0
+  regenerate: 0
+  regenerateCooldown: 0
+  rageExplosionSkill: {fileID: 0}
+  rageExplosionLevel: 0
+  rageExplosionTime: 0
+  rageExplosion: 0
+  bulkingUpLevel: 0
+  goldChestLevel: 0
+  potionChestLevel: 0
+  regularLevel: 0
+  sawBlade: []
+  skillPos: {fileID: 3386951397609864271}
+  attackSkillCount: 0
   moveSpeed: 7
   textPostion: {fileID: 3386951395930737087}
+--- !u!114 &7095265772013532893
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3386951395858889043}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 733f4e1ff483611408f4a8d4fc9202ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _pools:
+  - _name: BlackHole_Skill
+    _component: {fileID: 9079174200258000270, guid: 70278b9fc9c43a34c80feb034213cea9, type: 3}
+    _count: 0
+    _container: {fileID: 3386951397609864270}
+    _nonLazy: 0
 --- !u!1 &3386951395930737084
 GameObject:
   m_ObjectHideFlags: 0

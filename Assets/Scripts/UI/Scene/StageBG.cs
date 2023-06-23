@@ -27,6 +27,7 @@ public class StageBG : UI_Scene
             {
                 map[i].transform.position += new Vector3(150, 0, 0);//맵이동
                 countBG++;
+                CreateManager.Instance.Create_01();
 
                 //상점 생성
                 if (countBG % 2 == 0)

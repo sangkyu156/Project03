@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 3353261212023034544}
   - component: {fileID: 3353261212023034548}
   - component: {fileID: 3353261212023034549}
-  - component: {fileID: 3383040780993897344}
+  - component: {fileID: 9079174200258000270}
   m_Layer: 0
   m_Name: BlackHole_Skill
   m_TagString: Skill
@@ -98,7 +98,7 @@ Animator:
   m_GameObject: {fileID: 3353261212023034545}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 6dfcd7fa64c997c4da0ccc9e763cfe66, type: 2}
+  m_Controller: {fileID: 9100000, guid: 8d822852726a3c449be24082d6aee78e, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -155,7 +155,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &3383040780993897344
+--- !u!114 &9079174200258000270
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -164,7 +164,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 3353261212023034545}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 09ca812a411e8bc4882d75b5d35770e8, type: 3}
+  m_Script: {fileID: 11500000, guid: 7444b9973c5b3234da6718be31cef921, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   idName: BlackHole_Skill

@@ -47,17 +47,14 @@ public class StoreItems : MonoBehaviour
         skillNameArray = new string[Enum.GetValues(typeof(Define.Skills)).Length];
         skillWeightedArray = new int[Enum.GetValues(typeof(Define.Skills)).Length];
 
-        Debug.Log($"스킬 개수 = {Enum.GetValues(typeof(Define.Skills)).Length}");
-
         skillNameArray = typeof(Define.Skills).GetEnumNames();//'Skills'에서 이름 있는 것들만 뽑아오기 (skillNameArray 세팅)
         SetSkillWeightedArray();//스킬 가중치 모와두기 (skillWeightedArray 세팅)
 
         //스킬,가중치 하나씩 추가 (가중치가 높을수록 잘뽑힘)
         for (int i = 0; i < skillNameArray.Length; i++)
-        {
-            Debug.Log($"[{i + 1}]번째 스킬 이름 = {skillNameArray[i]}\n[{i + 1}]번째 스킬 가중치 = {skillWeightedArray[i]}");
             weightedRandom.Add($"{skillNameArray[i]}", skillWeightedArray[i]);
-        }
+
+        //여기다 플레이어 공격스킬 4개 정해졌으면 정해진 4개 뺴고 다 삭제 & 랩 7인것도 빼야함
     }
 
     //'SkillData.Skills'에서 key를 하나씩 넣어서 key에 해당하는 value를 저장하는 함수
@@ -128,13 +125,18 @@ public class StoreItems : MonoBehaviour
         }
         SetSkills();
 
-        if(stageScene != null)
-            stageScene.GetComponent<StageScene>().PrintFieldMoney();
+        PrintFieldMoney();
     }
 
     public void ClosePopup()
     {
         Time.timeScale = 1.0f;
         Destroy(gameObject.transform.parent.gameObject);
+    }
+
+    public void PrintFieldMoney()
+    {
+        if (stageScene != null)
+            stageScene.GetComponent<StageScene>().PrintFieldMoney();
     }
 }

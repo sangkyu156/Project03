@@ -1,0 +1,75 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &7281743509527797063
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1336402131536987376}
+  - component: {fileID: 9063509561838478390}
+  - component: {fileID: -1069360463295588864}
+  m_Layer: 0
+  m_Name: CreateManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1336402131536987376
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7281743509527797063}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.8829692, y: -0.08468786, z: 0.052006833}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &9063509561838478390
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7281743509527797063}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 733f4e1ff483611408f4a8d4fc9202ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _pools:
+  - _name: Chick
+    _component: {fileID: 4636132882168620359, guid: 87f9c00f6a439e543a12faafd4765b70, type: 3}
+    _count: 0
+    _container: {fileID: 1336402131536987376}
+    _nonLazy: 0
+  - _name: Chicken
+    _component: {fileID: 5746415564024318418, guid: 4f3631cfeb0ac8f49b807cb840092bbf, type: 3}
+    _count: 0
+    _container: {fileID: 1336402131536987376}
+    _nonLazy: 0
+  - _name: Coin_1
+    _component: {fileID: 3225109521594217061, guid: 4842e5711d1516748b586be70836dd87, type: 3}
+    _count: 0
+    _container: {fileID: 1336402131536987376}
+    _nonLazy: 0
+--- !u!114 &-1069360463295588864
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7281743509527797063}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 375cfce7c811e8a43b1499b736368948, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
