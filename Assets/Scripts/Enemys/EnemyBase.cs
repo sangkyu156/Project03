@@ -1,8 +1,5 @@
 using Redcode.Pools;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class EnemyBase : MonoBehaviour, IPoolObject
 {
@@ -41,10 +38,10 @@ public class EnemyBase : MonoBehaviour, IPoolObject
         if (target != null)
         {
             //Vector3 direction = transform.position - target.position;
-            transform.position = Vector2.MoveTowards(transform.position, target.position + new Vector3(0,1,0), speed * Time.deltaTime);
+            transform.position = Vector2.MoveTowards(transform.position, target.position + new Vector3(0, 1, 0), speed * Time.deltaTime);
         }
     }
-    
+
     //∏ÿ√„
     protected void PositionStop()
     {

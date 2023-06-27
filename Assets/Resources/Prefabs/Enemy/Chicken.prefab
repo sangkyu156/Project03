@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2416069684635336177}
   - component: {fileID: 7468633233961079837}
   - component: {fileID: 4963821196596415530}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: HealthBar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -114,7 +114,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1124003872071626948}
   - component: {fileID: 2665093567876956668}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: LegL
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -201,7 +201,7 @@ GameObject:
   - component: {fileID: 4487807773707609101}
   - component: {fileID: 4728471265615811515}
   - component: {fileID: 5746415564024318418}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Chicken
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -315,7 +315,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8974289305414350442}
   - component: {fileID: 6042618908291931516}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: LegR
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -399,7 +399,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3238391814723860742}
   - component: {fileID: 1101223619647696504}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Shadow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -482,7 +482,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5006195165357339412}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: DamageTextPosition
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -515,7 +515,7 @@ GameObject:
   - component: {fileID: 6771310936964025093}
   - component: {fileID: 3111798964822810053}
   - component: {fileID: 9217493665452743740}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Border
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -590,7 +590,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2395326467821757634}
   - component: {fileID: 8972417262111765144}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Wing
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -676,7 +676,7 @@ GameObject:
   - component: {fileID: 2575439476326889317}
   - component: {fileID: 6339039342487153065}
   - component: {fileID: 1132731027141515795}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -775,7 +775,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4174071953677604806}
   - component: {fileID: 397550724793484828}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -864,7 +864,7 @@ GameObject:
   - component: {fileID: 5508069687772292039}
   - component: {fileID: 8476019160186446940}
   - component: {fileID: 8658393951899320885}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Fill
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -939,7 +939,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5444326070281005104}
   - component: {fileID: 3220657118574883623}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Head
   m_TagString: Untagged
   m_Icon: {fileID: 0}

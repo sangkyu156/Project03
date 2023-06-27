@@ -1,7 +1,4 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using static UnityEditor.Experimental.AssetDatabaseExperimental.AssetDatabaseCounters;
 
 public class StageBG : UI_Scene
 {
@@ -18,7 +15,7 @@ public class StageBG : UI_Scene
 
         for (int i = 0; i < map.Length; i++)
         {
-            if(player == null)
+            if (player == null)
                 player = GameObject.FindGameObjectWithTag("Player");
 
             dist = player.transform.position.x - 60;

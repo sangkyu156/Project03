@@ -1,6 +1,4 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
@@ -45,7 +43,7 @@ public class BlackHole_Store : BlackHole_Skill
         {
             explanation.text = TextUtil.GetText("game:skill:explanation:blackhole");
         }
-        else if(Player.Instance.blackholeLevel == 7)
+        else if (Player.Instance.blackholeLevel == 7)
         {
             if (TextUtil.languageNumber == 0 || TextUtil.languageNumber == 1) //한국
             {
@@ -87,7 +85,6 @@ public class BlackHole_Store : BlackHole_Skill
 
         Managers.fieldMoney -= priceValue;
         Managers.Data.paymentGold += priceValue;
-        Debug.Log($"사용한 금화 = {Managers.Data.paymentGold}");
         Managers.Data.legendSkillCount++;
         //GameManager.Instance.SFXPlay(GameManager.Sfx.Buy);
 
@@ -95,11 +92,9 @@ public class BlackHole_Store : BlackHole_Skill
         {
             Player.Instance.blackholeLevel++;
             Player.Instance.attackSkillCount++;
+
             if (Player.Instance.attackSkillCount >= 4)
-            {
                 Managers.Instance.skillLockAction();
-                //Player.Instance.AttackSkillCheck();
-            }
         }
         else
             Player.Instance.blackholeLevel++;
@@ -135,13 +130,9 @@ public class BlackHole_Store : BlackHole_Skill
     public void BuyCheck()
     {
         if (priceValue > Managers.fieldMoney)
-        {
             price.color = Color.red;
-        }
         else
-        {
             price.color = Color.white;
-        }
     }
 
     //공격스킬 잠그기(공격스킬 4개 모두 정해졌을때)

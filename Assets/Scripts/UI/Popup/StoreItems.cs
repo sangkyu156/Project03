@@ -1,9 +1,7 @@
 using System;
-using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
-using static UnityEditor.Progress;
 
 public class StoreItems : MonoBehaviour
 {
@@ -35,7 +33,7 @@ public class StoreItems : MonoBehaviour
 
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.R))
+        if (Input.GetKeyDown(KeyCode.R))
         {
             OverlapRedraw();
         }
@@ -54,7 +52,7 @@ public class StoreItems : MonoBehaviour
         for (int i = 0; i < skillNameArray.Length; i++)
             weightedRandom.Add($"{skillNameArray[i]}", skillWeightedArray[i]);
 
-        //여기다 플레이어 공격스킬 4개 정해졌으면 정해진 4개 뺴고 다 삭제 & 랩 7인것도 빼야함
+        //여기다 플레이어 공격스킬 4개 정해졌으면 정해진 4개 뺴고 다 삭제 & 랩 7인것도 빼야함 해야함
     }
 
     //'SkillData.Skills'에서 key를 하나씩 넣어서 key에 해당하는 value를 저장하는 함수

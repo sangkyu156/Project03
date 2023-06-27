@@ -1,6 +1,4 @@
 using Redcode.Pools;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class BlackHole_Skill : ProjectileSkill, IPoolObject
@@ -30,7 +28,7 @@ public class BlackHole_Skill : ProjectileSkill, IPoolObject
 
         if (rigidbody2D == null)
             return;
-        
+
         Shoot();
 
         if (deadTiem > 0)
@@ -56,7 +54,7 @@ public class BlackHole_Skill : ProjectileSkill, IPoolObject
     {
         EnemyBase enemy;
         enemy = collider_.GetComponent<EnemyBase>();
-        
+
         collider_.transform.position = new Vector3(collider_.transform.position.x + 1f, collider_.transform.position.y);
 
         enemy.TakeDamage(curPower + (int)(Managers.Data.state_Power * 0.3f));
@@ -71,15 +69,6 @@ public class BlackHole_Skill : ProjectileSkill, IPoolObject
     public void OnCreatedInPool()
     {
         SetAbility();
-        //여기서 위치지정하지말고 생성할때 위치지정 해보고 되면 이거 지우기
-        //if (rigidbody2D != null)
-        //{
-        //    //생성위치 지정
-        //    if (playerFlip.flipX == true)
-        //        transform.position = Player.Instance.skillPos.transform.position;
-        //    else
-        //        transform.position = Player.Instance.skillPos.transform.position - new Vector3(1.57f, 0, 0);
-        //}
     }
 
     //재사용되서 다시한번 실행될때마다 실행되는 메소드
@@ -87,15 +76,6 @@ public class BlackHole_Skill : ProjectileSkill, IPoolObject
     {
         deadTiem = 1.2f;
         SetAbility();
-        //여기서 위치지정하지말고 생성할때 위치지정 해보고 되면 이거 지우기
-        //if (rigidbody2D != null)
-        //{
-        //    //생성위치 지정
-        //    if (playerFlip.flipX == true)
-        //        transform.position = Player.Instance.skillPos.transform.position;
-        //    else
-        //        transform.position = Player.Instance.skillPos.transform.position - new Vector3(1.57f, 0, 0);
-        //}
     }
 
     //오브젝트 회수

@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 2522135191755121751}
   - component: {fileID: 2522135191755121749}
   - component: {fileID: 2522135191755121748}
-  - component: {fileID: 2522135191755121747}
   - component: {fileID: 2522135191755121746}
   - component: {fileID: 2821335181466558809}
+  - component: {fileID: 4337948578010928033}
   m_Layer: 0
   m_Name: FireBall_Skill
   m_TagString: Skill
@@ -98,7 +98,7 @@ Animator:
   m_GameObject: {fileID: 2522135191755121750}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 54a79baddc23aaa4cadfceaf5277d15f, type: 2}
+  m_Controller: {fileID: 9100000, guid: b7ecf071714244e4893e2e1967fc1c64, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -108,19 +108,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
---- !u!114 &2522135191755121747
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2522135191755121750}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d37efe19fd8f2e54ca26178a2906a4d5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  idName: FireBall_Skill
 --- !u!50 &2522135191755121746
 Rigidbody2D:
   serializedVersion: 4
@@ -168,3 +155,16 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.65, y: 0.58}
   m_EdgeRadius: 0
+--- !u!114 &4337948578010928033
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2522135191755121750}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f35a20f51a3d2a0458ff094fd298c701, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  idName: FireBall_Skill

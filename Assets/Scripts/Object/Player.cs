@@ -1,10 +1,5 @@
 using Redcode.Pools;
-using System.Collections;
-using System.Collections.Generic;
-using TMPro;
-using Unity.VisualScripting;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class Player : MonoBehaviour
 {
@@ -44,6 +39,7 @@ public class Player : MonoBehaviour
 
     public GameObject skillPos;//발사스킬 시작지점
     public int attackSkillCount = 0;
+    public int maxHealth = 10;
     public int currentHealth;
     public float moveSpeed = 7;
     public Transform textPostion;
@@ -95,12 +91,12 @@ public class Player : MonoBehaviour
 
     void Start()
     {
-        
+        currentHealth = maxHealth;
     }
 
     void Update()
     {
-        
+
     }
 
     private void FixedUpdate()
@@ -180,7 +176,7 @@ public class Player : MonoBehaviour
         }
         #endregion
 
-        if(stageCamera != null)
+        if (stageCamera != null)
         {
             dist = Vector2.Distance(stageCamera.transform.position, transform.position);
 
@@ -287,7 +283,8 @@ public class Player : MonoBehaviour
     void Spawn()
     {
         //GameManager.Instance.SFXPlay(Sfx.FireBall);
-        //FireBall_Skill fireBall_Skill = poolManager.GetFromPool<FireBall_Skill>();
+        FireBall_Skill fireBall_Skill = poolManager.GetFromPool<FireBall_Skill>();
+        fireBall_Skill.gameObject.transform.position = skillPos.transform.position;
     }
     void Spawn2()
     {
@@ -322,10 +319,10 @@ public class Player : MonoBehaviour
     }
 
     //오브젝트 회수
-    //public void ReturnPool(FireBall_Skill clone)
-    //{
-    //    poolManager.TakeToPool<FireBall_Skill>(clone.idName, clone);
-    //}
+    public void ReturnPool(FireBall_Skill clone)
+    {
+        poolManager.TakeToPool<FireBall_Skill>(clone.idName, clone);
+    }
     //public void ReturnPool(Tornado_Skill clone)
     //{
     //    poolManager.TakeToPool<Tornado_Skill>(clone.idName, clone);
@@ -358,7 +355,7 @@ public class Player : MonoBehaviour
         healthBar.SetHealth(currentHealth);
 
         //데미지 출력
-        GameObject damageUI = Instantiate(Resources.Load<GameObject>($"DamageTextCanvas")) as GameObject;
+        GameObject damageUI = Managers.Resource.Instantiate("UI/Text/DamageTextCanvas");
         damageUI.GetComponentInChildren<DamageText>().damage = damage_;
         damageUI.transform.SetParent(textPostion, false);
         //GameManager.Instance.SFXPlay(Sfx.PlayerHit);
@@ -381,5 +378,22 @@ public class Player : MonoBehaviour
             this.rigidbody2D.AddForce(new Vector2(1, 0) * 5000);
 
         Invoke("OnDamage", 1f);
+    }
+
+    //무적 풀림
+    public void OnDamage()
+    {
+        gameObject.tag = "Player";
+        spriteRenderer.color = new Color(1, 1, 1, 1);
+    }
+
+    void effect1()
+    {
+        spriteRenderer.color = new Color(1, 1, 1, 0.6f);
+    }
+
+    void effect2()
+    {
+        spriteRenderer.color = new Color(1, 1, 1, 0.3f);
     }
 }

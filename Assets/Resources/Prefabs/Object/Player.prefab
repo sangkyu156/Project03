@@ -14983,8 +14983,11 @@ MonoBehaviour:
   sawBlade: []
   skillPos: {fileID: 3386951397609864271}
   attackSkillCount: 0
+  maxHealth: 10
+  currentHealth: 0
   moveSpeed: 7
   textPostion: {fileID: 3386951395930737087}
+  healthBar: {fileID: 6483764916861724856}
 --- !u!114 &7095265772013532893
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15000,6 +15003,11 @@ MonoBehaviour:
   _pools:
   - _name: BlackHole_Skill
     _component: {fileID: 9079174200258000270, guid: 70278b9fc9c43a34c80feb034213cea9, type: 3}
+    _count: 0
+    _container: {fileID: 3386951397609864270}
+    _nonLazy: 0
+  - _name: FireBall_Skill
+    _component: {fileID: 4337948578010928033, guid: e371162ba47972b41889b4b1cb105ed1, type: 3}
     _count: 0
     _container: {fileID: 3386951397609864270}
     _nonLazy: 0
@@ -15460,6 +15468,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3386951397417817747}
   - component: {fileID: 3386951397417817749}
+  - component: {fileID: 6483764916861724856}
   m_Layer: 5
   m_Name: PlayerHealthBar
   m_TagString: Untagged
@@ -15540,6 +15549,49 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &6483764916861724856
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3386951397417817744}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fba88ffa6436b1846b4373ed6c9217d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerSlider: {fileID: 3386951397417817749}
+  gradient:
+    serializedVersion: 2
+    key0: {r: 0.46226418, g: 0, b: 0, a: 1}
+    key1: {r: 1, g: 0, b: 0, a: 1}
+    key2: {r: 1, g: 0.41176474, b: 0, a: 1}
+    key3: {r: 0.70980394, g: 0.8431373, b: 0.10588236, a: 1}
+    key4: {r: 0.70980394, g: 0.8431373, b: 0.10588236, a: 0}
+    key5: {r: 0, g: 0, b: 0, a: 0}
+    key6: {r: 0, g: 0, b: 0, a: 0}
+    key7: {r: 0, g: 0, b: 0, a: 0}
+    ctime0: 0
+    ctime1: 21823
+    ctime2: 43646
+    ctime3: 65535
+    ctime4: 65535
+    ctime5: 0
+    ctime6: 0
+    ctime7: 0
+    atime0: 0
+    atime1: 65535
+    atime2: 65535
+    atime3: 65535
+    atime4: 0
+    atime5: 0
+    atime6: 0
+    atime7: 0
+    m_Mode: 0
+    m_NumColorKeys: 4
+    m_NumAlphaKeys: 2
+  fill: {fileID: 3386951396735337348}
 --- !u!1 &3386951397467378798
 GameObject:
   m_ObjectHideFlags: 0
