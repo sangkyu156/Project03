@@ -4,36 +4,36 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     #region 스킬변수
-    public int fireBallLevel = 0;           //파이어볼
-    public float fireBallCooldown = 0;
-    public int tornadoLevel = 0;            //토네이도
-    public float tornadoCooldown = 0;
-    public int blackholeLevel = 0;          //블랙홀
-    public float blackholeCooldown = 0;
-    public int sawBladeLevel = 0;           //톱날
-    public int sparkLevel = 0;              //스파크(연사)
-    public float sparkCooldown = 0;
-    public int waveEnergyLevel = 0;         //에너지볼(관통)
-    public float waveEnergyCooldown = 0;
-    public int volcanoLevel = 0;            //볼케이노
-    public float volcanoCooldown = 0;
-    public bool volcano = false;
-    public int tridentLevel = 0;            //삼지창
-    public float tridentCooldown = 0;
-    public bool trident = false;
-    public int quicknessLevel = 0;          //신속
-    public int slowdownLevel = 0;           //감속
-    public int regenerateLevel = 0;         //체력회복
-    public bool regenerate = false;
-    public float regenerateCooldown = 0;
+    public int      fireBallLevel = 0;           //파이어볼
+    public float    fireBallCooldown = 0;
+    public int      tornadoLevel = 0;            //토네이도
+    public float    tornadoCooldown = 0;
+    public int      blackholeLevel = 0;          //블랙홀
+    public float    blackholeCooldown = 0;
+    public int      sawBladeLevel = 0;           //톱날
+    public int      sparkLevel = 0;              //스파크(연사)
+    public float    sparkCooldown = 0;
+    public int      waveEnergyLevel = 0;         //에너지볼(관통)
+    public float    waveEnergyCooldown = 0;
+    public int      volcanoLevel = 0;            //볼케이노
+    public float    volcanoCooldown = 0;
+    public bool     volcano = false;
+    public int      tridentLevel = 0;            //삼지창
+    public float    tridentCooldown = 0;
+    public bool     trident = false;
+    public int      quicknessLevel = 0;          //신속
+    public int      slowdownLevel = 0;           //감속
+    public int      regenerateLevel = 0;         //체력회복
+    public bool     regenerate = false;
+    public float    regenerateCooldown = 0;
+    public int      rageExplosionLevel = 0;
+    public float    rageExplosionTime = 0;
+    public bool     rageExplosion = false;
+    public int      bulkingUpLevel = 0;          //벌크업
+    public int      goldChestLevel = 0;          //금화상자
+    public int      potionChestLevel = 0;        //포션상자
+    public int      regularLevel = 0;            //단골
     public GameObject rageExplosionSkill;   //분노폭발
-    public int rageExplosionLevel = 0;
-    public float rageExplosionTime = 0;
-    public bool rageExplosion = false;
-    public int bulkingUpLevel = 0;          //벌크업
-    public int goldChestLevel = 0;          //금화상자
-    public int potionChestLevel = 0;        //포션상자
-    public int regularLevel = 0;            //단골
     public GameObject[] sawBlade;
     #endregion
 
@@ -45,8 +45,10 @@ public class Player : MonoBehaviour
     public Transform textPostion;
     float dist = 0f;
 
+    public GameObject effect_Heal;
     public PlayerHealthBar healthBar;
     Vector2 vector2;
+    GameObject healUI;
     GameObject stageCamera;
     Animator animator;
     SpriteRenderer spriteRenderer;
@@ -92,11 +94,7 @@ public class Player : MonoBehaviour
     void Start()
     {
         currentHealth = maxHealth;
-    }
-
-    void Update()
-    {
-
+        healthBar.SetMaxHealth(maxHealth);
     }
 
     private void FixedUpdate()
@@ -351,6 +349,7 @@ public class Player : MonoBehaviour
     //데미지 받았을때
     public void TakeDamage(int damage_, bool direction)//매개변수 bool값 으로 오른쪽으로 밀려날지 왼쪽으로 밀려날지 정해야함
     {
+        Debug.Log($"받은 데미지 = {damage_}");
         currentHealth -= damage_;
         healthBar.SetHealth(currentHealth);
 
@@ -395,5 +394,38 @@ public class Player : MonoBehaviour
     void effect2()
     {
         spriteRenderer.color = new Color(1, 1, 1, 0.3f);
+    }
+
+    //포션 먹었을때
+    public void GetHP_Potion(Define.Potion potion_)
+    {
+        effect_Heal.SetActive(true);
+        //GameManager.Instance.SFXPlay(Sfx.Heal);
+
+        currentHealth += ((int)potion_ + Managers.Data.state_PotionRecover);
+
+        if (currentHealth > maxHealth)
+            currentHealth = maxHealth;
+
+        HealPrint(potion_);
+
+        healthBar.SetHealth(currentHealth);
+
+        Invoke("HealOff", 0.7f);
+    }
+
+    //힐Text 출력
+    void HealPrint(Define.Potion potion_)
+    {
+        if(healUI == null)
+            healUI = Managers.Resource.Instantiate("UI/Text/HealTextCanvas");
+
+        healUI.transform.SetParent(textPostion, false);
+        healUI.GetComponentInChildren<HealText>().heal = $"+{((int)potion_ + Managers.Data.state_PotionRecover)}";        
+    }
+
+    void HealOff()
+    {
+        effect_Heal.SetActive(false);
     }
 }

@@ -4,6 +4,11 @@ using UnityEngine;
 
 public class Define
 {
+    public enum Potion
+    {
+        HP_Potion = 3, HP_Potion2 = 5, HP_Potion3 = 7
+    }
+
     public enum Scene
     {
         Unknown,

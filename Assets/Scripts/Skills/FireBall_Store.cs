@@ -30,9 +30,10 @@ public class FireBall_Store : FireBall_Skill
         PrintExplanation();
     }
 
-    void Update()
+    private void OnDestroy()
     {
-        
+        Managers.Instance.buyCheckAction -= BuyCheck;
+        Managers.Instance.skillLockAction -= SkillLock;
     }
 
     //설명 텍스트 출력

@@ -24,11 +24,6 @@ public class StageCanvas : UI_Base
         Init();
     }
 
-    void Update()
-    {
-        
-    }
-
     public void PauseButton(PointerEventData data)
     {
         Time.timeScale = 0;

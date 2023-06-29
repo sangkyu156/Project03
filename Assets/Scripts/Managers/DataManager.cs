@@ -8,6 +8,7 @@ public class DataManager
     public Action buyAction;
     public int killCount;
 
+    public bool clairvoyant = false;
     public int state_PowerLevel = 0;
     public int state_Power = 0;
     public int state_HealthLevel = 0;

@@ -9,6 +9,8 @@ TagManager:
   - StageScene
   - StageCanvas
   - NoDamage
+  - Boss
+  - Enemy
   layers:
   - Default
   - TransparentFX
@@ -17,7 +19,7 @@ TagManager:
   - Water
   - UI
   - Player
-  - 
+  - OverUI
   - 
   - 
   - 

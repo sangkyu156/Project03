@@ -85,6 +85,8 @@ public class FireBall_Skill : ProjectileSkill, IPoolObject
     public void OnGettingFromPool()
     {
         deadTiem = 1.4f;
+        skillCollider.enabled = true;
+        animator.SetBool("hit", false);
         SetAbility();
     }
 
@@ -96,9 +98,6 @@ public class FireBall_Skill : ProjectileSkill, IPoolObject
 
     public override void SetAbility()
     {
-        skillCollider.enabled = true;
-        animator.SetBool("hit", false);
-
         switch (Player.Instance.fireBallLevel)
         {
             case 0:
