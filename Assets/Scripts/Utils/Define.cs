@@ -35,7 +35,7 @@ public class Define
     public enum Skills //스킬이름은 항상 Pefeb이름과 같아야 한다. 그래야 Resources 폴더에서 가져옴
     {
         /**********1000**********/
-        FireBall_Store = 10000, SawBlade_Store, WaveEnergy_Store, Quickness_Store, BulkingUp_Store, GoldChest_Store,
+        FireBall_Store = 1000, SawBlade_Store, WaveEnergy_Store, Quickness_Store, BulkingUp_Store, GoldChest_Store,
         PotionChest_Store,
         /**********900***********/
 
@@ -68,7 +68,7 @@ public class Define
         /**********40************/
 
         /**********30************/
-        BlackHole_Store = 30, Volcano_Store, Slowdown_Store, Redraw3_Store
+        BlackHole_Store = 300, Volcano_Store, Slowdown_Store, Redraw3_Store
         /**********20************/
 
         /**********10************/

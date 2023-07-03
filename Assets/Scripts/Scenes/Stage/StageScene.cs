@@ -52,6 +52,7 @@ public class StageScene : BaseScene
         Managers.Resource.Instantiate("UI/Scene/PauseButton", canvas);
 
         boss = Managers.Resource.Instantiate("Object/Boss");//보스생성
+        Managers.Instance.FindBoss();
 
         GameObject bi = Managers.Resource.Instantiate("UI/Scene/BossImage");//보스 UI
         bi.transform.SetParent(canvas, false);

@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 2849698842381787518}
   - component: {fileID: 2849698842381787517}
   - component: {fileID: 2849698842381787514}
-  - component: {fileID: 3739024338333287701}
+  - component: {fileID: 9194568184173856579}
   m_Layer: 0
   m_Name: Tornado_Skill
   m_TagString: Skill
@@ -98,7 +98,7 @@ Animator:
   m_GameObject: {fileID: 2849698842381787489}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 168b9f509c6a0584ca70092ac818f57d, type: 2}
+  m_Controller: {fileID: 9100000, guid: 1048d8486ea50be4f946f4744145c075, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -155,7 +155,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &3739024338333287701
+--- !u!114 &9194568184173856579
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -164,7 +164,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2849698842381787489}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: adb54b42772679147b5752d9e534248f, type: 3}
+  m_Script: {fileID: 11500000, guid: a9015155b6fa5d049bc6c86934c11fba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   idName: Tornado_Skill

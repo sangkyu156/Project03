@@ -61,7 +61,7 @@ public class Box2 : MonoBehaviour
         switch (Random.Range(0, 2))
         {
             case 0:
-                GameObject pottion = Instantiate(Resources.Load<GameObject>("Field/HP_Potion")) as GameObject;
+                GameObject pottion = Managers.Resource.Instantiate("Object/HP_Potion");
                 float posX = Random.Range(-0.5f, 0.3f);
                 float posY = Random.Range(-0.5f, 0.3f);
                 pottion.transform.position = new Vector2(transform.position.x + posX, transform.position.y + posY);
@@ -69,7 +69,7 @@ public class Box2 : MonoBehaviour
             case 1:
                 for (int i = 0; i < 2; i++)
                 {
-                    GameObject pottion2 = Instantiate(Resources.Load<GameObject>("Field/HP_Potion")) as GameObject;
+                    GameObject pottion2 = Managers.Resource.Instantiate("Object/HP_Potion");
                     float posX2 = Random.Range(-0.5f, 0.3f);
                     float posY2 = Random.Range(-0.5f, 0.3f);
                     pottion2.transform.position = new Vector2(transform.position.x + posX2, transform.position.y + posY2);

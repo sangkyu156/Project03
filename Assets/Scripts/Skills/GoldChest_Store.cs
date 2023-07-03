@@ -11,7 +11,6 @@ public class GoldChest_Store : MonoBehaviour
     public UnityEngine.UI.Button buyButton;
 
     int priceValue = 0;
-    int probability = 0;
 
     void Start()
     {

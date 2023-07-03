@@ -74082,6 +74082,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8210141889134354082}
+  - component: {fileID: 8049911900545774750}
   m_Layer: 5
   m_Name: Slowdown_Store
   m_TagString: Untagged
@@ -74119,6 +74120,21 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &8049911900545774750
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4027788121815731359}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: adc946f6535c0c74f91594a6436b2fbe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  price: {fileID: 7808736443458582506}
+  explanation: {fileID: 2995571070721809909}
+  buyButton: {fileID: 1454505651425779551}
 --- !u!1 &4136262457509056558
 GameObject:
   m_ObjectHideFlags: 0
@@ -79378,7 +79394,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 8049911900545774750}
         m_TargetAssemblyTypeName: Slowdown_Store, Assembly-CSharp
         m_MethodName: SlowdownBuy
         m_Mode: 1

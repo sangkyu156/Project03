@@ -97,6 +97,30 @@ public class Player : MonoBehaviour
         healthBar.SetMaxHealth(maxHealth);
     }
 
+    private void Update()
+    {
+        //분노폭발 스킬 획득시
+        if (rageExplosion)
+        {
+            rageExplosionTime -= Time.deltaTime;
+            if (rageExplosionTime < 0)
+            {
+                rageExplosionSkill.SetActive(true);
+                //GameManager.Instance.SFXPlay(Sfx.RageExplosion);
+                Invoke("RageExplosionOff", 0.7f);
+                rageExplosionTime = rageExplosionSkill.GetComponent<RageExplosion_Skill>().rageExplosionCooldown;
+            }
+        }
+
+        //체력회복 스킬 획득시
+        if (regenerate)
+        {
+            regenerateCooldown -= Time.deltaTime;
+            if (regenerateCooldown < 0)
+                Heal();
+        }
+    }
+
     private void FixedUpdate()
     {
         //이동
@@ -234,6 +258,11 @@ public class Player : MonoBehaviour
         trident = true;
     }
 
+    void RageExplosionOff()
+    {
+        rageExplosionSkill.SetActive(false);
+    }
+
     //톱니 추가
     public void SawBladeAdd()
     {
@@ -287,7 +316,8 @@ public class Player : MonoBehaviour
     void Spawn2()
     {
         //GameManager.Instance.SFXPlay(Sfx.Tornado);
-        //Tornado_Skill tornado_Skill = poolManager.GetFromPool<Tornado_Skill>();
+        Tornado_Skill tornado_Skill = poolManager.GetFromPool<Tornado_Skill>();
+        tornado_Skill.gameObject.transform.position = skillPos.transform.position;
     }
     void Spawn3()
     {
@@ -298,7 +328,8 @@ public class Player : MonoBehaviour
     void Spawn4()
     {
         //GameManager.Instance.SFXPlay(Sfx.Spark);
-        //Spark_Skill spark_Skill = poolManager.GetFromPool<Spark_Skill>();
+        Spark_Skill spark_Skill = poolManager.GetFromPool<Spark_Skill>();
+        spark_Skill.gameObject.transform.position = skillPos.transform.position;
     }
     void Spawn5()
     {
@@ -321,18 +352,18 @@ public class Player : MonoBehaviour
     {
         poolManager.TakeToPool<FireBall_Skill>(clone.idName, clone);
     }
-    //public void ReturnPool(Tornado_Skill clone)
-    //{
-    //    poolManager.TakeToPool<Tornado_Skill>(clone.idName, clone);
-    //}
+    public void ReturnPool(Tornado_Skill clone)
+    {
+        poolManager.TakeToPool<Tornado_Skill>(clone.idName, clone);
+    }
     public void ReturnPool(BlackHole_Skill clone)
     {
         poolManager.TakeToPool<BlackHole_Skill>(clone.idName, clone);
     }
-    //public void ReturnPool(Spark_Skill clone)
-    //{
-    //    poolManager.TakeToPool<Spark_Skill>(clone.idName, clone);
-    //}
+    public void ReturnPool(Spark_Skill clone)
+    {
+        poolManager.TakeToPool<Spark_Skill>(clone.idName, clone);
+    }
     //public void ReturnPool(WaveEnergy_Skill clone)
     //{
     //    poolManager.TakeToPool<WaveEnergy_Skill>(clone.idName, clone);
@@ -349,7 +380,6 @@ public class Player : MonoBehaviour
     //데미지 받았을때
     public void TakeDamage(int damage_, bool direction)//매개변수 bool값 으로 오른쪽으로 밀려날지 왼쪽으로 밀려날지 정해야함
     {
-        Debug.Log($"받은 데미지 = {damage_}");
         currentHealth -= damage_;
         healthBar.SetHealth(currentHealth);
 
@@ -424,8 +454,37 @@ public class Player : MonoBehaviour
         healUI.GetComponentInChildren<HealText>().heal = $"+{((int)potion_ + Managers.Data.state_PotionRecover)}";        
     }
 
+    void HealPrint(int skillLevel)
+    {
+        if (healUI == null)
+            healUI = Managers.Resource.Instantiate("UI/Text/HealTextCanvas");
+
+        healUI.transform.SetParent(textPostion, false);
+        healUI.GetComponentInChildren<HealText>().heal = $"+{skillLevel + 2}";
+    }
+
     void HealOff()
     {
         effect_Heal.SetActive(false);
+    }
+
+    //체력회복 스킬
+    void Heal()
+    {
+        regenerateCooldown = 10;
+        effect_Heal.SetActive(true);
+
+        //GameManager.Instance.SFXPlay(Sfx.Heal);
+
+        currentHealth += regenerateLevel + 2;
+        
+        if(currentHealth > maxHealth)
+            currentHealth = maxHealth;
+
+        HealPrint(regenerateLevel);
+
+        healthBar.SetHealth(currentHealth);
+
+        Invoke("HealOff", 0.7f);
     }
 }

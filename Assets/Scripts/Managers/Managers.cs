@@ -9,6 +9,8 @@ using UnityEngine;
 public class Managers : MonoBehaviour
 {
     GameObject stageScene;
+    [SerializeField]
+    GameObject boss;
 
     public System.Action buyCheckAction;//스킬 구매시 남은돈으로 다른스킬 구매 가능한지 색구분하도록
     public System.Action skillLockAction;//공격스킬 4개 모두 정해졌을때 다른 공격스킬 구매못하도록
@@ -84,5 +86,19 @@ public class Managers : MonoBehaviour
             stageScene = GameObject.FindGameObjectWithTag("StageScene");
         else
             stageScene.GetComponent<StageScene>().PrintFieldMoney();
+    }
+
+    public void FindBoss()
+    {
+        if(boss == null)
+            boss = GameObject.FindGameObjectWithTag("Boss");
+    }
+
+    public void SetBossSpeed(float speed)
+    {
+        if (boss == null)
+            boss = GameObject.FindGameObjectWithTag("Boss");
+
+        boss.GetComponent<Boss>().bossSpeed = speed;
     }
 }

@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 3073955358257042973}
   - component: {fileID: 3073955358257042971}
   - component: {fileID: 3355159607468282640}
-  - component: {fileID: 3073955358257042976}
+  - component: {fileID: 1970540103194467109}
   m_Layer: 0
   m_Name: Spark_Skill
   m_TagString: Skill
@@ -155,7 +155,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.65, y: 0.4}
   m_EdgeRadius: 0
---- !u!114 &3073955358257042976
+--- !u!114 &1970540103194467109
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -164,7 +164,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 3073955358257042975}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 907325e2e887bd2408d1d77839c09310, type: 3}
+  m_Script: {fileID: 11500000, guid: 2db5fd2b86f8d854cb02a791cf659e91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   idName: Spark_Skill
