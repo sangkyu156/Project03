@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 1395497493708694176}
   - component: {fileID: 1395497493708694179}
   - component: {fileID: 1395497493708694180}
-  - component: {fileID: 6350083146413951218}
+  - component: {fileID: 139542013417446225}
   m_Layer: 0
   m_Name: Trident_Skill
   m_TagString: Skill
@@ -98,7 +98,7 @@ Animator:
   m_GameObject: {fileID: 1395497493708694207}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 3e3bbab0f070b354db11888e63523367, type: 2}
+  m_Controller: {fileID: 9100000, guid: 0c62a1facd07ea4469a61650ad65b89a, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -155,7 +155,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &6350083146413951218
+--- !u!114 &139542013417446225
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -164,7 +164,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1395497493708694207}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8dd5348d7b646f54bb4b040bdbed5e5c, type: 3}
+  m_Script: {fileID: 11500000, guid: d738ee8fdbad1844692422c6fbef48a9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   idName: Trident_Skill

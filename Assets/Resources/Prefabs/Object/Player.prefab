@@ -14995,6 +14995,8 @@ MonoBehaviour:
   currentHealth: 0
   moveSpeed: 7
   textPostion: {fileID: 3386951395930737087}
+  volcanoPos: {fileID: 0}
+  tridentPos: {fileID: 0}
   effect_Heal: {fileID: 787166821014092609}
   healthBar: {fileID: 6483764916861724856}
 --- !u!114 &7095265772013532893
@@ -15027,6 +15029,21 @@ MonoBehaviour:
     _nonLazy: 0
   - _name: Tornado_Skill
     _component: {fileID: 9194568184173856579, guid: 4b94521271ada404f9658126403cacfc, type: 3}
+    _count: 0
+    _container: {fileID: 3386951397609864270}
+    _nonLazy: 0
+  - _name: Trident_Skill
+    _component: {fileID: 139542013417446225, guid: 6523f64f4f6e9c24d810de01e39bdf27, type: 3}
+    _count: 0
+    _container: {fileID: 3386951397609864270}
+    _nonLazy: 0
+  - _name: Volcano_Skill
+    _component: {fileID: 8620134962820206943, guid: aa7b3c06416a15b46a9dfa8a4ec48c8e, type: 3}
+    _count: 0
+    _container: {fileID: 3386951397609864270}
+    _nonLazy: 0
+  - _name: WaveEnergy_Skill
+    _component: {fileID: 3045454214433280556, guid: a210f07438e2d214982a853cee4e655e, type: 3}
     _count: 0
     _container: {fileID: 3386951397609864270}
     _nonLazy: 0

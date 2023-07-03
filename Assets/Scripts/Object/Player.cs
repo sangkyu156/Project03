@@ -43,6 +43,8 @@ public class Player : MonoBehaviour
     public int currentHealth;
     public float moveSpeed = 7;
     public Transform textPostion;
+    public Transform volcanoPos;
+    public Transform tridentPos;
     float dist = 0f;
 
     public GameObject effect_Heal;
@@ -118,6 +120,90 @@ public class Player : MonoBehaviour
             regenerateCooldown -= Time.deltaTime;
             if (regenerateCooldown < 0)
                 Heal();
+        }
+
+        //삼지창 스킬 획득시
+        if (trident)
+        {
+            tridentCooldown -= Time.deltaTime;
+            if (tridentCooldown < 0)
+            {
+                Collider2D[] targets = Physics2D.OverlapBoxAll(transform.position, new Vector2(12, 5), 0);
+
+                for (int i = 0; i < targets.Length; i++)
+                {
+                    if (targets[i].tag == "Enemy" && targets[i].GetComponent<EnemyBase>().currentHealth > 0)
+                    {
+                        if (Mathf.Abs(transform.position.x - targets[i].transform.position.x) < 13)
+                        {
+                            tridentPos = targets[i].transform;
+                            Spawn7();
+                        }
+
+                        switch (tridentLevel)
+                        {
+                            case 1:
+                                tridentCooldown = 0.9f; break;
+                            case 2:
+                                tridentCooldown = 0.9f; break;
+                            case 3:
+                                tridentCooldown = 0.8f; break;
+                            case 4:
+                                tridentCooldown = 0.8f; break;
+                            case 5:
+                                tridentCooldown = 0.7f; break;
+                            case 6:
+                                tridentCooldown = 0.7f; break;
+                            case 7:
+                                tridentCooldown = 0.5f; break;
+                        }
+
+                        return;
+                    }
+                }
+            }
+        }
+
+        //볼케이노 스킬 획득시
+        if (volcano)
+        {
+            volcanoCooldown -= Time.deltaTime;
+            if (volcanoCooldown < 0)
+            {
+                Collider2D[] targets = Physics2D.OverlapBoxAll(transform.position, new Vector2(10, 5), 0);
+
+                for (int i = 0; i < targets.Length; i++)
+                {
+                    if (targets[i].tag == "Enemy" && targets[i].GetComponent<EnemyBase>().currentHealth > 0)
+                    {
+                        if (Mathf.Abs(transform.position.x - targets[i].transform.position.x) < 13)
+                        {
+                            volcanoPos = targets[i].transform;
+                            Spawn6();
+                        }
+
+                        switch (volcanoLevel)
+                        {
+                            case 1:
+                                volcanoCooldown = 2f; break;
+                            case 2:
+                                volcanoCooldown = 2f; break;
+                            case 3:
+                                volcanoCooldown = 1.9f; break;
+                            case 4:
+                                volcanoCooldown = 1.9f; break;
+                            case 5:
+                                volcanoCooldown = 1.8f; break;
+                            case 6:
+                                volcanoCooldown = 1.7f; break;
+                            case 7:
+                                volcanoCooldown = 1.6f; break;
+                        }
+
+                        return;
+                    }
+                }
+            }
         }
     }
 
@@ -334,17 +420,18 @@ public class Player : MonoBehaviour
     void Spawn5()
     {
         //GameManager.Instance.SFXPlay(Sfx.EnergyBall);
-        //WaveEnergy_Skill waveEnergy_Skill = poolManager.GetFromPool<WaveEnergy_Skill>();
+        WaveEnergy_Skill waveEnergy_Skill = poolManager.GetFromPool<WaveEnergy_Skill>();
+        waveEnergy_Skill.gameObject.transform.position = skillPos.transform.position;
     }
     void Spawn6()
     {
         //GameManager.Instance.SFXPlay(Sfx.Volcano);
-        //Volcano_Skill volcano_Skill = poolManager.GetFromPool<Volcano_Skill>();
+        Volcano_Skill volcano_Skill = poolManager.GetFromPool<Volcano_Skill>();
     }
     void Spawn7()
     {
         //GameManager.Instance.SFXPlay(Sfx.Trident);
-        //Trident_Skill volcano_Skill = poolManager.GetFromPool<Trident_Skill>();
+        Trident_Skill trident_Skill = poolManager.GetFromPool<Trident_Skill>();
     }
 
     //오브젝트 회수
@@ -364,18 +451,18 @@ public class Player : MonoBehaviour
     {
         poolManager.TakeToPool<Spark_Skill>(clone.idName, clone);
     }
-    //public void ReturnPool(WaveEnergy_Skill clone)
-    //{
-    //    poolManager.TakeToPool<WaveEnergy_Skill>(clone.idName, clone);
-    //}
-    //public void ReturnPool(Volcano_Skill clone)
-    //{
-    //    poolManager.TakeToPool<Volcano_Skill>(clone.idName, clone);
-    //}
-    //public void ReturnPool(Trident_Skill clone)
-    //{
-    //    poolManager.TakeToPool<Trident_Skill>(clone.idName, clone);
-    //}
+    public void ReturnPool(WaveEnergy_Skill clone)
+    {
+        poolManager.TakeToPool<WaveEnergy_Skill>(clone.idName, clone);
+    }
+    public void ReturnPool(Volcano_Skill clone)
+    {
+        poolManager.TakeToPool<Volcano_Skill>(clone.idName, clone);
+    }
+    public void ReturnPool(Trident_Skill clone)
+    {
+        poolManager.TakeToPool<Trident_Skill>(clone.idName, clone);
+    }
 
     //데미지 받았을때
     public void TakeDamage(int damage_, bool direction)//매개변수 bool값 으로 오른쪽으로 밀려날지 왼쪽으로 밀려날지 정해야함

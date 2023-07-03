@@ -56,6 +56,16 @@ MonoBehaviour:
     _count: 0
     _container: {fileID: 1336402131536987376}
     _nonLazy: 0
+  - _name: Chick2
+    _component: {fileID: 7091893395188539383, guid: e486a793989935b4db785189668062cc, type: 3}
+    _count: 0
+    _container: {fileID: 1336402131536987376}
+    _nonLazy: 0
+  - _name: Chicken2
+    _component: {fileID: 2326183627878389526, guid: f2b75c3aa15a2a748a79cc35ffb5c893, type: 3}
+    _count: 0
+    _container: {fileID: 1336402131536987376}
+    _nonLazy: 0
   - _name: Coin_1
     _component: {fileID: 3225109521594217061, guid: 4842e5711d1516748b586be70836dd87, type: 3}
     _count: 0

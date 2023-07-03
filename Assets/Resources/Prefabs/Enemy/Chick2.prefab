@@ -268,7 +268,7 @@ GameObject:
   - component: {fileID: 3610959024528932178}
   - component: {fileID: 6582745843383038515}
   - component: {fileID: 3610959024528932182}
-  - component: {fileID: 3610959024528932181}
+  - component: {fileID: 7091893395188539383}
   m_Layer: 0
   m_Name: Chick2
   m_TagString: Enemy
@@ -305,7 +305,7 @@ Animator:
   m_GameObject: {fileID: 3610959024528932183}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 8ac15daf41c66d14e95b277e79f3c991, type: 2}
+  m_Controller: {fileID: 9100000, guid: ee5bf7a44ab0d4d41813085024c85c04, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -352,7 +352,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &3610959024528932181
+--- !u!114 &7091893395188539383
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -361,18 +361,18 @@ MonoBehaviour:
   m_GameObject: {fileID: 3610959024528932183}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0cedc6125619669429f5973b03898156, type: 3}
+  m_Script: {fileID: 11500000, guid: 439a56d7bb2bd0b43852c825dafb3d09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  maxHealth: 15
   currentHealth: 0
   knockbackTime: 1
   knockback: 0
+  Shadow: {fileID: 3610959024803014135}
   healthBar: {fileID: 5233774471194738025}
   textPostion: {fileID: 5233774471648257660}
   collider: {fileID: 0}
   idName: Chick2
-  maxHealth: 15
-  Shadow: {fileID: 3610959024803014135}
 --- !u!1 &3610959024803014135
 GameObject:
   m_ObjectHideFlags: 0
@@ -734,7 +734,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 5233774471194738026}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6a3f6d0a998ac4d43aaf09fe341f9a99, type: 3}
+  m_Script: {fileID: 11500000, guid: a8830c6b54d840e4aae064beab41a54b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   slider: {fileID: 5233774471194738024}

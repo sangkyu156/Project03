@@ -267,8 +267,8 @@ GameObject:
   - component: {fileID: 2681662173301075318}
   - component: {fileID: 1586292848300989346}
   - component: {fileID: 9170890829642257603}
-  - component: {fileID: 9170890829642257604}
   - component: {fileID: -3825408913221812515}
+  - component: {fileID: 2326183627878389526}
   m_Layer: 0
   m_Name: Chicken2
   m_TagString: Enemy
@@ -305,7 +305,7 @@ Animator:
   m_GameObject: {fileID: 1586292848300989351}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 8ac15daf41c66d14e95b277e79f3c991, type: 2}
+  m_Controller: {fileID: 9100000, guid: ee5bf7a44ab0d4d41813085024c85c04, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -331,27 +331,6 @@ CapsuleCollider2D:
   m_Offset: {x: -0.09658337, y: 1.7068329}
   m_Size: {x: 2, y: 3}
   m_Direction: 0
---- !u!114 &9170890829642257604
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1586292848300989351}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 387dac9c025502c4886ac9d54ba30196, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  currentHealth: 0
-  knockbackTime: 1
-  knockback: 0
-  healthBar: {fileID: 2775863243750573701}
-  textPostion: {fileID: 2775863243663193060}
-  collider: {fileID: 0}
-  idName: Chicken2
-  maxHealth: 16
-  Shadow: {fileID: 1586292848572973831}
 --- !u!50 &-3825408913221812515
 Rigidbody2D:
   serializedVersion: 4
@@ -373,6 +352,27 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &2326183627878389526
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1586292848300989351}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 617c6a5d9cb5b9d4a910f14718f1f272, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 0
+  currentHealth: 0
+  knockbackTime: 1
+  knockback: 0
+  Shadow: {fileID: 1586292848572973831}
+  healthBar: {fileID: 2775863243750573701}
+  textPostion: {fileID: 2775863243663193060}
+  collider: {fileID: 0}
+  idName: Chicken2
 --- !u!1 &1586292848572973831
 GameObject:
   m_ObjectHideFlags: 0
@@ -740,7 +740,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2775863243750573699}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6a3f6d0a998ac4d43aaf09fe341f9a99, type: 3}
+  m_Script: {fileID: 11500000, guid: a8830c6b54d840e4aae064beab41a54b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   slider: {fileID: 2775863243750573702}

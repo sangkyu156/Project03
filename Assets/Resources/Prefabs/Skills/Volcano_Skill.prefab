@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 3243394843002740782}
   - component: {fileID: 3243394843002740781}
   - component: {fileID: 3243394843002740778}
-  - component: {fileID: 1992953718100644466}
+  - component: {fileID: 8620134962820206943}
   m_Layer: 0
   m_Name: Volcano_Skill
   m_TagString: Skill
@@ -98,7 +98,7 @@ Animator:
   m_GameObject: {fileID: 3243394843002740785}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: f0c2b64b72910ee49aac4d2c640c7bec, type: 2}
+  m_Controller: {fileID: 9100000, guid: d371ea5efc343ac4f8dbde755139af7d, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -155,7 +155,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &1992953718100644466
+--- !u!114 &8620134962820206943
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -164,7 +164,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 3243394843002740785}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 582a5e49d57586940a1b3c355106f9a3, type: 3}
+  m_Script: {fileID: 11500000, guid: 40fc8adb2a4daad49b6c98c9df731aaa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   idName: Volcano_Skill
