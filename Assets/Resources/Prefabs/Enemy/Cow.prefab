@@ -96,7 +96,7 @@ GameObject:
   - component: {fileID: 5015223950978257377}
   - component: {fileID: 4893742317693548069}
   - component: {fileID: 5015223950978257385}
-  - component: {fileID: 5015223950978257384}
+  - component: {fileID: 5506134033573931449}
   m_Layer: 0
   m_Name: Cow
   m_TagString: Enemy
@@ -180,7 +180,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &5015223950978257384
+--- !u!114 &5506134033573931449
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -189,18 +189,18 @@ MonoBehaviour:
   m_GameObject: {fileID: 5015223950978257383}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9192f5ff3015c1b40b8956972e7b1a19, type: 3}
+  m_Script: {fileID: 11500000, guid: e1466f6d25917a64fa5869b360716ac0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  maxHealth: 0
   currentHealth: 0
   knockbackTime: 1
   knockback: 0
+  Shadow: {fileID: 4745555974067840597}
   healthBar: {fileID: 7029335605473620203}
   textPostion: {fileID: 7029335603829811402}
   collider: {fileID: 0}
   idName: Cow
-  maxHealth: 25
-  Shadow: {fileID: 4745555974067840597}
 --- !u!1 &5015223951382252619
 GameObject:
   m_ObjectHideFlags: 0
@@ -1179,7 +1179,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 7029335605473620201}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6a3f6d0a998ac4d43aaf09fe341f9a99, type: 3}
+  m_Script: {fileID: 11500000, guid: a8830c6b54d840e4aae064beab41a54b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   slider: {fileID: 7029335605473620202}

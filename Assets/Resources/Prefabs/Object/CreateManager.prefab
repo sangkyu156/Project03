@@ -26,7 +26,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7281743509527797063}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.8829692, y: -0.08468786, z: 0.052006833}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -46,6 +46,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _pools:
+  - _name: Coin_1
+    _component: {fileID: 3225109521594217061, guid: 4842e5711d1516748b586be70836dd87, type: 3}
+    _count: 0
+    _container: {fileID: 1336402131536987376}
+    _nonLazy: 0
+  - _name: Coin_2
+    _component: {fileID: 6646990167756978638, guid: d736caafb92464e46a4d46da42889340, type: 3}
+    _count: 0
+    _container: {fileID: 1336402131536987376}
+    _nonLazy: 0
   - _name: Chick
     _component: {fileID: 4636132882168620359, guid: 87f9c00f6a439e543a12faafd4765b70, type: 3}
     _count: 0
@@ -66,8 +76,28 @@ MonoBehaviour:
     _count: 0
     _container: {fileID: 1336402131536987376}
     _nonLazy: 0
-  - _name: Coin_1
-    _component: {fileID: 3225109521594217061, guid: 4842e5711d1516748b586be70836dd87, type: 3}
+  - _name: Cow
+    _component: {fileID: 5506134033573931449, guid: 6f718b9d7ab8bf24eb7001ac15e477ec, type: 3}
+    _count: 0
+    _container: {fileID: 1336402131536987376}
+    _nonLazy: 0
+  - _name: Cow2
+    _component: {fileID: 6194670946441204091, guid: 2e24461fabe1b704992d3542b8986187, type: 3}
+    _count: 0
+    _container: {fileID: 1336402131536987376}
+    _nonLazy: 0
+  - _name: Cow3
+    _component: {fileID: 5739874379281929134, guid: def98a92facb0b84f87266234aae95c9, type: 3}
+    _count: 0
+    _container: {fileID: 1336402131536987376}
+    _nonLazy: 0
+  - _name: Wolf
+    _component: {fileID: 736156350197886726, guid: cf00846fb63247740809ffac4f937707, type: 3}
+    _count: 0
+    _container: {fileID: 1336402131536987376}
+    _nonLazy: 0
+  - _name: Orc
+    _component: {fileID: 1594866298675762271, guid: cff1de54e398d2445adb241a8cdec59e, type: 3}
     _count: 0
     _container: {fileID: 1336402131536987376}
     _nonLazy: 0

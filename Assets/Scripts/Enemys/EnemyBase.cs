@@ -171,4 +171,9 @@ public class EnemyBase : MonoBehaviour, IPoolObject
     {
         CreateManager.Instance.CoinSpawn();
     }
+
+    protected void Drop2()
+    {
+        CreateManager.Instance.Coin2Spawn();
+    }
 }

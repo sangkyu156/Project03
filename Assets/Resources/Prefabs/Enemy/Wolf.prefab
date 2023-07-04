@@ -384,7 +384,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 3959843914958707353}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6a3f6d0a998ac4d43aaf09fe341f9a99, type: 3}
+  m_Script: {fileID: 11500000, guid: a8830c6b54d840e4aae064beab41a54b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   slider: {fileID: 3959843914958707351}
@@ -652,7 +652,7 @@ GameObject:
   - component: {fileID: 7050184711133350161}
   - component: {fileID: 7468373963840876245}
   - component: {fileID: 7050184711133350255}
-  - component: {fileID: 7050184711133350254}
+  - component: {fileID: 736156350197886726}
   m_Layer: 0
   m_Name: Wolf
   m_TagString: Enemy
@@ -736,7 +736,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &7050184711133350254
+--- !u!114 &736156350197886726
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -745,18 +745,18 @@ MonoBehaviour:
   m_GameObject: {fileID: 7050184711133350167}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 44adebadbcb9e2349949839016578b01, type: 3}
+  m_Script: {fileID: 11500000, guid: f35c20b2d18bcef4989c75b3ffbd3d70, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  maxHealth: 0
   currentHealth: 0
   knockbackTime: 1
   knockback: 0
+  Shadow: {fileID: 7319884567335321253}
   healthBar: {fileID: 3959843914958707350}
   textPostion: {fileID: 3959843914197974572}
   collider: {fileID: 0}
   idName: Wolf
-  maxHealth: 40
-  Shadow: {fileID: 7319884567335321253}
 --- !u!1 &7050184711831314375
 GameObject:
   m_ObjectHideFlags: 0

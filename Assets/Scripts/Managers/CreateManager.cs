@@ -46,7 +46,7 @@ public class CreateManager : MonoBehaviour
     {
         for (int i = 0; i < 15; i++)
         {
-            Spawn2();
+            SpawnOrc();
         }
     }
     //public void Create_01_1()
@@ -272,20 +272,20 @@ public class CreateManager : MonoBehaviour
         Chicken2 chicken2 = poolManager.GetFromPool<Chicken2>();
         Chick2 chick2 = poolManager.GetFromPool<Chick2>();
     }
-    //void Spawn3()
-    //{
-    //    Cow cow = poolManager.GetFromPool<Cow>();
-    //    Cow2 cow2 = poolManager.GetFromPool<Cow2>();
-    //}
-    //void Spawn4()
-    //{
-    //    Cow3 cow3 = poolManager.GetFromPool<Cow3>();
-    //    Wolf wolf = poolManager.GetFromPool<Wolf>();
-    //}
-    //void SpawnOrc()
-    //{
-    //    Orc orc = poolManager.GetFromPool<Orc>();
-    //}
+    void Spawn3()
+    {
+        Cow cow = poolManager.GetFromPool<Cow>();
+        Cow2 cow2 = poolManager.GetFromPool<Cow2>();
+    }
+    void Spawn4()
+    {
+        Cow3 cow3 = poolManager.GetFromPool<Cow3>();
+        Wolf wolf = poolManager.GetFromPool<Wolf>();
+    }
+    void SpawnOrc()
+    {
+        Orc orc = poolManager.GetFromPool<Orc>();
+    }
     //void Spawn10()
     //{
     //    Larva larva = poolManager.GetFromPool<Larva>();
@@ -334,10 +334,10 @@ public class CreateManager : MonoBehaviour
     {
         Coin coin = poolManager.GetFromPool<Coin>();
     }
-    //public void Coin2Spawn()
-    //{
-    //    Coin2 coin = poolManager.GetFromPool<Coin2>();
-    //}
+    public void Coin2Spawn()
+    {
+        Coin2 coin = poolManager.GetFromPool<Coin2>();
+    }
     //#endregion
 
     //#region 오브젝트 회수
@@ -357,22 +357,22 @@ public class CreateManager : MonoBehaviour
     {
         poolManager.TakeToPool<Chick2>(clone.idName, clone);
     }
-    //public void ReturnPool(Cow clone)
-    //{
-    //    poolManager.TakeToPool<Cow>(clone.idName, clone);
-    //}
-    //public void ReturnPool(Cow2 clone)
-    //{
-    //    poolManager.TakeToPool<Cow2>(clone.idName, clone);
-    //}
-    //public void ReturnPool(Cow3 clone)
-    //{
-    //    poolManager.TakeToPool<Cow3>(clone.idName, clone);
-    //}
-    //public void ReturnPool(Wolf clone)
-    //{
-    //    poolManager.TakeToPool<Wolf>(clone.idName, clone);
-    //}
+    public void ReturnPool(Cow clone)
+    {
+        poolManager.TakeToPool<Cow>(clone.idName, clone);
+    }
+    public void ReturnPool(Cow2 clone)
+    {
+        poolManager.TakeToPool<Cow2>(clone.idName, clone);
+    }
+    public void ReturnPool(Cow3 clone)
+    {
+        poolManager.TakeToPool<Cow3>(clone.idName, clone);
+    }
+    public void ReturnPool(Wolf clone)
+    {
+        poolManager.TakeToPool<Wolf>(clone.idName, clone);
+    }
     //public void ReturnPool(Pig clone)
     //{
     //    poolManager.TakeToPool<Pig>(clone.idName, clone);
@@ -401,14 +401,14 @@ public class CreateManager : MonoBehaviour
     {
         poolManager.TakeToPool<Coin>(clone.idName, clone);
     }
-    //public void ReturnPool(Coin2 clone)
-    //{
-    //    poolManager.TakeToPool<Coin2>(clone.idName, clone);
-    //}
-    //public void ReturnPool(Orc clone)
-    //{
-    //    poolManager.TakeToPool<Orc>(clone.idName, clone);
-    //}
+    public void ReturnPool(Coin2 clone)
+    {
+        poolManager.TakeToPool<Coin2>(clone.idName, clone);
+    }
+    public void ReturnPool(Orc clone)
+    {
+        poolManager.TakeToPool<Orc>(clone.idName, clone);
+    }
     //public void ReturnPool(Larva clone)
     //{
     //    poolManager.TakeToPool<Larva>(clone.idName, clone);
