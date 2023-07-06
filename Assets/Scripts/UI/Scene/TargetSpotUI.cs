@@ -8,6 +8,11 @@ public class TargetSpotUI : UI_Scene
     public Slider progress;
     public Image fill;
 
+    private void Awake()
+    {
+        SetMaxProgress(30);
+    }
+
     public void SetMaxProgress(int progress_)
     {
         progress.maxValue = progress_;

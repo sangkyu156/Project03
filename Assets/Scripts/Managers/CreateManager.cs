@@ -33,7 +33,6 @@ public class CreateManager : MonoBehaviour
             if (go == null)
             {
                 go = Managers.Resource.Instantiate("Object/CreateManager");
-                go.AddComponent<CreateManager>();
             }
 
             //DontDestroyOnLoad(go);
@@ -44,223 +43,221 @@ public class CreateManager : MonoBehaviour
     #region 생성이벤트
     public void Create_01()
     {
-        for (int i = 0; i < 55; i++)
+        for (int i = 0; i < 15; i++)
+        {
+            Spawn();
+        }
+    }
+    public void Create_01_1()
+    {
+        for (int i = 0; i < 20; i++)
+        {
+            Spawn();
+        }
+    }
+    public void Create_01_2()
+    {
+        for (int i = 0; i < 25; i++)
+        {
+            Spawn();
+        }
+    }
+    public void Create_02()
+    {
+        for (int i = 0; i < 15; i++)
+        {
+            Spawn2();
+        }
+    }
+    public void Create_02_1()
+    {
+        for (int i = 0; i < 20; i++)
+        {
+            Spawn2();
+        }
+    }
+    public void Create_02_2()
+    {
+        for (int i = 0; i < 25; i++)
+        {
+            Spawn2();
+        }
+    }
+    public void Create_03()
+    {
+        for (int i = 0; i < 15; i++)
+        {
+            Spawn3();
+        }
+    }
+    public void Create_03_1()
+    {
+        for (int i = 0; i < 20; i++)
+        {
+            Spawn3();
+        }
+    }
+    public void Create_03_2()
+    {
+        for (int i = 0; i < 25; i++)
+        {
+            Spawn3();
+        }
+    }
+    public void Create_04()
+    {
+        for (int i = 0; i < 13; i++)
+        {
+            Spawn4();
+        }
+    }
+    public void Create_04_1()
+    {
+        for (int i = 0; i < 18; i++)
+        {
+            Spawn4();
+        }
+    }
+    public void Create_04_2()
+    {
+        for (int i = 0; i < 25; i++)
+        {
+            Spawn4();
+        }
+    }
+    public void Create_Orc()
+    {
+        for (int i = 0; i < 1; i++)
+        {
+            SpawnOrc();
+        }
+    }
+    public void Create_10()
+    {
+        for (int i = 0; i < 15; i++)
+        {
+            Spawn10();
+        }
+    }
+    public void Create_10_1()
+    {
+        for (int i = 0; i < 20; i++)
+        {
+            Spawn10();
+        }
+    }
+    public void Create_10_2()
+    {
+        for (int i = 0; i < 25; i++)
+        {
+            Spawn10();
+        }
+    }
+    public void Create_11()
+    {
+        for (int i = 0; i < 15; i++)
+        {
+            Spawn11();
+        }
+    }
+    public void Create_11_1()
+    {
+        for (int i = 0; i < 20; i++)
+        {
+            Spawn11();
+        }
+    }
+    public void Create_11_2()
+    {
+        for (int i = 0; i < 25; i++)
+        {
+            Spawn11();
+        }
+    }
+    public void Create_12()
+    {
+        for (int i = 0; i < 15; i++)
+        {
+            Spawn12();
+        }
+    }
+    public void Create_12_1()
+    {
+        for (int i = 0; i < 20; i++)
+        {
+            Spawn12();
+        }
+    }
+    public void Create_12_2()
+    {
+        for (int i = 0; i < 25; i++)
+        {
+            Spawn12();
+        }
+    }
+    public void Create_13()
+    {
+        for (int i = 0; i < 15; i++)
+        {
+            Spawn13();
+        }
+    }
+    public void Create_13_1()
+    {
+        for (int i = 0; i < 20; i++)
+        {
+            Spawn13();
+        }
+    }
+    public void Create_13_2()
+    {
+        for (int i = 0; i < 25; i++)
+        {
+            Spawn13();
+        }
+    }
+    public void Create_Orc2()
+    {
+        for (int i = 0; i < 1; i++)
+        {
+            SpawnOrc2();
+        }
+    }
+    public void RepeatCreate_01()
+    {
+        for (int i = 0; i < 2; i++)
+        {
+            RepeatSpawn();
+        }
+    }
+    public void RepeatCreate_02()
+    {
+        for (int i = 0; i < 2; i++)
+        {
+            RepeatSpawn2();
+        }
+    }
+    public void RepeatCreate_03()
+    {
+        for (int i = 0; i < 2; i++)
+        {
+            RepeatSpawn3();
+        }
+    }
+    public void RepeatCreate_04()
+    {
+        for (int i = 0; i < 2; i++)
         {
             RepeatSpawn4();
+        }
+    }
+    public void RepeatCreate_05()
+    {
+        for (int i = 0; i < 2; i++)
+        {
             RepeatSpawn5();
         }
     }
-    //public void Create_01_1()
-    //{
-    //    for (int i = 0; i < 20; i++)
-    //    {
-    //        Spawn();
-    //    }
-    //}
-    //public void Create_01_2()
-    //{
-    //    for (int i = 0; i < 25; i++)
-    //    {
-    //        Spawn();
-    //    }
-    //}
-    //public void Create_02()
-    //{
-    //    for (int i = 0; i < 15; i++)
-    //    {
-    //        Spawn2();
-    //    }
-    //}
-    //public void Create_02_1()
-    //{
-    //    for (int i = 0; i < 20; i++)
-    //    {
-    //        Spawn2();
-    //    }
-    //}
-    //public void Create_02_2()
-    //{
-    //    for (int i = 0; i < 25; i++)
-    //    {
-    //        Spawn2();
-    //    }
-    //}
-    //public void Create_03()
-    //{
-    //    for (int i = 0; i < 15; i++)
-    //    {
-    //        Spawn3();
-    //    }
-    //}
-    //public void Create_03_1()
-    //{
-    //    for (int i = 0; i < 20; i++)
-    //    {
-    //        Spawn3();
-    //    }
-    //}
-    //public void Create_03_2()
-    //{
-    //    for (int i = 0; i < 25; i++)
-    //    {
-    //        Spawn3();
-    //    }
-    //}
-    //public void Create_04()
-    //{
-    //    for (int i = 0; i < 13; i++)
-    //    {
-    //        Spawn4();
-    //    }
-    //}
-    //public void Create_04_1()
-    //{
-    //    for (int i = 0; i < 18; i++)
-    //    {
-    //        Spawn4();
-    //    }
-    //}
-    //public void Create_04_2()
-    //{
-    //    for (int i = 0; i < 25; i++)
-    //    {
-    //        Spawn4();
-    //    }
-    //}
-    //public void Create_Orc()
-    //{
-    //    for (int i = 0; i < 1; i++)
-    //    {
-    //        SpawnOrc();
-    //    }
-    //}
-    //public void Create_10()
-    //{
-    //    for (int i = 0; i < 15; i++)
-    //    {
-    //        Spawn10();
-    //    }
-    //}
-    //public void Create_10_1()
-    //{
-    //    for (int i = 0; i < 20; i++)
-    //    {
-    //        Spawn10();
-    //    }
-    //}
-    //public void Create_10_2()
-    //{
-    //    for (int i = 0; i < 25; i++)
-    //    {
-    //        Spawn10();
-    //    }
-    //}
-    //public void Create_11()
-    //{
-    //    for (int i = 0; i < 15; i++)
-    //    {
-    //        Spawn11();
-    //    }
-    //}
-    //public void Create_11_1()
-    //{
-    //    for (int i = 0; i < 20; i++)
-    //    {
-    //        Spawn11();
-    //    }
-    //}
-    //public void Create_11_2()
-    //{
-    //    for (int i = 0; i < 25; i++)
-    //    {
-    //        Spawn11();
-    //    }
-    //}
-    //public void Create_12()
-    //{
-    //    for (int i = 0; i < 15; i++)
-    //    {
-    //        Spawn12();
-    //    }
-    //}
-    //public void Create_12_1()
-    //{
-    //    for (int i = 0; i < 20; i++)
-    //    {
-    //        Spawn12();
-    //    }
-    //}
-    //public void Create_12_2()
-    //{
-    //    for (int i = 0; i < 25; i++)
-    //    {
-    //        Spawn12();
-    //    }
-    //}
-    //public void Create_13()
-    //{
-    //    for (int i = 0; i < 15; i++)
-    //    {
-    //        Spawn13();
-    //    }
-    //}
-    //public void Create_13_1()
-    //{
-    //    for (int i = 0; i < 20; i++)
-    //    {
-    //        Spawn13();
-    //    }
-    //}
-    //public void Create_13_2()
-    //{
-    //    for (int i = 0; i < 25; i++)
-    //    {
-    //        Spawn13();
-    //    }
-    //}
-    //public void Create_Orc2()
-    //{
-    //    for (int i = 0; i < 1; i++)
-    //    {
-    //        SpawnOrc2();
-    //    }
-    //}
-    //public void RepeatCreate_01()
-    //{
-    //    for (int i = 0; i < 2; i++)
-    //    {
-    //        RepeatSpawn();
-    //    }
-    //}
-    //public void RepeatCreate_02()
-    //{
-    //    for (int i = 0; i < 2; i++)
-    //    {
-    //        RepeatSpawn2();
-    //    }
-    //}
-    //public void RepeatCreate_03()
-    //{
-    //    for (int i = 0; i < 2; i++)
-    //    {
-    //        RepeatSpawn3();
-    //    }
-    //}
-    //public void RepeatCreate_04()
-    //{
-    //    for (int i = 0; i < 2; i++)
-    //    {
-    //        RepeatSpawn4();
-    //    }
-    //}
-    //public void RepeatCreate_05()
-    //{
-    //    for (int i = 0; i < 2; i++)
-    //    {
-    //        RepeatSpawn5();
-    //    }
-    //}
-    //#endregion
 
     //#region 오브잭트 생성
     void Spawn()
@@ -339,7 +336,6 @@ public class CreateManager : MonoBehaviour
     {
         Coin2 coin = poolManager.GetFromPool<Coin2>();
     }
-    //#endregion
 
     //#region 오브젝트 회수
     public void ReturnPool(Chicken clone)
@@ -447,4 +443,32 @@ public class CreateManager : MonoBehaviour
         poolManager.TakeToPool<Orc2>(clone.idName, clone);
     }
     #endregion
+
+    //클리어 포탈
+    public void CreateClearPortal()
+    {
+        //GameObject portal = Instantiate(Resources.Load<GameObject>("Field/ClearPotal"));
+        //portal.transform.position = new Vector3(Player.Instance.transform.position.x + 20, -6.75f, 0);
+    }
+
+    //웅덩이
+    public void CreatePuddle()
+    {
+        int range = Random.Range(-5, -9);
+        GameObject portal = Managers.Resource.Instantiate("Object/Puddle");
+        portal.transform.position = new Vector3(Player.Instance.transform.position.x + Random.Range(30f, 40f), range, 0);
+    }
+
+    //바위
+    public void CreateUpRock()
+    {
+        GameObject portal = Managers.Resource.Instantiate("Object/UpRock");
+        portal.transform.position = new Vector3(Player.Instance.transform.position.x + Random.Range(30f, 47f), -5, 0);
+    }
+
+    public void CreateDownRock()
+    {
+        GameObject portal = Managers.Resource.Instantiate("Object/DownRock");
+        portal.transform.position = new Vector3(Player.Instance.transform.position.x + Random.Range(30f, 50f), -9, 0);
+    }
 }

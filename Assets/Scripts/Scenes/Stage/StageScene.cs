@@ -5,6 +5,7 @@ public class StageScene : BaseScene
 {
     public new GameObject camera;
     public Transform canvas;
+    public GameObject ts;
     GameObject player;
     GameObject boss;
     GameObject fieldMoney;
@@ -43,7 +44,7 @@ public class StageScene : BaseScene
         camera.GetComponent<CameraController>().SetPlayer();//카메라에 플레이어 연결
         player.GetComponent<Player>().SetCamera();//플레이어에 카메라 연결
 
-        GameObject ts = Managers.Resource.Instantiate("UI/Scene/TargetSpotUI");//진행률 UI
+        ts = Managers.Resource.Instantiate("UI/Scene/TargetSpotUI");//진행률 UI
         ts.transform.SetParent(canvas, false);
 
         fieldMoney = Managers.Resource.Instantiate("UI/Scene/FieldMoney", canvas);//금화창 생성
