@@ -187,7 +187,7 @@ GameObject:
   m_Component:
   - component: {fileID: 371699624318068801}
   - component: {fileID: 371699624318068807}
-  - component: {fileID: 371699624318068806}
+  - component: {fileID: 4812209778196306473}
   m_Layer: 5
   m_Name: HealthBar
   m_TagString: Untagged
@@ -268,7 +268,7 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &371699624318068806
+--- !u!114 &4812209778196306473
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -277,7 +277,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 371699624318068800}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6a3f6d0a998ac4d43aaf09fe341f9a99, type: 3}
+  m_Script: {fileID: 11500000, guid: a8830c6b54d840e4aae064beab41a54b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   slider: {fileID: 371699624318068807}
@@ -400,7 +400,7 @@ GameObject:
   - component: {fileID: 8794691656008347071}
   - component: {fileID: 8970803625203108475}
   - component: {fileID: 8794691656008347068}
-  - component: {fileID: 240914136839889115}
+  - component: {fileID: 1976618467061005761}
   m_Layer: 0
   m_Name: Rat
   m_TagString: Enemy
@@ -484,7 +484,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &240914136839889115
+--- !u!114 &1976618467061005761
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -493,18 +493,18 @@ MonoBehaviour:
   m_GameObject: {fileID: 8794691656008347065}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3775841f61f192545ad14d186a762c9c, type: 3}
+  m_Script: {fileID: 11500000, guid: 9319a5658bd3f1140bd71311954c5cf2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  maxHealth: 0
   currentHealth: 0
   knockbackTime: 1
   knockback: 0
-  healthBar: {fileID: 371699624318068806}
+  Shadow: {fileID: 9101555942673406475}
+  healthBar: {fileID: 4812209778196306473}
   textPostion: {fileID: 371699624501249369}
   collider: {fileID: 0}
   idName: Rat
-  maxHealth: 25
-  Shadow: {fileID: 9101555942673406475}
 --- !u!1 &8794691656606198555
 GameObject:
   m_ObjectHideFlags: 0

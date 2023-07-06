@@ -665,6 +665,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22f44a36cb07a1c4c9a3bb9ca4bfec7d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  maxHealth: 0
+  currentHealth: 0
+  knockbackTime: 1
+  knockback: 0
+  Shadow: {fileID: 7218711862002278254}
+  healthBar: {fileID: 854391768582723641}
+  textPostion: {fileID: 854391767782279636}
+  collider: {fileID: 0}
+  idName: Larva
 --- !u!1 &7218711862002278254
 GameObject:
   m_ObjectHideFlags: 0

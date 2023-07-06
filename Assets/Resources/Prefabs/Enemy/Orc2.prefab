@@ -606,7 +606,7 @@ GameObject:
   - component: {fileID: 6268568402261298915}
   - component: {fileID: 5804535835826678055}
   - component: {fileID: 6268568402261298924}
-  - component: {fileID: 2418948370845699531}
+  - component: {fileID: 6926670343158471026}
   m_Layer: 0
   m_Name: Orc2
   m_TagString: Enemy
@@ -690,7 +690,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &2418948370845699531
+--- !u!114 &6926670343158471026
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -699,18 +699,18 @@ MonoBehaviour:
   m_GameObject: {fileID: 6268568402261298917}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 06ad93800ee0f1e45b985b6215da661f, type: 3}
+  m_Script: {fileID: 11500000, guid: 965931c2cb8f30041927752488760e06, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  maxHealth: 0
   currentHealth: 0
   knockbackTime: 1
   knockback: 0
+  Shadow: {fileID: 5961728107250006359}
   healthBar: {fileID: 8709086539663823908}
   textPostion: {fileID: 8709086540596373588}
   collider: {fileID: 0}
   idName: Orc2
-  maxHealth: 900
-  Shadow: {fileID: 5961728107250006359}
 --- !u!1 &8437569938444315095
 GameObject:
   m_ObjectHideFlags: 0
@@ -895,7 +895,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 8709086539663823930}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6a3f6d0a998ac4d43aaf09fe341f9a99, type: 3}
+  m_Script: {fileID: 11500000, guid: a8830c6b54d840e4aae064beab41a54b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   slider: {fileID: 8709086539663823909}

@@ -440,7 +440,7 @@ GameObject:
   - component: {fileID: 841738339741330290}
   - component: {fileID: 1196424094024819953}
   - component: {fileID: 1196424094024819952}
-  - component: {fileID: 6964878950818758116}
+  - component: {fileID: 9079279541297675277}
   m_Layer: 0
   m_Name: Larva3
   m_TagString: Enemy
@@ -524,7 +524,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &6964878950818758116
+--- !u!114 &9079279541297675277
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -533,18 +533,18 @@ MonoBehaviour:
   m_GameObject: {fileID: 3791921214538161174}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c420758f9b7f0954a9ad5a6bc021a9e8, type: 3}
+  m_Script: {fileID: 11500000, guid: 5e83fceb9b3f4fa4aa53787ded67829f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  maxHealth: 0
   currentHealth: 0
   knockbackTime: 1
   knockback: 0
+  Shadow: {fileID: 625040297793927261}
   healthBar: {fileID: 7072083402463769440}
   textPostion: {fileID: 7072083403303584505}
   collider: {fileID: 0}
   idName: Larva3
-  maxHealth: 19
-  Shadow: {fileID: 625040297793927261}
 --- !u!1 &6704913189937952386
 GameObject:
   m_ObjectHideFlags: 0
@@ -729,7 +729,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 7072083402463769442}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6a3f6d0a998ac4d43aaf09fe341f9a99, type: 3}
+  m_Script: {fileID: 11500000, guid: a8830c6b54d840e4aae064beab41a54b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   slider: {fileID: 7072083402463769447}

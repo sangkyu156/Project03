@@ -44,9 +44,10 @@ public class CreateManager : MonoBehaviour
     #region 생성이벤트
     public void Create_01()
     {
-        for (int i = 0; i < 15; i++)
+        for (int i = 0; i < 55; i++)
         {
-            SpawnOrc();
+            RepeatSpawn4();
+            RepeatSpawn5();
         }
     }
     //public void Create_01_1()
@@ -286,50 +287,50 @@ public class CreateManager : MonoBehaviour
     {
         Orc orc = poolManager.GetFromPool<Orc>();
     }
-    //void Spawn10()
-    //{
-    //    Larva larva = poolManager.GetFromPool<Larva>();
-    //    Larva2 larva2 = poolManager.GetFromPool<Larva2>();
-    //}
-    //void Spawn11()
-    //{
-    //    Larva3 larva3 = poolManager.GetFromPool<Larva3>();
-    //    Larva4 larva4 = poolManager.GetFromPool<Larva4>();
-    //}
-    //void Spawn12()
-    //{
-    //    Rat rat = poolManager.GetFromPool<Rat>();
-    //    Rat2 rat2 = poolManager.GetFromPool<Rat2>();
-    //}
-    //void Spawn13()
-    //{
-    //    Rat3 rat3 = poolManager.GetFromPool<Rat3>();
-    //    Lizard orc = poolManager.GetFromPool<Lizard>();
-    //}
-    //void SpawnOrc2()
-    //{
-    //    Orc2 orc = poolManager.GetFromPool<Orc2>();
-    //}
-    //void RepeatSpawn()
-    //{
-    //    Pig pig = poolManager.GetFromPool<Pig>();
-    //}
-    //void RepeatSpawn2()
-    //{
-    //    Pig2 pig2 = poolManager.GetFromPool<Pig2>();
-    //}
-    //void RepeatSpawn3()
-    //{
-    //    Pig3 pig3 = poolManager.GetFromPool<Pig3>();
-    //}
-    //void RepeatSpawn4()
-    //{
-    //    Pig4 pig4 = poolManager.GetFromPool<Pig4>();
-    //}
-    //void RepeatSpawn5()
-    //{
-    //    Pig5 pig5 = poolManager.GetFromPool<Pig5>();
-    //}
+    void Spawn10()
+    {
+        Larva larva = poolManager.GetFromPool<Larva>();
+        Larva2 larva2 = poolManager.GetFromPool<Larva2>();
+    }
+    void Spawn11()
+    {
+        Larva3 larva3 = poolManager.GetFromPool<Larva3>();
+        Larva4 larva4 = poolManager.GetFromPool<Larva4>();
+    }
+    void Spawn12()
+    {
+        Rat rat = poolManager.GetFromPool<Rat>();
+        Rat2 rat2 = poolManager.GetFromPool<Rat2>();
+    }
+    void Spawn13()
+    {
+        Rat3 rat3 = poolManager.GetFromPool<Rat3>();
+        Lizard orc = poolManager.GetFromPool<Lizard>();
+    }
+    void SpawnOrc2()
+    {
+        Orc2 orc = poolManager.GetFromPool<Orc2>();
+    }
+    void RepeatSpawn()
+    {
+        Pig pig = poolManager.GetFromPool<Pig>();
+    }
+    void RepeatSpawn2()
+    {
+        Pig2 pig2 = poolManager.GetFromPool<Pig2>();
+    }
+    void RepeatSpawn3()
+    {
+        Pig3 pig3 = poolManager.GetFromPool<Pig3>();
+    }
+    void RepeatSpawn4()
+    {
+        Pig4 pig4 = poolManager.GetFromPool<Pig4>();
+    }
+    void RepeatSpawn5()
+    {
+        Pig5 pig5 = poolManager.GetFromPool<Pig5>();
+    }
     public void CoinSpawn()
     {
         Coin coin = poolManager.GetFromPool<Coin>();
@@ -373,30 +374,30 @@ public class CreateManager : MonoBehaviour
     {
         poolManager.TakeToPool<Wolf>(clone.idName, clone);
     }
-    //public void ReturnPool(Pig clone)
-    //{
-    //    poolManager.TakeToPool<Pig>(clone.idName, clone);
-    //}
-    //public void ReturnPool(Pig2 clone)
-    //{
-    //    poolManager.TakeToPool<Pig2>(clone.idName, clone);
-    //}
-    //public void ReturnPool(Pig3 clone)
-    //{
-    //    poolManager.TakeToPool<Pig3>(clone.idName, clone);
-    //}
-    //public void ReturnPool(Pig4 clone)
-    //{
-    //    poolManager.TakeToPool<Pig4>(clone.idName, clone);
-    //}
-    //public void ReturnPool(Pig5 clone)
-    //{
-    //    poolManager.TakeToPool<Pig5>(clone.idName, clone);
-    //}
-    //public void ReturnPool(Wasp clone)
-    //{
-    //    poolManager.TakeToPool<Wasp>(clone.idName, clone);
-    //}
+    public void ReturnPool(Pig clone)
+    {
+        poolManager.TakeToPool<Pig>(clone.idName, clone);
+    }
+    public void ReturnPool(Pig2 clone)
+    {
+        poolManager.TakeToPool<Pig2>(clone.idName, clone);
+    }
+    public void ReturnPool(Pig3 clone)
+    {
+        poolManager.TakeToPool<Pig3>(clone.idName, clone);
+    }
+    public void ReturnPool(Pig4 clone)
+    {
+        poolManager.TakeToPool<Pig4>(clone.idName, clone);
+    }
+    public void ReturnPool(Pig5 clone)
+    {
+        poolManager.TakeToPool<Pig5>(clone.idName, clone);
+    }
+    public void ReturnPool(Wasp clone)
+    {
+        poolManager.TakeToPool<Wasp>(clone.idName, clone);
+    }
     public void ReturnPool(Coin clone)
     {
         poolManager.TakeToPool<Coin>(clone.idName, clone);
@@ -409,41 +410,41 @@ public class CreateManager : MonoBehaviour
     {
         poolManager.TakeToPool<Orc>(clone.idName, clone);
     }
-    //public void ReturnPool(Larva clone)
-    //{
-    //    poolManager.TakeToPool<Larva>(clone.idName, clone);
-    //}
-    //public void ReturnPool(Larva2 clone)
-    //{
-    //    poolManager.TakeToPool<Larva2>(clone.idName, clone);
-    //}
-    //public void ReturnPool(Larva3 clone)
-    //{
-    //    poolManager.TakeToPool<Larva3>(clone.idName, clone);
-    //}
-    //public void ReturnPool(Larva4 clone)
-    //{
-    //    poolManager.TakeToPool<Larva4>(clone.idName, clone);
-    //}
-    //public void ReturnPool(Rat clone)
-    //{
-    //    poolManager.TakeToPool<Rat>(clone.idName, clone);
-    //}
-    //public void ReturnPool(Rat2 clone)
-    //{
-    //    poolManager.TakeToPool<Rat2>(clone.idName, clone);
-    //}
-    //public void ReturnPool(Rat3 clone)
-    //{
-    //    poolManager.TakeToPool<Rat3>(clone.idName, clone);
-    //}
-    //public void ReturnPool(Lizard clone)
-    //{
-    //    poolManager.TakeToPool<Lizard>(clone.idName, clone);
-    //}
-    //public void ReturnPool(Orc2 clone)
-    //{
-    //    poolManager.TakeToPool<Orc2>(clone.idName, clone);
-    //}
+    public void ReturnPool(Larva clone)
+    {
+        poolManager.TakeToPool<Larva>(clone.idName, clone);
+    }
+    public void ReturnPool(Larva2 clone)
+    {
+        poolManager.TakeToPool<Larva2>(clone.idName, clone);
+    }
+    public void ReturnPool(Larva3 clone)
+    {
+        poolManager.TakeToPool<Larva3>(clone.idName, clone);
+    }
+    public void ReturnPool(Larva4 clone)
+    {
+        poolManager.TakeToPool<Larva4>(clone.idName, clone);
+    }
+    public void ReturnPool(Rat clone)
+    {
+        poolManager.TakeToPool<Rat>(clone.idName, clone);
+    }
+    public void ReturnPool(Rat2 clone)
+    {
+        poolManager.TakeToPool<Rat2>(clone.idName, clone);
+    }
+    public void ReturnPool(Rat3 clone)
+    {
+        poolManager.TakeToPool<Rat3>(clone.idName, clone);
+    }
+    public void ReturnPool(Lizard clone)
+    {
+        poolManager.TakeToPool<Lizard>(clone.idName, clone);
+    }
+    public void ReturnPool(Orc2 clone)
+    {
+        poolManager.TakeToPool<Orc2>(clone.idName, clone);
+    }
     #endregion
 }

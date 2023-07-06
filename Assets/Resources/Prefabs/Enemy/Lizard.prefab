@@ -690,7 +690,7 @@ GameObject:
   - component: {fileID: 6771397721672081710}
   - component: {fileID: 6596473216609011434}
   - component: {fileID: 6771397721672081718}
-  - component: {fileID: 4590663984763330477}
+  - component: {fileID: 1343467864001644013}
   m_Layer: 0
   m_Name: Lizard
   m_TagString: Enemy
@@ -774,7 +774,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &4590663984763330477
+--- !u!114 &1343467864001644013
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -783,18 +783,18 @@ MonoBehaviour:
   m_GameObject: {fileID: 6771397721672081704}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 91fd69d96d1b87b4c9d80d841b650c68, type: 3}
+  m_Script: {fileID: 11500000, guid: f95c396b0e3084d4eae6a5bc11757f81, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  maxHealth: 0
   currentHealth: 0
   knockbackTime: 1
   knockback: 0
+  Shadow: {fileID: 6465739453267416730}
   healthBar: {fileID: 8103538485885863782}
   textPostion: {fileID: 8103538487212413912}
   collider: {fileID: 0}
   idName: Lizard
-  maxHealth: 51
-  Shadow: {fileID: 6465739453267416730}
 --- !u!1 &8103538485885863768
 GameObject:
   m_ObjectHideFlags: 0
@@ -895,7 +895,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 8103538485885863768}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6a3f6d0a998ac4d43aaf09fe341f9a99, type: 3}
+  m_Script: {fileID: 11500000, guid: a8830c6b54d840e4aae064beab41a54b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   slider: {fileID: 8103538485885863783}

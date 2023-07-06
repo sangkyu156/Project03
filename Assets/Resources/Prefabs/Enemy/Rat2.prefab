@@ -438,7 +438,7 @@ GameObject:
   - component: {fileID: 1111032243312762221}
   - component: {fileID: 655444004524341929}
   - component: {fileID: 1111032243312762220}
-  - component: {fileID: 441077547860771459}
+  - component: {fileID: 6899005786300544932}
   m_Layer: 0
   m_Name: Rat2
   m_TagString: Enemy
@@ -522,7 +522,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &441077547860771459
+--- !u!114 &6899005786300544932
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -531,18 +531,18 @@ MonoBehaviour:
   m_GameObject: {fileID: 1111032243312762219}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aa8c5e82d107d604681ffd3ea675b24c, type: 3}
+  m_Script: {fileID: 11500000, guid: 3afceaec87eff8b43851372ab7a89d5c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  maxHealth: 0
   currentHealth: 0
   knockbackTime: 1
   knockback: 0
+  Shadow: {fileID: 804192078324394713}
   healthBar: {fileID: 6403280250623039523}
   textPostion: {fileID: 6403280251048668916}
   collider: {fileID: 0}
   idName: Rat2
-  maxHealth: 27
-  Shadow: {fileID: 804192078324394713}
 --- !u!1 &1111032243714064583
 GameObject:
   m_ObjectHideFlags: 0
@@ -971,7 +971,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 6403280250623039533}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6a3f6d0a998ac4d43aaf09fe341f9a99, type: 3}
+  m_Script: {fileID: 11500000, guid: a8830c6b54d840e4aae064beab41a54b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   slider: {fileID: 6403280250623039522}

@@ -437,7 +437,7 @@ GameObject:
   - component: {fileID: 1896458541834668645}
   - component: {fileID: 8293302369404339460}
   - component: {fileID: 8293302369404339514}
-  - component: {fileID: 8293302369404339461}
+  - component: {fileID: 59028353207979113}
   m_Layer: 0
   m_Name: Pig
   m_TagString: Enemy
@@ -521,7 +521,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &8293302369404339461
+--- !u!114 &59028353207979113
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -530,18 +530,18 @@ MonoBehaviour:
   m_GameObject: {fileID: 1896458541834668640}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9e07bb283d84e0f48b4bd09b53ab72c1, type: 3}
+  m_Script: {fileID: 11500000, guid: 7235c92233d140641912d8e51b83bbdf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  maxHealth: 0
   currentHealth: 0
   knockbackTime: 1
   knockback: 0
+  Shadow: {fileID: 1896458541562712768}
   healthBar: {fileID: 2144700461352175538}
   textPostion: {fileID: 2144700460756084965}
   collider: {fileID: 0}
   idName: Pig
-  maxHealth: 5
-  Shadow: {fileID: 1896458541562712768}
 --- !u!1 &2144700459861334703
 GameObject:
   m_ObjectHideFlags: 0
@@ -749,7 +749,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2144700461352175549}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6a3f6d0a998ac4d43aaf09fe341f9a99, type: 3}
+  m_Script: {fileID: 11500000, guid: a8830c6b54d840e4aae064beab41a54b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   slider: {fileID: 2144700461352175539}

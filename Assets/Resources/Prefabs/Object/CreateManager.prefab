@@ -101,6 +101,76 @@ MonoBehaviour:
     _count: 0
     _container: {fileID: 1336402131536987376}
     _nonLazy: 0
+  - _name: Larva
+    _component: {fileID: 7294526252203161433, guid: ff04ac1e0b02ab24f96c8f7a985595e9, type: 3}
+    _count: 0
+    _container: {fileID: 1336402131536987376}
+    _nonLazy: 0
+  - _name: Larva2
+    _component: {fileID: 7128943315741042211, guid: 6e9ed2dcdfa763044ab7c03b21212398, type: 3}
+    _count: 0
+    _container: {fileID: 1336402131536987376}
+    _nonLazy: 0
+  - _name: Larva3
+    _component: {fileID: 9079279541297675277, guid: ca3e2d7f83f99b348abef79454ab1620, type: 3}
+    _count: 0
+    _container: {fileID: 1336402131536987376}
+    _nonLazy: 0
+  - _name: Larva4
+    _component: {fileID: 4729566868206951435, guid: 026bd14bd45913749b55754d0dd03761, type: 3}
+    _count: 0
+    _container: {fileID: 1336402131536987376}
+    _nonLazy: 0
+  - _name: Rat
+    _component: {fileID: 1976618467061005761, guid: cc1af32574d36ff4488a570a084bb804, type: 3}
+    _count: 0
+    _container: {fileID: 1336402131536987376}
+    _nonLazy: 0
+  - _name: Rat2
+    _component: {fileID: 6899005786300544932, guid: 727c3b20158ba394bacbe6ed3c83d164, type: 3}
+    _count: 0
+    _container: {fileID: 1336402131536987376}
+    _nonLazy: 0
+  - _name: Rat3
+    _component: {fileID: 2482067628341293569, guid: 4cdbc43e06815bc4692cc34c58eaa76e, type: 3}
+    _count: 0
+    _container: {fileID: 1336402131536987376}
+    _nonLazy: 0
+  - _name: Lizard
+    _component: {fileID: 1343467864001644013, guid: 4d0d85744b2b8c841ab1889dc075725c, type: 3}
+    _count: 0
+    _container: {fileID: 1336402131536987376}
+    _nonLazy: 0
+  - _name: Orc2
+    _component: {fileID: 6926670343158471026, guid: 1c70e15b48d3bd447969014580891905, type: 3}
+    _count: 0
+    _container: {fileID: 1336402131536987376}
+    _nonLazy: 0
+  - _name: Pig
+    _component: {fileID: 59028353207979113, guid: 3b0a17e76613ee944a330d79d6f4af45, type: 3}
+    _count: 0
+    _container: {fileID: 1336402131536987376}
+    _nonLazy: 0
+  - _name: Pig2
+    _component: {fileID: 517672782396957665, guid: ab360c65cdc4a81458d2d11f3a57f8b5, type: 3}
+    _count: 0
+    _container: {fileID: 1336402131536987376}
+    _nonLazy: 0
+  - _name: Pig3
+    _component: {fileID: 5992818679583264271, guid: 2f42ef34e2be3b74e9a474638fca4665, type: 3}
+    _count: 0
+    _container: {fileID: 1336402131536987376}
+    _nonLazy: 0
+  - _name: Pig4
+    _component: {fileID: 8305140485066045023, guid: 53149990d21a1a24f97be42ce9037924, type: 3}
+    _count: 0
+    _container: {fileID: 1336402131536987376}
+    _nonLazy: 0
+  - _name: Pig5
+    _component: {fileID: 4164005484840814718, guid: da8c457a57f8a7f4f9df67b8a5e385ab, type: 3}
+    _count: 0
+    _container: {fileID: 1336402131536987376}
+    _nonLazy: 0
 --- !u!114 &-1069360463295588864
 MonoBehaviour:
   m_ObjectHideFlags: 0

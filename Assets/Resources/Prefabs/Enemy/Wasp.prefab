@@ -232,7 +232,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 369177490301340358}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6a3f6d0a998ac4d43aaf09fe341f9a99, type: 3}
+  m_Script: {fileID: 11500000, guid: a8830c6b54d840e4aae064beab41a54b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   slider: {fileID: 369177490301340352}
@@ -657,7 +657,7 @@ GameObject:
   - component: {fileID: 6700156643561387503}
   - component: {fileID: 8978822801708456413}
   - component: {fileID: 321268775833751874}
-  - component: {fileID: 5702734695547230122}
+  - component: {fileID: 4515391369099844253}
   m_Layer: 0
   m_Name: Wasp
   m_TagString: Enemy
@@ -741,7 +741,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &5702734695547230122
+--- !u!114 &4515391369099844253
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -750,18 +750,18 @@ MonoBehaviour:
   m_GameObject: {fileID: 1602840647689083350}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8277edc4229a73a4e93d5707b63e9e67, type: 3}
+  m_Script: {fileID: 11500000, guid: 4e01930dfbb2da34d99f030c8a0026e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  maxHealth: 0
   currentHealth: 0
   knockbackTime: 1
   knockback: 0
+  Shadow: {fileID: 580406240058986495}
   healthBar: {fileID: 369177490301340353}
   textPostion: {fileID: 369177489520771016}
   collider: {fileID: 0}
   idName: Wasp
-  maxHealth: 11
-  Shadow: {fileID: 580406240058986495}
 --- !u!1 &5641632138129836161
 GameObject:
   m_ObjectHideFlags: 0
