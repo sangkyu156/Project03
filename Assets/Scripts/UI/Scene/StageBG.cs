@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class StageBG : UI_Scene
 {
-    public int countBG = 0;
+    //public int countBG = 0;
     public GameObject[] map;
     GameObject player;
     GameObject stageScene;
@@ -29,10 +29,10 @@ public class StageBG : UI_Scene
             if (dist > map[i].transform.position.x)
             {
                 map[i].transform.position += new Vector3(150, 0, 0);//¸ÊÀÌµ¿
-                countBG++;
+                Managers.Data.countBG++;
 
                 //ÁøÇà·ü Áõ°¡
-                stageScene.GetComponent<StageScene>().ts.GetComponent<TargetSpotUI>().SetProgress(countBG);
+                stageScene.GetComponent<StageScene>().ts.GetComponent<TargetSpotUI>().SetProgress(Managers.Data.countBG);
 
                 //¿õµ¢ÀÌ »ı¼º
                 CreateManager.Instance.CreatePuddle();
@@ -55,7 +55,7 @@ public class StageBG : UI_Scene
                 }
 
                 //»óÁ¡ »ı¼º
-                if (countBG % 2 == 0)
+                if (Managers.Data.countBG % 2 == 0)
                 {
                     if (Random.Range(0, 21) <= 10 + Player.Instance.regularLevel)
                     {
@@ -92,10 +92,10 @@ public class StageBG : UI_Scene
                 switch (Managers.Data.curStage)
                 {
                     case 1:
-                        //Stage01CreateEnemy(countBG);
+                        Stage01CreateEnemy(Managers.Data.countBG);
                         break;
                     case 2:
-                        Stage02CreateEnemy(countBG);
+                        Stage02CreateEnemy(Managers.Data.countBG);
                         break;
                 }
             }
@@ -106,34 +106,34 @@ public class StageBG : UI_Scene
     {
         switch (_countBG)
         {
-            case 2: CreateManager.Instance.Create_01(); break;
-            case 4: CreateManager.Instance.Create_01_1(); break;
-            case 6: CreateManager.Instance.Create_01_2(); break;
-            case 8: CreateManager.Instance.Create_02(); break;
-            case 10: CreateManager.Instance.Create_02_1(); break;
-            case 12: CreateManager.Instance.Create_02_2(); break;
-            case 14: CreateManager.Instance.Create_03(); break;
-            case 16: CreateManager.Instance.Create_03_1(); break;
-            case 18: CreateManager.Instance.Create_03_2(); break;
-            case 20: CreateManager.Instance.Create_04(); break;
-            case 22: CreateManager.Instance.Create_04_1(); break;
-            case 23: CreateManager.Instance.Create_Orc(); break;
-            case 25: CreateManager.Instance.Create_04_2(); break;
-            case 27:
-                CreateManager.Instance.Create_01_1();
-                CreateManager.Instance.Create_02_1();
-                CreateManager.Instance.Create_03_1();
-                break;
-            case 28:
-                CreateManager.Instance.Create_01_2();
-                CreateManager.Instance.Create_02_2();
-                CreateManager.Instance.Create_03_2();
-                break;
-            case 29:
-                CreateManager.Instance.Create_02_2();
-                CreateManager.Instance.Create_03_2();
-                CreateManager.Instance.Create_04_2();
-                break;
+            //case 2: CreateManager.Instance.Create_01(); break;
+            //case 4: CreateManager.Instance.Create_01_1(); break;
+            //case 6: CreateManager.Instance.Create_01_2(); break;
+            //case 8: CreateManager.Instance.Create_02(); break;
+            //case 10: CreateManager.Instance.Create_02_1(); break;
+            //case 12: CreateManager.Instance.Create_02_2(); break;
+            //case 14: CreateManager.Instance.Create_03(); break;
+            //case 16: CreateManager.Instance.Create_03_1(); break;
+            //case 18: CreateManager.Instance.Create_03_2(); break;
+            //case 20: CreateManager.Instance.Create_04(); break;
+            //case 22: CreateManager.Instance.Create_04_1(); break;
+            //case 23: CreateManager.Instance.Create_Orc(); break;
+            //case 25: CreateManager.Instance.Create_04_2(); break;
+            //case 27:
+            //    CreateManager.Instance.Create_01_1();
+            //    CreateManager.Instance.Create_02_1();
+            //    CreateManager.Instance.Create_03_1();
+            //    break;
+            //case 28:
+            //    CreateManager.Instance.Create_01_2();
+            //    CreateManager.Instance.Create_02_2();
+            //    CreateManager.Instance.Create_03_2();
+            //    break;
+            //case 29:
+            //    CreateManager.Instance.Create_02_2();
+            //    CreateManager.Instance.Create_03_2();
+            //    CreateManager.Instance.Create_04_2();
+            //    break;
             case 30:
                 CreateManager.Instance.CreateClearPortal(); break;
             default:

@@ -5,6 +5,7 @@ using UnityEngine.EventSystems;
 
 public class Boss : MonoBehaviour
 {
+    GameObject canvas;
     Vector3 moveDirectione;
     new Rigidbody2D rigidbody;
     Animator animator;
@@ -16,6 +17,11 @@ public class Boss : MonoBehaviour
         rigidbody = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         bossSpeed = 7;
+    }
+
+    private void Start()
+    {
+        canvas = GameObject.FindGameObjectWithTag("StageCanvas");
     }
 
     void Update()
@@ -43,8 +49,8 @@ public class Boss : MonoBehaviour
     {
         attack = false;
         animator.SetBool("Attack", false);
-        //플레이어 죽음
-        //게임 오버팝업 생성해야함
-        Debug.Log("플레이어 죽음");
+
+        GameObject deadPopup = Managers.Resource.Instantiate("UI/Popup/DeadPopup");
+        deadPopup.transform.SetParent(canvas.transform, false);
     }
 }

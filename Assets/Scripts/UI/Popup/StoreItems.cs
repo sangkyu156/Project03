@@ -25,7 +25,7 @@ public class StoreItems : MonoBehaviour
     void Start()
     {
         Time.timeScale = 0;
-        //스토어카운트 증가 해야함
+        Managers.Data.storCount++;
 
         SetSkills();
         stageScene = GameObject.FindGameObjectWithTag("StageScene");

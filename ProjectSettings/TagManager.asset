@@ -11,6 +11,9 @@ TagManager:
   - NoDamage
   - Boss
   - Enemy
+  - Coin
+  - MainCanvas
+  - MainScene
   layers:
   - Default
   - TransparentFX

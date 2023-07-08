@@ -15,6 +15,7 @@ public class Define
         Title,
         Intro,
         Stage,
+        Main,
     }
 
     public enum UIEvent

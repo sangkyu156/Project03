@@ -169,6 +169,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   camera: {fileID: 7096024926569273059}
   canvas: {fileID: 2068311630}
+  ts: {fileID: 0}
 --- !u!1 &925196045
 GameObject:
   m_ObjectHideFlags: 0

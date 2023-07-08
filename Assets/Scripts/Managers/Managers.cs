@@ -9,6 +9,7 @@ using UnityEngine;
 public class Managers : MonoBehaviour
 {
     GameObject stageScene;
+    GameObject mainScene;
     [SerializeField]
     GameObject boss;
 
@@ -20,6 +21,7 @@ public class Managers : MonoBehaviour
     static public int currStage = (int)Define.Stage.Stage01;
     static public int currScene = (int)Define.Scene.Title;
     static public int fieldMoney { get; set; } = 0;
+    static public int diamond { get; set; } = 0;
 
     ResourceManager _resource = new ResourceManager();
     SceneManagerEx _scene = new SceneManagerEx();
@@ -80,12 +82,31 @@ public class Managers : MonoBehaviour
         stageScene = GameObject.FindGameObjectWithTag("StageScene");
     }
 
+    public void GetMainScene()
+    {
+        mainScene = GameObject.FindGameObjectWithTag("MainScene");
+    }
+
     public void PrintFieldMoney()
     {
+        if (currScene != (int)Define.Scene.Stage)
+            return;
+
         if (stageScene == null)
             stageScene = GameObject.FindGameObjectWithTag("StageScene");
         else
             stageScene.GetComponent<StageScene>().PrintFieldMoney();
+    }
+
+    public void PrintDiamond()
+    {
+        if (currScene != (int)Define.Scene.Main)
+            return;
+
+        if (mainScene == null)
+            mainScene = GameObject.FindGameObjectWithTag("Mainscene");
+        else
+            mainScene.GetComponent<MainScene>().PrintDiamond();
     }
 
     public void FindBoss()

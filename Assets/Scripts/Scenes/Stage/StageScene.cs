@@ -12,11 +12,6 @@ public class StageScene : BaseScene
     TextMeshProUGUI fieldMoney_Text;
     TextMeshProUGUI fieldDiamond;
 
-    private void Awake()
-    {
-
-    }
-
     void Start()
     {
         Init();
@@ -66,7 +61,7 @@ public class StageScene : BaseScene
         //스테이지에 맞게 맵 구현
         switch (Managers.currStage)
         {
-            case (int)Define.Stage.Stage01: Managers.Resource.Instantiate("UI/Scene/Stage01_BG"); break;//배경
+            case (int)Define.Stage.Stage01: Managers.Resource.Instantiate("UI/Scene/Stage01_BG");Debug.Log("123"); break;//배경
             case (int)Define.Stage.Stage02: break;
             case (int)Define.Stage.Stage03: break;
             case (int)Define.Stage.Stage04: break;

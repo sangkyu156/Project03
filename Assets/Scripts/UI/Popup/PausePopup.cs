@@ -35,7 +35,8 @@ public class PausePopup : UI_Popup
 
     public void MeueButton(PointerEventData data)
     {
-        Debug.Log("메뉴화면으로 이동");
+        Time.timeScale = 1;
+        Managers.Scene.LoadScene(Define.Scene.Main);
     }
 
     public void ResumeButton(PointerEventData data)

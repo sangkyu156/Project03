@@ -447,8 +447,8 @@ public class CreateManager : MonoBehaviour
     //Å¬¸®¾î Æ÷Å»
     public void CreateClearPortal()
     {
-        //GameObject portal = Instantiate(Resources.Load<GameObject>("Field/ClearPotal"));
-        //portal.transform.position = new Vector3(Player.Instance.transform.position.x + 20, -6.75f, 0);
+        GameObject portal = Managers.Resource.Instantiate("Object/ClearPotal");
+        portal.transform.position = new Vector3(Player.Instance.transform.position.x + 20, -4f, 0);
     }
 
     //¿õµ¢ÀÌ

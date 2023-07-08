@@ -9,6 +9,7 @@ public class DataManager
     public int killCount;
 
     public bool clairvoyant = false;
+    public bool[] stageCheck = new bool[2];
     public int state_PowerLevel = 0;
     public int state_Power = 0;
     public int state_HealthLevel = 0;
@@ -18,6 +19,9 @@ public class DataManager
     public int state_PotionRecoverLevel = 0;
     public int state_PotionRecover = 0;
     public int paymentGold;//사용한 금화
+    public int clearRewardDiamond;
+    public int countBG = 0;
+    public int storCount = 0;
     public int curStage = 1;
 
     //0 -> 완료하지 못함, 1 -> 완료 해서 보상을 받을 준비됨, 2 -> 이미 보상을 완료함
