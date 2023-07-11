@@ -8,23 +8,11 @@ using static UnityEngine.GraphicsBuffer;
 public class Coin : MonoBehaviour, IPoolObject
 {
     public string idName;
-    int speed = 13;
+    public int speed = 13;
 
     void Start()
     {
         speed = 13;
-    }
-
-    void Update()
-    {
-        Collider2D[] targets = Physics2D.OverlapBoxAll(transform.position, new Vector2(3, 10), 0);
-        for (int i = 0; i < targets.Length; i++)
-        {
-            if (targets[i].tag == "Player" || targets[i].tag == "NoDamage")
-            {
-                transform.position = Vector2.MoveTowards(transform.position, Player.Instance.transform.position + new Vector3(0, 1.5f, 0), speed * Time.deltaTime);
-            }
-        }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

@@ -35,8 +35,10 @@ public class Managers : MonoBehaviour
     {
         Init();
         CreateManager.Init();
+
         //TEMP
-        fieldMoney = 5000;
+        fieldMoney = 10000;
+        diamond = 5000;
     }
 
     void Update()
@@ -50,6 +52,12 @@ public class Managers : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.X))
         {
             TextUtil.languageNumber = 1; //ÇÑ±¹¾î
+        }
+
+        if (Input.GetKeyDown(KeyCode.H))
+        {
+            fieldMoney += 500;
+            PrintFieldMoney();
         }
     }
 

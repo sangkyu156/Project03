@@ -17,6 +17,8 @@ public class TitleScene : BaseScene
 
     private void Start()
     {
+        base.Init();
+
         cameraPosition = titleCamera.transform.position;
         time_ = 0;
         gradationSpeed = 0.3f;

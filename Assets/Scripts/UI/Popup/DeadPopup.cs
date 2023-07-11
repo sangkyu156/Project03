@@ -17,7 +17,7 @@ public class DeadPopup : MonoBehaviour
     public GameObject[] smokeFX;
     bool first = false;
 
-    private void OnEnable()
+    private void Start()
     {
         first = false;
         SmokeFX_Off();
@@ -27,6 +27,9 @@ public class DeadPopup : MonoBehaviour
         goldPaymentValue.text = $"{Managers.Data.paymentGold}";
         diamondAcquisitionValue.text = $"{Managers.diamond}";
         storCountValue.text = $"{Managers.Data.storCount}";
+
+        Destroy(Player.Instance.gameObject);
+        Managers.currScene = (int)Define.Scene.GameOver;
     }
 
     void Update()

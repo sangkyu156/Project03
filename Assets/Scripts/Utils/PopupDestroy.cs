@@ -8,4 +8,9 @@ public class PopupDestroy : MonoBehaviour
     {
         Destroy(gameObject);
     }
+
+    public void ParentPopupOff()
+    {
+        Destroy(gameObject.transform.parent.gameObject);
+    }
 }

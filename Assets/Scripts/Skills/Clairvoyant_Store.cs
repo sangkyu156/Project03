@@ -49,14 +49,18 @@ public class Clairvoyant_Store : MonoBehaviour
         Managers.Data.paymentGold += priceValue;
         //GameManager.Instance.SFXPlay(GameManager.Sfx.Buy);
 
-        Managers.Data.clairvoyant = true;
+        Player.Instance.clairvoyant = true;
 
         stageCanvas = GameObject.FindGameObjectWithTag("StageCanvas");
         GameObject bd = Managers.Resource.Instantiate("UI/Scene/BossDistance");
         bd.transform.SetParent(stageCanvas.transform, false);
         bd.transform.SetAsFirstSibling();
 
-        gameObject.transform.parent.parent.gameObject.GetComponent<StoreItems>().PrintFieldMoney();
+        if (Player.Instance.firstStore)
+            gameObject.transform.parent.parent.gameObject.GetComponent<FirstStoreItems>().PrintFieldMoney();
+        else
+            gameObject.transform.parent.parent.gameObject.GetComponent<StoreItems>().PrintFieldMoney();
+
         Managers.Instance.buyCheckAction();
 
         buyButton.interactable = false;

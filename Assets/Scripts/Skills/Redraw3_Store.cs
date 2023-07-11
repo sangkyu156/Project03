@@ -44,9 +44,13 @@ public class Redraw3_Store : MonoBehaviour
         //GameManager.Instance.SFXPlay(GameManager.Sfx.Buy);
 
         Managers.fieldMoney += priceValue;
-        //AchievementManager.Instance.legendSkillCount++;
+        Managers.Data.legendSkillCount++;
 
-        gameObject.transform.parent.parent.gameObject.GetComponent<StoreItems>().PrintFieldMoney();
+        if (Player.Instance.firstStore)
+            gameObject.transform.parent.parent.gameObject.GetComponent<FirstStoreItems>().PrintFieldMoney();
+        else
+            gameObject.transform.parent.parent.gameObject.GetComponent<StoreItems>().PrintFieldMoney();
+
         Managers.Instance.buyCheckAction();
 
         gameObject.transform.parent.parent.gameObject.GetComponent<StoreItems>().OverlapRedraw();//´Ù½Ã »Ì±â

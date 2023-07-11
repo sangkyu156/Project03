@@ -117,7 +117,11 @@ public class Regenerate_Store : MonoBehaviour
         Player.Instance.regenerateCooldown = 10;
         Player.Instance.regenerate = true;
 
-        gameObject.transform.parent.parent.gameObject.GetComponent<StoreItems>().PrintFieldMoney();
+        if (Player.Instance.firstStore)
+            gameObject.transform.parent.parent.gameObject.GetComponent<FirstStoreItems>().PrintFieldMoney();
+        else
+            gameObject.transform.parent.parent.gameObject.GetComponent<StoreItems>().PrintFieldMoney();
+
         Managers.Instance.buyCheckAction();
         PrintExplanation();
 

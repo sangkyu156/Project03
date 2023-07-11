@@ -24,6 +24,8 @@ public class FirstStoreItems : MonoBehaviour
 
     void Start()
     {
+        Managers.Data.storCount++;
+        Player.Instance.firstStore = true;
         stageScene = GameObject.FindGameObjectWithTag("StageScene");
         SetSkills();
     }
@@ -123,5 +125,11 @@ public class FirstStoreItems : MonoBehaviour
     {
         Time.timeScale = 1.0f;
         Destroy(gameObject.transform.parent.gameObject);
+    }
+
+    public void PrintFieldMoney()
+    {
+        if (stageScene != null)
+            stageScene.GetComponent<StageScene>().PrintFieldMoney();
     }
 }

@@ -26,6 +26,7 @@ public class StoreItems : MonoBehaviour
     {
         Time.timeScale = 0;
         Managers.Data.storCount++;
+        Player.Instance.firstStore = false;
 
         SetSkills();
         stageScene = GameObject.FindGameObjectWithTag("StageScene");
@@ -52,7 +53,44 @@ public class StoreItems : MonoBehaviour
         for (int i = 0; i < skillNameArray.Length; i++)
             weightedRandom.Add($"{skillNameArray[i]}", skillWeightedArray[i]);
 
-        //여기다 플레이어 공격스킬 4개 정해졌으면 정해진 4개 뺴고 다 삭제 & 랩 7인것도 빼야함 해야함
+        //여기다 플레이어 공격스킬 4개 정해졌으면 정해진 4개 뺴고 다 삭제 & 만랩 인 스킬도 삭제
+        if(Player.Instance.attackSkillCount >= 4)
+        {
+            Debug.Log($"스킬 4개라 들어옴 = {Player.Instance.attackSkillCount}");
+            RemoveSkill();
+        }
+
+        //천리안 스킬 이미 획득했으면 목록에서 삭제
+        if (Player.Instance.clairvoyant == true)
+            weightedRandom.Remove("Clairvoyant_Store");
+    }
+
+    void SkillsReset()
+    {
+        for (int i = 0; i < skillNameArray.Length; i++)
+            weightedRandom.Remove($"{skillNameArray[i]}");
+    }
+
+    void RemoveSkill()
+    {
+        if (Player.Instance.fireBallLevel == 0 || Player.Instance.fireBallLevel == 7)
+            weightedRandom.Remove("FireBall_Store");
+        if (Player.Instance.tornadoLevel == 0 || Player.Instance.tornadoLevel == 7)
+            weightedRandom.Remove("Tornado_Store");
+        if (Player.Instance.blackholeLevel == 0 || Player.Instance.blackholeLevel == 7)
+            weightedRandom.Remove("BlackHole_Store");
+        if (Player.Instance.sawBladeLevel == 0 || Player.Instance.sawBladeLevel == 7)
+            weightedRandom.Remove("SawBlade_Store");
+        if (Player.Instance.sparkLevel == 0 || Player.Instance.sparkLevel == 7)
+            weightedRandom.Remove("Spark_Store");
+        if (Player.Instance.waveEnergyLevel == 0 || Player.Instance.waveEnergyLevel == 7)
+            weightedRandom.Remove("WaveEnergy_Store");
+        if (Player.Instance.volcanoLevel == 0 || Player.Instance.volcanoLevel == 7)
+            weightedRandom.Remove("Volcano_Store");
+        if (Player.Instance.tridentLevel == 0 || Player.Instance.tridentLevel == 7)
+            weightedRandom.Remove("Trident_Store");
+        if (Player.Instance.rageExplosionLevel == 0 || Player.Instance.rageExplosionLevel == 7)
+            weightedRandom.Remove("RageExplosion_Store");
     }
 
     //'SkillData.Skills'에서 key를 하나씩 넣어서 key에 해당하는 value를 저장하는 함수
@@ -99,6 +137,11 @@ public class StoreItems : MonoBehaviour
             Destroy(items[i].transform.GetChild(0).gameObject);
         }
 
+        //스킬목록 초기화
+        SkillsReset();
+        //다시 스킬목록 생성
+        AddSkills();
+        //스킬 뽑기
         SetSkills();
     }
 
@@ -114,13 +157,18 @@ public class StoreItems : MonoBehaviour
 
         //GameManager.Instance.SFXPlay(GameManager.Sfx.Button01);
         Managers.fieldMoney -= 200; //돈차감
-        //해야함
-        //AchievementManager.Instance.redrawCount++;
+        Managers.Data.redrawCount++;
 
         for (int i = 0; i < items.Length; i++)
         {
             Destroy(items[i].transform.GetChild(0).gameObject);
         }
+
+        //스킬목록 초기화
+        SkillsReset();
+        //다시 스킬목록 생성
+        AddSkills();
+
         SetSkills();
 
         PrintFieldMoney();

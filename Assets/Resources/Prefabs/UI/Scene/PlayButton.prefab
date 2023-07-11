@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 248215916853640468}
   - component: {fileID: 248215916853640488}
   - component: {fileID: 248215916853640491}
+  - component: {fileID: 7091730403609045799}
   m_Layer: 5
   m_Name: PlayButton
   m_TagString: Untagged
@@ -126,8 +127,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 4885441515858014269, guid: 8817878a1fd1bfa4997637f9445d302c, type: 3}
-        m_TargetAssemblyTypeName: HomeManager, Assembly-CSharp
+      - m_Target: {fileID: 7091730403609045799}
+        m_TargetAssemblyTypeName: PlayButton, Assembly-CSharp
         m_MethodName: StagePopupOn
         m_Mode: 1
         m_Arguments:
@@ -184,6 +185,18 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
+--- !u!114 &7091730403609045799
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 248215916853640466}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b0e42a6ad74a064f833c9337ae2ace9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &248215917009848609
 GameObject:
   m_ObjectHideFlags: 0

@@ -755,8 +755,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 4885441515858014269, guid: 8817878a1fd1bfa4997637f9445d302c, type: 3}
-        m_TargetAssemblyTypeName: HomeManager, Assembly-CSharp
+      - m_Target: {fileID: 6665674186270345442}
+        m_TargetAssemblyTypeName: Menu, Assembly-CSharp
         m_MethodName: CreditPopupOn
         m_Mode: 1
         m_Arguments:
@@ -1117,8 +1117,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 4885441515858014269, guid: 8817878a1fd1bfa4997637f9445d302c, type: 3}
-        m_TargetAssemblyTypeName: HomeManager, Assembly-CSharp
+      - m_Target: {fileID: 6665674186270345442}
+        m_TargetAssemblyTypeName: Menu, Assembly-CSharp
         m_MethodName: AchievementPopupOn
         m_Mode: 1
         m_Arguments:

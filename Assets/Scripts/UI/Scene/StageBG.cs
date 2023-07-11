@@ -2,12 +2,12 @@ using UnityEngine;
 
 public class StageBG : UI_Scene
 {
-    //public int countBG = 0;
     public GameObject[] map;
     GameObject player;
     GameObject stageScene;
-
+    float reSpawnTime = 2f;
     float dist = 0f;
+    bool bgMove = false;
 
     private void Start()
     {
@@ -30,29 +30,7 @@ public class StageBG : UI_Scene
             {
                 map[i].transform.position += new Vector3(150, 0, 0);//맵이동
                 Managers.Data.countBG++;
-
-                //진행률 증가
-                stageScene.GetComponent<StageScene>().ts.GetComponent<TargetSpotUI>().SetProgress(Managers.Data.countBG);
-
-                //웅덩이 생성
-                CreateManager.Instance.CreatePuddle();
-
-                //바위 생성
-                if (Random.Range(0, 142) <= 100) //70% 확률
-                {
-                    CreateManager.Instance.CreateUpRock();
-                    CreateManager.Instance.CreateDownRock();
-                }
-                else
-                {
-                    switch (Random.Range(0, 2))
-                    {
-                        case 0:
-                            CreateManager.Instance.CreateUpRock(); break;
-                        case 1:
-                            CreateManager.Instance.CreateDownRock(); break;
-                    }
-                }
+                bgMove = true;
 
                 //상점 생성
                 if (Managers.Data.countBG % 2 == 0)
@@ -63,41 +41,81 @@ public class StageBG : UI_Scene
                         portal.transform.position = new Vector3(map[i].transform.position.x - 50, -3.5f, 0);
                     }
                 }
+            }
+        }
 
-                //금화상자 생성
-                for (int q = 0; q < Player.Instance.goldChestLevel + 4; q++)
-                {
-                    if (Random.Range(0, 10) == 2) //10% 확률
-                    {
-                        float ran_x = Random.Range(20, 48);
-                        float ran_y = Random.Range(-9f, -5.5f);
-                        GameObject box = Managers.Resource.Instantiate("Object/Box1");
-                        box.transform.position = new Vector3(Player.Instance.transform.position.x + ran_x, ran_y, 0);
-                    }
-                }
+        //Pig생성
+        reSpawnTime -= Time.deltaTime;
+        if (reSpawnTime <= 0)
+        {
+            reSpawnTime = 2f;
+            switch (Managers.currStage)
+            {
+                case 1: Stage01PigCreate(Managers.Data.countBG); break;
+                case 2: Stage02PigCreate(Managers.Data.countBG); break;
+            }
+        }
 
-                //포션상자 생성
-                for (int q = 0; q < Player.Instance.potionChestLevel + 4; q++)
-                {
-                    if (Random.Range(0, 20) == 2) //5% 확률
-                    {
-                        float ran_x = Random.Range(20, 48);
-                        float ran_y = Random.Range(-9f, -5.5f);
-                        GameObject box = Managers.Resource.Instantiate("Object/Box2");
-                        box.transform.position = new Vector3(Player.Instance.transform.position.x + ran_x, ran_y, 0);
-                    }
-                }
+        if (bgMove)
+        {
+            bgMove = false;
 
-                //에너미 생성
-                switch (Managers.Data.curStage)
+            //진행률 증가
+            stageScene.GetComponent<StageScene>().ts.GetComponent<TargetSpotUI>().SetProgress(Managers.Data.countBG);
+
+            //웅덩이 생성
+            CreateManager.Instance.CreatePuddle();
+
+            //바위 생성
+            if (Random.Range(0, 142) <= 100) //70% 확률
+            {
+                CreateManager.Instance.CreateUpRock();
+                CreateManager.Instance.CreateDownRock();
+            }
+            else
+            {
+                switch (Random.Range(0, 2))
                 {
+                    case 0:
+                        CreateManager.Instance.CreateUpRock(); break;
                     case 1:
-                        Stage01CreateEnemy(Managers.Data.countBG);
-                        break;
-                    case 2:
-                        Stage02CreateEnemy(Managers.Data.countBG);
-                        break;
+                        CreateManager.Instance.CreateDownRock(); break;
                 }
+            }
+
+            //금화상자 생성
+            for (int q = 0; q < Player.Instance.goldChestLevel + 4; q++)
+            {
+                if (Random.Range(0, 10) == 2) //10% 확률
+                {
+                    float ran_x = Random.Range(20, 48);
+                    float ran_y = Random.Range(-9f, -5.5f);
+                    GameObject box = Managers.Resource.Instantiate("Object/Box1");
+                    box.transform.position = new Vector3(Player.Instance.transform.position.x + ran_x, ran_y, 0);
+                }
+            }
+
+            //포션상자 생성
+            for (int q = 0; q < Player.Instance.potionChestLevel + 4; q++)
+            {
+                if (Random.Range(0, 20) == 2) //5% 확률
+                {
+                    float ran_x = Random.Range(20, 48);
+                    float ran_y = Random.Range(-9f, -5.5f);
+                    GameObject box = Managers.Resource.Instantiate("Object/Box2");
+                    box.transform.position = new Vector3(Player.Instance.transform.position.x + ran_x, ran_y, 0);
+                }
+            }
+
+            //에너미 생성
+            switch (Managers.currStage)
+            {
+                case 1:
+                    Stage01CreateEnemy(Managers.Data.countBG);
+                    break;
+                case 2:
+                    Stage02CreateEnemy(Managers.Data.countBG);
+                    break;
             }
         }
     }
@@ -106,34 +124,34 @@ public class StageBG : UI_Scene
     {
         switch (_countBG)
         {
-            //case 2: CreateManager.Instance.Create_01(); break;
-            //case 4: CreateManager.Instance.Create_01_1(); break;
-            //case 6: CreateManager.Instance.Create_01_2(); break;
-            //case 8: CreateManager.Instance.Create_02(); break;
-            //case 10: CreateManager.Instance.Create_02_1(); break;
-            //case 12: CreateManager.Instance.Create_02_2(); break;
-            //case 14: CreateManager.Instance.Create_03(); break;
-            //case 16: CreateManager.Instance.Create_03_1(); break;
-            //case 18: CreateManager.Instance.Create_03_2(); break;
-            //case 20: CreateManager.Instance.Create_04(); break;
-            //case 22: CreateManager.Instance.Create_04_1(); break;
-            //case 23: CreateManager.Instance.Create_Orc(); break;
-            //case 25: CreateManager.Instance.Create_04_2(); break;
-            //case 27:
-            //    CreateManager.Instance.Create_01_1();
-            //    CreateManager.Instance.Create_02_1();
-            //    CreateManager.Instance.Create_03_1();
-            //    break;
-            //case 28:
-            //    CreateManager.Instance.Create_01_2();
-            //    CreateManager.Instance.Create_02_2();
-            //    CreateManager.Instance.Create_03_2();
-            //    break;
-            //case 29:
-            //    CreateManager.Instance.Create_02_2();
-            //    CreateManager.Instance.Create_03_2();
-            //    CreateManager.Instance.Create_04_2();
-            //    break;
+            case 2: CreateManager.Instance.Create_01(); break;
+            case 4: CreateManager.Instance.Create_01_1(); break;
+            case 6: CreateManager.Instance.Create_01_2(); break;
+            case 8: CreateManager.Instance.Create_02(); break;
+            case 10: CreateManager.Instance.Create_02_1(); break;
+            case 12: CreateManager.Instance.Create_02_2(); break;
+            case 14: CreateManager.Instance.Create_03(); break;
+            case 16: CreateManager.Instance.Create_03_1(); break;
+            case 18: CreateManager.Instance.Create_03_2(); break;
+            case 20: CreateManager.Instance.Create_04(); break;
+            case 22: CreateManager.Instance.Create_04_1(); break;
+            case 23: CreateManager.Instance.Create_Orc(); break;
+            case 25: CreateManager.Instance.Create_04_2(); break;
+            case 27:
+                CreateManager.Instance.Create_01_1();
+                CreateManager.Instance.Create_02_1();
+                CreateManager.Instance.Create_03_1();
+                break;
+            case 28:
+                CreateManager.Instance.Create_01_2();
+                CreateManager.Instance.Create_02_2();
+                CreateManager.Instance.Create_03_2();
+                break;
+            case 29:
+                CreateManager.Instance.Create_02_2();
+                CreateManager.Instance.Create_03_2();
+                CreateManager.Instance.Create_04_2();
+                break;
             case 30:
                 CreateManager.Instance.CreateClearPortal(); break;
             default:
@@ -178,5 +196,29 @@ public class StageBG : UI_Scene
             default:
                 break;
         }
+    }
+
+    void Stage01PigCreate(int _countBG)
+    {
+        if (1 <= _countBG && _countBG < 8)
+            CreateManager.Instance.RepeatCreate_01();
+        else if (8 <= _countBG && _countBG < 15)
+            CreateManager.Instance.RepeatCreate_02();
+        else if (15 <= _countBG && _countBG < 23)
+            CreateManager.Instance.RepeatCreate_03();
+        else if (23 <= _countBG && _countBG < 30)
+            CreateManager.Instance.RepeatCreate_04();
+    }
+
+    void Stage02PigCreate(int _countBG)
+    {
+        if (1 <= _countBG && _countBG < 8)
+            CreateManager.Instance.RepeatCreate_02();
+        else if (8 <= _countBG && _countBG < 15)
+            CreateManager.Instance.RepeatCreate_03();
+        else if (15 <= _countBG && _countBG < 23)
+            CreateManager.Instance.RepeatCreate_04();
+        else if (23 <= _countBG && _countBG < 30)
+            CreateManager.Instance.RepeatCreate_05();
     }
 }

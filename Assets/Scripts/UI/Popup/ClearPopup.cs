@@ -11,16 +11,24 @@ public class ClearPopup : MonoBehaviour
     public TextMeshProUGUI clearRewarText;
     public TextMeshProUGUI totalText;
 
+    private void Start()
+    {
+        Managers.currScene = (int)Define.Scene.Clear;
+        Destroy(Player.Instance.gameObject);
+    }
+
     public void RewardPopupOn()
     {
         //GameManager.Instance.SFXPlay(GameManager.Sfx.ClearBox);
 
-        switch (Managers.Data.curStage)
+        switch (Managers.currStage)
         {
             case 1:
+                Managers.Data.clearRewardDiamond = 12;
                 Managers.Data.stageCheck[0] = true;
                 break;
             case 2:
+                Managers.Data.clearRewardDiamond = 30;
                 Managers.Data.stageCheck[1] = true;
                 break;
         }
@@ -35,7 +43,7 @@ public class ClearPopup : MonoBehaviour
 
     public void ExitButton_Home()
     {
-        switch (Managers.Data.curStage)
+        switch (Managers.currStage)
         {
             case 1:
                 Managers.Data.stageCheck[0] = true;

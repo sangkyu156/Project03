@@ -11,6 +11,7 @@ public class Pig2 : EnemyBase
         if (currentHealth <= 0 && drop == false)
         {
             Death();
+            Managers.Data.pigCount++;
             if (drop == false)
             {
                 drop = true;

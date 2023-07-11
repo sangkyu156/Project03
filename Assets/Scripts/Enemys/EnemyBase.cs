@@ -87,7 +87,10 @@ public class EnemyBase : MonoBehaviour, IPoolObject
     //플레이어 위치에 따라 회전(애니메이션을 바꾸는 방법)
     protected void Rotation()
     {
-        if (Player.Instance.transform.position.x < transform.position.x)
+        if(target ==  null)
+            return;
+
+        if (target.position.x < transform.position.x)
         {
             animator.SetBool("Left", true);
             animator.SetBool("Right", false);

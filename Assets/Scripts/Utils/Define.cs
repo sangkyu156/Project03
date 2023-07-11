@@ -16,6 +16,8 @@ public class Define
         Intro,
         Stage,
         Main,
+        GameOver,
+        Clear,
     }
 
     public enum UIEvent
@@ -26,7 +28,7 @@ public class Define
 
     public enum Stage
     {
-        Stage01,
+        Stage01 = 1,
         Stage02,
         Stage03,
         Stage04,

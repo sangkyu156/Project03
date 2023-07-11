@@ -122,7 +122,12 @@ public class Quickness_Store : MonoBehaviour
         //GameManager.Instance.SFXPlay(GameManager.Sfx.Buy);
 
         Player.Instance.quicknessLevel++;
-        gameObject.transform.parent.parent.gameObject.GetComponent<StoreItems>().PrintFieldMoney();
+
+        if (Player.Instance.firstStore)
+            gameObject.transform.parent.parent.gameObject.GetComponent<FirstStoreItems>().PrintFieldMoney();
+        else
+            gameObject.transform.parent.parent.gameObject.GetComponent<StoreItems>().PrintFieldMoney();
+
         Managers.Instance.buyCheckAction();
         PrintExplanation();
 

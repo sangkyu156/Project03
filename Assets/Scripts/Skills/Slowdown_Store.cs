@@ -113,7 +113,11 @@ public class Slowdown_Store : MonoBehaviour
         Managers.Data.legendSkillCount++;
         Player.Instance.slowdownLevel++;
 
-        gameObject.transform.parent.parent.gameObject.GetComponent<StoreItems>().PrintFieldMoney();
+        if (Player.Instance.firstStore)
+            gameObject.transform.parent.parent.gameObject.GetComponent<FirstStoreItems>().PrintFieldMoney();
+        else
+            gameObject.transform.parent.parent.gameObject.GetComponent<StoreItems>().PrintFieldMoney();
+
         Managers.Instance.buyCheckAction();
         PrintExplanation();
 

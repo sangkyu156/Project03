@@ -2,27 +2,28 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.Diagnostics;
 /*
-    [가중치 랜덤 뽑기]
+[가중치 랜덤 뽑기]
 
-    - 제네릭을 통해 아이템의 타입을 지정해 객체화하여 사용한다.
-    - 중복되는 아이템이 없도록 딕셔너리로 구현하였다.
-    - 가중치가 0보다 작은 경우 예외를 호출한다.
+- 제네릭을 통해 아이템의 타입을 지정해 객체화하여 사용한다.
+- 중복되는 아이템이 없도록 딕셔너리로 구현하였다.
+- 가중치가 0보다 작은 경우 예외를 호출한다.
 
-    - double SumOfWeights : 전체 아이템의 가중치 합(읽기 전용 프로퍼티)
+- double SumOfWeights : 전체 아이템의 가중치 합(읽기 전용 프로퍼티)
 
-    - void Add(T, double) : 새로운 아이템-가중치 쌍을 추가한다.
-    - void Add(params (T, double)[]) : 새로운 아이템-가중치 쌍을 여러 개 추가한다.
-    - void Remove(T) : 대상 아이템을 목록에서 제거한다.
-    - void ModifyWeight(T, double) : 대상 아이템의 가중치를 변경한다.
-    - void ReSeed(int) : 랜덤 시드를 재설정한다.
+- void Add(T, double) : 새로운 아이템-가중치 쌍을 추가한다.
+- void Add(params (T, double)[]) : 새로운 아이템-가중치 쌍을 여러 개 추가한다.
+- void Remove(T) : 대상 아이템을 목록에서 제거한다.
+- void ModifyWeight(T, double) : 대상 아이템의 가중치를 변경한다.
+- void ReSeed(int) : 랜덤 시드를 재설정한다.
 
-    - T GetRandomPick() : 현재 아이템 목록에서 가중치를 계산하여 랜덤으로 항목 하나를 뽑아온다.
-    - T GetRandomPick(double) : 이미 계산된 확률 값을 매개변수로 넣어, 해당되는 항목 하나를 뽑아온다.
+- T GetRandomPick() : 현재 아이템 목록에서 가중치를 계산하여 랜덤으로 항목 하나를 뽑아온다.
+- T GetRandomPick(double) : 이미 계산된 확률 값을 매개변수로 넣어, 해당되는 항목 하나를 뽑아온다.
 
-    - ReadonlyDictionary<T, double> GetItemDictReadonly() : 전체 아이템 목록을 읽기전용 컬렉션으로 받아온다.
-    - ReadonlyDictionary<T, double> GetNormalizedItemDictReadonly()
-      : 전체 아이템의 가중치 총합이 1이 되도록 정규화된 아이템 목록을 읽기전용 컬렉션으로 받아온다.
+- ReadonlyDictionary<T, double> GetItemDictReadonly() : 전체 아이템 목록을 읽기전용 컬렉션으로 받아온다.
+- ReadonlyDictionary<T, double> GetNormalizedItemDictReadonly()
+: 전체 아이템의 가중치 총합이 1이 되도록 정규화된 아이템 목록을 읽기전용 컬렉션으로 받아온다.
 */
 
 namespace WRandom
@@ -108,10 +109,13 @@ namespace WRandom
         /// <summary> 목록에서 대상 아이템 제거 </summary>
         public void Remove(T item)
         {
+            UnityEngine.Debug.Log($"들어옴 = {item}");
             CheckNotExistedItem(item);
 
             itemWeightDict.Remove(item);
             isDirty = true;
+
+            UnityEngine.Debug.Log($"아이템 삭제됨  = {item}");
         }
 
         /// <summary> 대상 아이템의 가중치 수정 </summary>
@@ -236,7 +240,7 @@ namespace WRandom
         private void CheckNotExistedItem(T item)
         {
             if (!itemWeightDict.ContainsKey(item))
-                throw new Exception($"[{item}] 아이템이 목록에 존재하지 않습니다.");
+                UnityEngine.Debug.Log($"[{item}] 아이템이 목록에 존재하지 않습니다.");
         }
 
         /// <summary> 가중치 값 범위 검사(0보다 커야 함) </summary>

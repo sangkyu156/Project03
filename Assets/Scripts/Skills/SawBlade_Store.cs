@@ -104,7 +104,12 @@ public class SawBlade_Store : SawBlade_Skill
             Player.Instance.sawBladeLevel++;
 
         PrintExplanation();
-        gameObject.transform.parent.parent.gameObject.GetComponent<StoreItems>().PrintFieldMoney();
+
+        if (Player.Instance.firstStore)
+            gameObject.transform.parent.parent.gameObject.GetComponent<FirstStoreItems>().PrintFieldMoney();
+        else
+            gameObject.transform.parent.parent.gameObject.GetComponent<StoreItems>().PrintFieldMoney();
+
         Managers.Instance.buyCheckAction();
         buyButton.interactable = false;
 

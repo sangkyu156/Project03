@@ -11,6 +11,7 @@ public class Pig : EnemyBase
         if (currentHealth <= 0 && drop == false)
         {
             Death();
+            Managers.Data.pigCount++;
             if (drop == false)
             {
                 drop = true;
@@ -40,8 +41,8 @@ public class Pig : EnemyBase
     protected override void SetAbility()
     {
         base.SetAbility();
-        maxHealth = 12;
-        speed = 3.1f;
+        maxHealth = 5;
+        speed = 3f;
         power = 1;
     }
 

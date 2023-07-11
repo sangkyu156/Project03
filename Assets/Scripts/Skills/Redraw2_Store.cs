@@ -41,10 +41,14 @@ public class Redraw2_Store : MonoBehaviour
     {
         //GameManager.Instance.SFXPlay(GameManager.Sfx.Buy);
 
-        gameObject.transform.parent.parent.gameObject.GetComponent<StoreItems>().OverlapRedraw();//다시 뽑기
-        Managers.Instance.buyCheckAction();
 
-        gameObject.transform.parent.parent.gameObject.GetComponent<StoreItems>().PrintFieldMoney();
+        if (Player.Instance.firstStore)
+            gameObject.transform.parent.parent.gameObject.GetComponent<FirstStoreItems>().PrintFieldMoney();
+        else
+            gameObject.transform.parent.parent.gameObject.GetComponent<StoreItems>().PrintFieldMoney();
+
+        Managers.Instance.buyCheckAction();
+        gameObject.transform.parent.parent.gameObject.GetComponent<StoreItems>().OverlapRedraw();//다시 뽑기
     }
 
     //구매가능여부체크

@@ -15,16 +15,19 @@ public class BossImage : MonoBehaviour
 
     void Start()
     {
+        player = GameObject.FindGameObjectWithTag("Player");
+        boss = GameObject.FindGameObjectWithTag("Boss");
+
         img = GetComponent<Image>(); // 대상 이미지를 가져옴
     }
 
     void Update()
     {
-        if(player == null)
-            player = GameObject.FindGameObjectWithTag("Player");
+        if (player == null)
+            return;
 
         if(boss == null)
-            boss = GameObject.FindGameObjectWithTag("Boss");
+            return;
 
         dis = player.transform.position.x - boss.transform.position.x;
         if (200 <= dis)

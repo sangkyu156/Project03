@@ -26,14 +26,15 @@ public class Player : MonoBehaviour
     public int      regenerateLevel = 0;         //체력회복
     public bool     regenerate = false;
     public float    regenerateCooldown = 0;
-    public int      rageExplosionLevel = 0;
+    public int      rageExplosionLevel = 0;      //분노폭발
     public float    rageExplosionTime = 0;
     public bool     rageExplosion = false;
     public int      bulkingUpLevel = 0;          //벌크업
     public int      goldChestLevel = 0;          //금화상자
     public int      potionChestLevel = 0;        //포션상자
     public int      regularLevel = 0;            //단골
-    public GameObject rageExplosionSkill;   //분노폭발
+    public bool clairvoyant = false;             //천리안
+    public GameObject rageExplosionSkill;   
     public GameObject[] sawBlade;
     #endregion
 
@@ -45,6 +46,7 @@ public class Player : MonoBehaviour
     public Transform textPostion;
     public Transform volcanoPos;
     public Transform tridentPos;
+    public bool firstStore = false;
     float dist = 0f;
 
     public GameObject effect_Heal;
@@ -54,6 +56,7 @@ public class Player : MonoBehaviour
     GameObject stageCamera;
     Animator animator;
     SpriteRenderer spriteRenderer;
+    GameObject canvas;
     PoolManager poolManager; //오브젝트 풀링 매니져
     new Rigidbody2D rigidbody2D;
 
@@ -95,12 +98,28 @@ public class Player : MonoBehaviour
 
     void Start()
     {
-        currentHealth = maxHealth;
-        healthBar.SetMaxHealth(maxHealth);
+        canvas = GameObject.FindGameObjectWithTag("StageCanvas");
+        SetPlayerStats();
     }
 
     private void Update()
     {
+        //죽음
+        if(currentHealth <= 0)
+        {
+            GameObject deadPopup = Managers.Resource.Instantiate("UI/Popup/DeadPopup");
+            deadPopup.transform.SetParent(canvas.transform, false);
+        }
+
+        Collider2D[] coin = Physics2D.OverlapBoxAll(transform.position, new Vector2(3, 10), 0);
+        for (int i = 0; i < coin.Length; i++)
+        {
+            if (coin[i].tag == "Coin")
+            {
+                coin[i].transform.position = Vector2.MoveTowards(coin[i].transform.position, this.transform.position + new Vector3(0, 1.5f, 0), 13 * Time.deltaTime);
+            }
+        }
+
         //분노폭발 스킬 획득시
         if (rageExplosion)
         {
@@ -573,5 +592,14 @@ public class Player : MonoBehaviour
         healthBar.SetHealth(currentHealth);
 
         Invoke("HealOff", 0.7f);
+    }
+
+    void SetPlayerStats()
+    {
+        maxHealth += Managers.Data.state_Health;
+        currentHealth = maxHealth;
+        healthBar.SetMaxHealth(maxHealth);
+        Managers.fieldMoney = Managers.Data.state_StartGold + 500;
+        Managers.Instance.PrintFieldMoney();
     }
 }

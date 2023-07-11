@@ -29,4 +29,17 @@ public class Menu : MonoBehaviour
         //GameManager.Instance.SFXPlay(GameManager.Sfx.Button01);
         GameObject store = Managers.Resource.Instantiate("UI/Popup/DiaStorePopup", canvas.transform);
     }
+
+    public void AchievementPopupOn()
+    {
+        //GameManager.Instance.SFXPlay(GameManager.Sfx.Button01);
+        Managers.Data.AchievementCheck();
+        GameObject achievement = Managers.Resource.Instantiate("UI/Popup/AchievementPopup", canvas.transform);
+    }
+
+    public void CreditPopupOn()
+    {
+        //GameManager.Instance.SFXPlay(GameManager.Sfx.Button01);
+        GameObject credit = Managers.Resource.Instantiate("UI/Popup/CreditPopup", canvas.transform);
+    }
 }
