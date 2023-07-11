@@ -33,14 +33,11 @@ public class IntroSceneManager : BaseScene
 
     void Start()
     {
-        //Invoke("GoStage", 9.8f);
+        Managers.Sound.Play("IntroBGM", Define.Sound.Bgm);
 
-        Invoke("GoStage", 2.3f);
-    }
+        Invoke("GoStage", 9.8f);
 
-    private void Update()
-    {
-
+        //Invoke("GoStage", 2.3f);
     }
 
     void GoStage()

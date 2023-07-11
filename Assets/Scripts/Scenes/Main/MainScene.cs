@@ -11,6 +11,7 @@ public class MainScene : BaseScene
 
     void Start()
     {
+        Managers.Sound.Play("HomeBGM", Define.Sound.Bgm);
         canvas = GameObject.FindGameObjectWithTag("MainCanvas");
 
         Init();

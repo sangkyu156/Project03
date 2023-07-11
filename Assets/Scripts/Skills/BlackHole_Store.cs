@@ -12,7 +12,7 @@ public class BlackHole_Store : BlackHole_Skill
 
     void Start()
     {
-        //GameManager.Instance.SFXPlay(GameManager.Sfx.LegendarySkill);
+        Managers.Sound.Play("LegendarySkill");
 
         int min = (int)Math.Round((int)Define.SkillPrice.Legendary * 0.9f);
         int max = (int)Math.Round((int)Define.SkillPrice.Legendary * 1.1f);
@@ -76,17 +76,16 @@ public class BlackHole_Store : BlackHole_Skill
         if (Player.Instance.blackholeLevel >= 7)
             return;
 
-        if (Managers.fieldMoney
-            < priceValue)
+        if (Managers.fieldMoney < priceValue)
         {
-            //GameManager.Instance.SFXPlay(GameManager.Sfx.DonotBuy);
+            Managers.Sound.Play("DonotBuy");
             return;
         }
 
         Managers.fieldMoney -= priceValue;
         Managers.Data.paymentGold += priceValue;
         Managers.Data.legendSkillCount++;
-        //GameManager.Instance.SFXPlay(GameManager.Sfx.Buy);
+        Managers.Sound.Play("Buy");
 
         if (Player.Instance.blackholeLevel == 0)
         {
@@ -120,7 +119,7 @@ public class BlackHole_Store : BlackHole_Skill
 
         PrintExplanation();
 
-        if(Player.Instance.firstStore)
+        if (Player.Instance.firstStore)
             gameObject.transform.parent.parent.gameObject.GetComponent<FirstStoreItems>().PrintFieldMoney();
         else
             gameObject.transform.parent.parent.gameObject.GetComponent<StoreItems>().PrintFieldMoney();

@@ -15,17 +15,20 @@ public class StageCanvas : UI_Base
     {
         Bind<Button>(typeof(Buttons));//Dictionary에 버튼 종류를 저장함
 
-        //각각의 버튼에 클릭했을때 함수 연결해줌
+        //각각의 버튼에 클릭했을때 호출하는 함수 연결해줌
         GetButton((int)Buttons.PauseButton).gameObject.BindEvent(PauseButton);
     }
 
     void Start()
     {
+        Managers.Sound.Play("StageBGM", Define.Sound.Bgm);
+
         Init();
     }
 
     public void PauseButton(PointerEventData data)
     {
+        Managers.Sound.Play("Button01");
         Time.timeScale = 0;
         Managers.Resource.Instantiate("UI/Popup/PausePopup", this.transform);
     }

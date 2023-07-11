@@ -13,6 +13,7 @@ public class PlayButton : MonoBehaviour
 
     public void StagePopupOn()
     {
+        Managers.Sound.Play("Button01");
         Managers.Resource.Instantiate("UI/Popup/StagePopup", canvas.transform);
     }
 }

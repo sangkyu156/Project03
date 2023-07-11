@@ -40,6 +40,7 @@ public class Achievement_LS : AchievementBase
 
     public void Reward()
     {
+        Managers.Sound.Play("DiamondReward");
         Managers.Data.achievement08 = 2;
         Managers.diamond += 3;
 

@@ -40,6 +40,7 @@ public class Achievement_pig2 : AchievementBase
 
     public void Reward()
     {
+        Managers.Sound.Play("DiamondReward");
         Managers.Data.achievement02 = 2;
         Managers.diamond += 2;
 

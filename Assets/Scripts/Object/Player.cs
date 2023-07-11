@@ -1,40 +1,41 @@
 using Redcode.Pools;
+using System.Collections;
 using UnityEngine;
 
 public class Player : MonoBehaviour
 {
     #region 스킬변수
-    public int      fireBallLevel = 0;           //파이어볼
-    public float    fireBallCooldown = 0;
-    public int      tornadoLevel = 0;            //토네이도
-    public float    tornadoCooldown = 0;
-    public int      blackholeLevel = 0;          //블랙홀
-    public float    blackholeCooldown = 0;
-    public int      sawBladeLevel = 0;           //톱날
-    public int      sparkLevel = 0;              //스파크(연사)
-    public float    sparkCooldown = 0;
-    public int      waveEnergyLevel = 0;         //에너지볼(관통)
-    public float    waveEnergyCooldown = 0;
-    public int      volcanoLevel = 0;            //볼케이노
-    public float    volcanoCooldown = 0;
-    public bool     volcano = false;
-    public int      tridentLevel = 0;            //삼지창
-    public float    tridentCooldown = 0;
-    public bool     trident = false;
-    public int      quicknessLevel = 0;          //신속
-    public int      slowdownLevel = 0;           //감속
-    public int      regenerateLevel = 0;         //체력회복
-    public bool     regenerate = false;
-    public float    regenerateCooldown = 0;
-    public int      rageExplosionLevel = 0;      //분노폭발
-    public float    rageExplosionTime = 0;
-    public bool     rageExplosion = false;
-    public int      bulkingUpLevel = 0;          //벌크업
-    public int      goldChestLevel = 0;          //금화상자
-    public int      potionChestLevel = 0;        //포션상자
-    public int      regularLevel = 0;            //단골
+    public int fireBallLevel = 0;           //파이어볼
+    public float fireBallCooldown = 0;
+    public int tornadoLevel = 0;            //토네이도
+    public float tornadoCooldown = 0;
+    public int blackholeLevel = 0;          //블랙홀
+    public float blackholeCooldown = 0;
+    public int sawBladeLevel = 0;           //톱날
+    public int sparkLevel = 0;              //스파크(연사)
+    public float sparkCooldown = 0;
+    public int waveEnergyLevel = 0;         //에너지볼(관통)
+    public float waveEnergyCooldown = 0;
+    public int volcanoLevel = 0;            //볼케이노
+    public float volcanoCooldown = 0;
+    public bool volcano = false;
+    public int tridentLevel = 0;            //삼지창
+    public float tridentCooldown = 0;
+    public bool trident = false;
+    public int quicknessLevel = 0;          //신속
+    public int slowdownLevel = 0;           //감속
+    public int regenerateLevel = 0;         //체력회복
+    public bool regenerate = false;
+    public float regenerateCooldown = 0;
+    public int rageExplosionLevel = 0;      //분노폭발
+    public float rageExplosionTime = 0;
+    public bool rageExplosion = false;
+    public int bulkingUpLevel = 0;          //벌크업
+    public int goldChestLevel = 0;          //금화상자
+    public int potionChestLevel = 0;        //포션상자
+    public int regularLevel = 0;            //단골
     public bool clairvoyant = false;             //천리안
-    public GameObject rageExplosionSkill;   
+    public GameObject rageExplosionSkill;
     public GameObject[] sawBlade;
     #endregion
 
@@ -48,6 +49,7 @@ public class Player : MonoBehaviour
     public Transform tridentPos;
     public bool firstStore = false;
     float dist = 0f;
+    bool isCoin = false;
 
     public GameObject effect_Heal;
     public PlayerHealthBar healthBar;
@@ -105,7 +107,7 @@ public class Player : MonoBehaviour
     private void Update()
     {
         //죽음
-        if(currentHealth <= 0)
+        if (currentHealth <= 0)
         {
             GameObject deadPopup = Managers.Resource.Instantiate("UI/Popup/DeadPopup");
             deadPopup.transform.SetParent(canvas.transform, false);
@@ -127,7 +129,7 @@ public class Player : MonoBehaviour
             if (rageExplosionTime < 0)
             {
                 rageExplosionSkill.SetActive(true);
-                //GameManager.Instance.SFXPlay(Sfx.RageExplosion);
+                Managers.Sound.Play("RageExplosion");
                 Invoke("RageExplosionOff", 0.7f);
                 rageExplosionTime = rageExplosionSkill.GetComponent<RageExplosion_Skill>().rageExplosionCooldown;
             }
@@ -414,42 +416,42 @@ public class Player : MonoBehaviour
     //오브젝트풀링 생성
     void Spawn()
     {
-        //GameManager.Instance.SFXPlay(Sfx.FireBall);
+        Managers.Sound.Play("FireBall");
         FireBall_Skill fireBall_Skill = poolManager.GetFromPool<FireBall_Skill>();
         fireBall_Skill.gameObject.transform.position = skillPos.transform.position;
     }
     void Spawn2()
     {
-        //GameManager.Instance.SFXPlay(Sfx.Tornado);
+        Managers.Sound.Play("Tornado");
         Tornado_Skill tornado_Skill = poolManager.GetFromPool<Tornado_Skill>();
         tornado_Skill.gameObject.transform.position = skillPos.transform.position;
     }
     void Spawn3()
     {
-        //GameManager.Instance.SFXPlay(Sfx.BlackHole);
+        Managers.Sound.Play("BlackHole");
         BlackHole_Skill blackHole_Skill = poolManager.GetFromPool<BlackHole_Skill>();
         blackHole_Skill.gameObject.transform.position = skillPos.transform.position;
     }
     void Spawn4()
     {
-        //GameManager.Instance.SFXPlay(Sfx.Spark);
+        Managers.Sound.Play("Spark");
         Spark_Skill spark_Skill = poolManager.GetFromPool<Spark_Skill>();
         spark_Skill.gameObject.transform.position = skillPos.transform.position;
     }
     void Spawn5()
     {
-        //GameManager.Instance.SFXPlay(Sfx.EnergyBall);
+        Managers.Sound.Play("EnergyBall");
         WaveEnergy_Skill waveEnergy_Skill = poolManager.GetFromPool<WaveEnergy_Skill>();
         waveEnergy_Skill.gameObject.transform.position = skillPos.transform.position;
     }
     void Spawn6()
     {
-        //GameManager.Instance.SFXPlay(Sfx.Volcano);
+        Managers.Sound.Play("Volcano");
         Volcano_Skill volcano_Skill = poolManager.GetFromPool<Volcano_Skill>();
     }
     void Spawn7()
     {
-        //GameManager.Instance.SFXPlay(Sfx.Trident);
+        Managers.Sound.Play("Trident");
         Trident_Skill trident_Skill = poolManager.GetFromPool<Trident_Skill>();
     }
 
@@ -493,7 +495,7 @@ public class Player : MonoBehaviour
         GameObject damageUI = Managers.Resource.Instantiate("UI/Text/DamageTextCanvas");
         damageUI.GetComponentInChildren<DamageText>().damage = damage_;
         damageUI.transform.SetParent(textPostion, false);
-        //GameManager.Instance.SFXPlay(Sfx.PlayerHit);
+        Managers.Sound.Play("PlayerHit");
 
         gameObject.tag = "NoDamage";
         spriteRenderer.color = new Color(1, 1, 1, 0.4f);
@@ -536,7 +538,7 @@ public class Player : MonoBehaviour
     public void GetHP_Potion(Define.Potion potion_)
     {
         effect_Heal.SetActive(true);
-        //GameManager.Instance.SFXPlay(Sfx.Heal);
+        Managers.Sound.Play("Heal");
 
         currentHealth += ((int)potion_ + Managers.Data.state_PotionRecover);
 
@@ -553,11 +555,11 @@ public class Player : MonoBehaviour
     //힐Text 출력
     void HealPrint(Define.Potion potion_)
     {
-        if(healUI == null)
+        if (healUI == null)
             healUI = Managers.Resource.Instantiate("UI/Text/HealTextCanvas");
 
         healUI.transform.SetParent(textPostion, false);
-        healUI.GetComponentInChildren<HealText>().heal = $"+{((int)potion_ + Managers.Data.state_PotionRecover)}";        
+        healUI.GetComponentInChildren<HealText>().heal = $"+{((int)potion_ + Managers.Data.state_PotionRecover)}";
     }
 
     void HealPrint(int skillLevel)
@@ -580,11 +582,11 @@ public class Player : MonoBehaviour
         regenerateCooldown = 10;
         effect_Heal.SetActive(true);
 
-        //GameManager.Instance.SFXPlay(Sfx.Heal);
+        Managers.Sound.Play("Heal");
 
         currentHealth += regenerateLevel + 2;
-        
-        if(currentHealth > maxHealth)
+
+        if (currentHealth > maxHealth)
             currentHealth = maxHealth;
 
         HealPrint(regenerateLevel);
@@ -596,10 +598,30 @@ public class Player : MonoBehaviour
 
     void SetPlayerStats()
     {
+        Managers.Data.countBG = 0;
         maxHealth += Managers.Data.state_Health;
         currentHealth = maxHealth;
         healthBar.SetMaxHealth(maxHealth);
         Managers.fieldMoney = Managers.Data.state_StartGold + 500;
         Managers.Instance.PrintFieldMoney();
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "Coin")
+            StartCoroutine("CoinSound");
+    }
+
+    IEnumerator CoinSound()
+    {
+        if (isCoin)
+            yield break;
+
+        isCoin = true;
+        Managers.Sound.Play("Coin");
+
+        yield return new WaitForSeconds(0.08f);
+
+        isCoin = false;
     }
 }

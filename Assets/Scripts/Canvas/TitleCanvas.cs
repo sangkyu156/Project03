@@ -27,6 +27,8 @@ public class TitleCanvas : UI_Base
     void Start()
     {
         Init();
+
+        Managers.Sound.Play("TitleBGM", Define.Sound.Bgm);
     }
 
     void Update()
@@ -36,17 +38,22 @@ public class TitleCanvas : UI_Base
 
     public void SetupButton(PointerEventData data)
     {
+        Managers.Sound.Play("Button01");
+
         GameObject popup = Managers.Resource.Instantiate("UI/Popup/SetupPopup");//SetupPopup 프리팹 팝업 생성
         popup.transform.SetParent(this.transform, false);
     }
 
     public void QuitButton(PointerEventData data)
     {
+        Managers.Sound.Play("Button01");
         Application.Quit();
     }
 
     public void StartButton(PointerEventData data)
     {
+        Managers.Sound.Play("Button01");
+
         //TODO
         //슬롯을 만들고 슬롯에 저장되어 있는 데이터를 읽어와서 저장되어있는 데이터가 있으면 메인화면으로 가야하고
         //저장되어 있는 데이터가 없으면 GoIntro() 함수 호출해야함.

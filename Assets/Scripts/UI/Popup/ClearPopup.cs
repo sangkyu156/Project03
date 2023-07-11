@@ -13,13 +13,16 @@ public class ClearPopup : MonoBehaviour
 
     private void Start()
     {
+        Managers.Sound.Clear();
+        Managers.Sound.Play("ClearPopup");
+
         Managers.currScene = (int)Define.Scene.Clear;
         Destroy(Player.Instance.gameObject);
     }
 
     public void RewardPopupOn()
     {
-        //GameManager.Instance.SFXPlay(GameManager.Sfx.ClearBox);
+        Managers.Sound.Play("ClearBox");
 
         switch (Managers.currStage)
         {
@@ -52,7 +55,7 @@ public class ClearPopup : MonoBehaviour
                 Managers.Data.stageCheck[1] = true;
                 break;
         }
-        //GameManager.Instance.SFXPlay(GameManager.Sfx.Button01);
+        Managers.Sound.Play("Button01");
 
         Managers.Scene.LoadScene(Define.Scene.Main);
     }

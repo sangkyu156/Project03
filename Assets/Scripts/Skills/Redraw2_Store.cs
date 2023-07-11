@@ -39,7 +39,7 @@ public class Redraw2_Store : MonoBehaviour
     //±¸¸Å
     public void RedrawBuy2()
     {
-        //GameManager.Instance.SFXPlay(GameManager.Sfx.Buy);
+        Managers.Sound.Play("Buy");
 
 
         if (Player.Instance.firstStore)

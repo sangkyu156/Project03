@@ -40,6 +40,7 @@ public class Achievement_Redraw2 : AchievementBase
 
     public void Reward()
     {
+        Managers.Sound.Play("DiamondReward");
         Managers.Data.achievement06 = 2;
         Managers.diamond += 2;
 

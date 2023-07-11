@@ -35,6 +35,13 @@ public class Define
         Stage05
     }
 
+    public enum Sound
+    {
+        Bgm,
+        Effect,
+        MaxCount,
+    }
+
     public enum Skills //스킬이름은 항상 Pefeb이름과 같아야 한다. 그래야 Resources 폴더에서 가져옴
     {
         /**********1000**********/

@@ -122,6 +122,7 @@ public class StageBG : UI_Scene
 
     void Stage01CreateEnemy(int _countBG)
     {
+        Debug.Log($"ÇöÁ¦ BG = {_countBG}");
         switch (_countBG)
         {
             case 2: CreateManager.Instance.Create_01(); break;

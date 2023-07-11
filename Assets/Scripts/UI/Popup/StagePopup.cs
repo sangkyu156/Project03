@@ -44,6 +44,7 @@ public class StagePopup : MonoBehaviour
 
     void SetStage()
     {
+        Managers.Sound.Play("Button01");
         for (int i = 0; i < 5; i++)//스테이지 개수만큼 반복
         {
             if (curStage == i)

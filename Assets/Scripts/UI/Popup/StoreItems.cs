@@ -150,12 +150,12 @@ public class StoreItems : MonoBehaviour
     {
         if (Managers.fieldMoney < 200)
         {
-            //사운드 해야함
-            //GameManager.Instance.SFXPlay(GameManager.Sfx.DonotBuy);
+            Managers.Sound.Play("DonotBuy");
             return;
         }
 
-        //GameManager.Instance.SFXPlay(GameManager.Sfx.Button01);
+        Managers.Sound.Play("Button01");
+
         Managers.fieldMoney -= 200; //돈차감
         Managers.Data.redrawCount++;
 

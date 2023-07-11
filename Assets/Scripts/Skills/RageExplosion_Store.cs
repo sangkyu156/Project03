@@ -78,13 +78,14 @@ public class RageExplosion_Store : RageExplosion_Skill
 
         if (Managers.fieldMoney < priceValue)
         {
-            //GameManager.Instance.SFXPlay(GameManager.Sfx.DonotBuy);
+            Managers.Sound.Play("DonotBuy");
             return;
         }
 
         Managers.fieldMoney -= priceValue;
         Managers.Data.paymentGold += priceValue;
-        //GameManager.Instance.SFXPlay(GameManager.Sfx.Buy);
+
+        Managers.Sound.Play("Buy");
 
         if (Player.Instance.rageExplosionLevel == 0)
         {

@@ -19,6 +19,9 @@ public class DeadPopup : MonoBehaviour
 
     private void Start()
     {
+        Managers.Sound.Clear();
+        Managers.Sound.Play("GameOver");
+
         first = false;
         SmokeFX_Off();
         Calculate();//보상 지급
@@ -58,7 +61,7 @@ public class DeadPopup : MonoBehaviour
     }
     public void ExitButton_Home()
     {
-        //GameManager.Instance.SFXPlay(GameManager.Sfx.Button01);
+        Managers.Sound.Play("Button01");
 
         Managers.Scene.LoadScene(Define.Scene.Main);
     }

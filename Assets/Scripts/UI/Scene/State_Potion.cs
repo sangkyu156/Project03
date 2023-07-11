@@ -117,7 +117,7 @@ public class State_Potion : MonoBehaviour
     public void PotionRecoverBuy()
     {
         Managers.diamond -= int.Parse(diaValue.text);
-        //GameManager.Instance.SFXPlay(GameManager.Sfx.Upgrade);
+        Managers.Sound.Play("Upgrade");
 
         Managers.Data.state_PotionRecoverLevel++;
         PotionRecoverSet();

@@ -24,6 +24,8 @@ public class FirstStoreItems : MonoBehaviour
 
     void Start()
     {
+        Managers.Sound.Play("Button01");
+
         Managers.Data.storCount++;
         Player.Instance.firstStore = true;
         stageScene = GameObject.FindGameObjectWithTag("StageScene");
@@ -101,15 +103,14 @@ public class FirstStoreItems : MonoBehaviour
     {
         if (Managers.fieldMoney < 200)
         {
-            //사운드 해야함
-            //GameManager.Instance.SFXPlay(GameManager.Sfx.DonotBuy);
+            Managers.Sound.Play("DonotBuy");
             return;
         }
 
-        //GameManager.Instance.SFXPlay(GameManager.Sfx.Button01);
+        Managers.Sound.Play("Button01");
         Managers.fieldMoney -= 200; //돈차감
-        //해야함
-        //AchievementManager.Instance.redrawCount++;
+
+        Managers.Data.redrawCount++;
 
         for (int i = 0; i < items.Length; i++)
         {

@@ -30,17 +30,20 @@ public class PausePopup : UI_Popup
 
     public void SetupButton(PointerEventData data)
     {
+        Managers.Sound.Play("Button01");
         Managers.Resource.Instantiate("UI/Popup/SetupPopup", this.transform);
     }
 
     public void MeueButton(PointerEventData data)
     {
+        Managers.Sound.Play("Button01");
         Time.timeScale = 1;
         Managers.Scene.LoadScene(Define.Scene.Main);
     }
 
     public void ResumeButton(PointerEventData data)
     {
+        Managers.Sound.Play("Button01");
         Time.timeScale = 1;
         Managers.Resource.Destroy(gameObject);
     }

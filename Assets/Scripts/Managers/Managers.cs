@@ -22,13 +22,17 @@ public class Managers : MonoBehaviour
     static public int currScene = (int)Define.Scene.Title;
     static public int fieldMoney { get; set; } = 0;
     static public int diamond { get; set; } = 0;
+    static public float bgmVolume = 1;
+    static public float sfxVolume = 1;
 
     ResourceManager _resource = new ResourceManager();
     SceneManagerEx _scene = new SceneManagerEx();
+    SoundManager _sound = new SoundManager();
     DataManager _data = new DataManager();
 
     public static ResourceManager Resource { get { return Instance._resource; } }
     public static SceneManagerEx Scene { get { return Instance._scene; } }
+    public static SoundManager Sound { get { return Instance._sound; } }
     public static DataManager Data { get { return Instance._data; } }
 
     void Start()
@@ -74,6 +78,8 @@ public class Managers : MonoBehaviour
 
             DontDestroyOnLoad(go);
             s_instance = go.GetComponent<Managers>();
+
+            s_instance._sound.Init();
         }
     }
 
@@ -81,7 +87,7 @@ public class Managers : MonoBehaviour
     {
         //Scene.Clear();
         //Input.Clear();
-        //Sound.Clear();
+        Sound.Clear();
         //UI.Clear();
     }
 
