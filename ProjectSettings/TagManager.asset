@@ -15,6 +15,7 @@ TagManager:
   - MainCanvas
   - MainScene
   - Sound
+  - TitleCanvas
   layers:
   - Default
   - TransparentFX

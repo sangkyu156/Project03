@@ -45,6 +45,7 @@ public class StageScene : BaseScene
         fieldMoney = Managers.Resource.Instantiate("UI/Scene/FieldMoney", canvas);//금화창 생성
         fieldMoney_Text = Util.FindChild<TextMeshProUGUI>(fieldMoney, null, true);//금화창 연결
         fieldDiamond = Util.FindChild<TextMeshProUGUI>(Managers.Resource.Instantiate("UI/Scene/FieldDiamond", canvas), null, true);//다야몬드창 생성 & 연결
+        fieldDiamond.text = Managers.diamond.ToString();
         Managers.Resource.Instantiate("UI/Scene/PauseButton", canvas);
 
         boss = Managers.Resource.Instantiate("Object/Boss");//보스생성

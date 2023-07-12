@@ -555,8 +555,7 @@ public class Player : MonoBehaviour
     //ÈúText Ãâ·Â
     void HealPrint(Define.Potion potion_)
     {
-        if (healUI == null)
-            healUI = Managers.Resource.Instantiate("UI/Text/HealTextCanvas");
+        healUI = Managers.Resource.Instantiate("UI/Text/HealTextCanvas");
 
         healUI.transform.SetParent(textPostion, false);
         healUI.GetComponentInChildren<HealText>().heal = $"+{((int)potion_ + Managers.Data.state_PotionRecover)}";
@@ -604,6 +603,7 @@ public class Player : MonoBehaviour
         healthBar.SetMaxHealth(maxHealth);
         Managers.fieldMoney = Managers.Data.state_StartGold + 500;
         Managers.Instance.PrintFieldMoney();
+        Managers.Instance.PrintDiamond();
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

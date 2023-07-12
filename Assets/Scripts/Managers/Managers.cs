@@ -28,11 +28,13 @@ public class Managers : MonoBehaviour
     ResourceManager _resource = new ResourceManager();
     SceneManagerEx _scene = new SceneManagerEx();
     SoundManager _sound = new SoundManager();
+    SLManager _saveLode = new SLManager();
     DataManager _data = new DataManager();
 
     public static ResourceManager Resource { get { return Instance._resource; } }
     public static SceneManagerEx Scene { get { return Instance._scene; } }
     public static SoundManager Sound { get { return Instance._sound; } }
+    public static SLManager SaveLode { get { return Instance._saveLode; } }
     public static DataManager Data { get { return Instance._data; } }
 
     void Start()
@@ -63,6 +65,12 @@ public class Managers : MonoBehaviour
             fieldMoney += 500;
             PrintFieldMoney();
         }
+
+        if (Input.GetKeyDown(KeyCode.J))
+        {
+            diamond += 10;
+            PrintDiamond();
+        }
     }
 
     static void Init()
@@ -80,6 +88,7 @@ public class Managers : MonoBehaviour
             s_instance = go.GetComponent<Managers>();
 
             s_instance._sound.Init();
+            s_instance._saveLode.Init();
         }
     }
 

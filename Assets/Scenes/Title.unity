@@ -3929,7 +3929,7 @@ GameObject:
   - component: {fileID: 2025307905}
   m_Layer: 5
   m_Name: TitleCanvas
-  m_TagString: Untagged
+  m_TagString: TitleCanvas
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

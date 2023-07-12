@@ -10,6 +10,8 @@ public class SceneManagerEx
 
 	public void LoadScene(Define.Scene type)
     {
+        Managers.SaveLode.SaveData();
+
         Managers.Clear();
 
         Initiate.Fade(GetSceneName(type), fadeColor, 1.2f);

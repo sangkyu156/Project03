@@ -18,6 +18,9 @@ public class Clairvoyant_Skill : MonoBehaviour
         if (boss == null)
             return;
 
+        if (Managers.currScene != (int)Define.Scene.Stage)
+            return;
+
         float dis = Player.Instance.transform.position.x - boss.transform.position.x;
         text.text = $"{((int)dis) - 14}";
     }
